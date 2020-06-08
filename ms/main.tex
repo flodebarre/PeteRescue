@@ -2,7 +2,6 @@
 
 \usepackage[utf8x]{inputenc}	
 \usepackage{fullpage}		
-\usepackage[T1]{fontenc}				
 \usepackage[english]{babel}			
 %\usepackage{ulem}
 \usepackage{xcolor}						
@@ -18,6 +17,8 @@
 \titleformat{\subsubsection}[block]{\large\itshape}{\thesubsubsection}{1em}{}
 \titleformat{\paragraph}[runin]{\itshape}{\theparagraph}{1em}{}[. ]\renewcommand{\refname}{Literature Cited}
 
+\usepackage{enumitem}
+
 \usepackage{microtype}
 \usepackage{array}
 \usepackage{booktabs}
@@ -30,10 +31,12 @@
 \usepackage[pdftex, breaklinks, colorlinks, citecolor=black, urlcolor=black, linkcolor=black]{hyperref} 
 \usepackage{fourier} % FD I try to avoid the default LaTeX font for non math journals
 \usepackage{FiraSans}
+\usepackage[T1]{fontenc}				
+
 \usepackage{soul}
 
 % Packages to comment out before submitting!
-%\usepackage[textsize = scriptsize, backgroundcolor = white, linecolor = black]{todonotes}
+\usepackage[textsize = scriptsize, backgroundcolor = white, linecolor = black]{todonotes}
 %\usepackage{showlabels}
 
 %\numberwithin{equation}{section}
@@ -77,7 +80,7 @@
 
 \noindent $^\dag$ Equal contribution.
 
-\noindent The authors wish to be identified to the reviewers.
+\noindent The authors wish to be identified to the reviewers (the manuscript is already on bioRxiv so the identities of all authors can be easily found).
 
 \bigskip
 
@@ -111,42 +114,47 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Evol rescue and empirical evidence %%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Facing current anthropogenic environmental changes such as deforestation, soil and water contamination or rising temperatures, the populations of many species are declining and might eventually go extinct \citep{bellard_2012, diniz_2019}. Pests and pathogens experience similarly strong selective pressures as a result of increased consumption of antibiotics and use of pesticides \citep{ramsayer_2013, kreiner_2018}. 
-The process of genetic adaptation that saves populations from extinction is termed evolutionary rescue. This \linelabel{R1-3}\chg{process is characterized by an initial population decline (that would result in population extinction) followed by recovery due to the establishment of adapted genotypes, typically }resulting in a U-shaped demographic trajectory over time~\citep{gomulkiewicz_1995}.
-In recent years, empirical examples of evolutionary rescue have accumulated \citep[as reviewed by ][]{alexander_2014,carlson_2014,bell_2017}. Evolutionary rescue \linelabel{R1-4}\chg{has been observed directly in laboratory experiments \citep[e.g.][]{bell_2009,agashe_2011,lachapelle_2012,lindsey_2013,stelkens_2014}. In wild populations demographic and genotypic data is rarely monitored at the same time impeding direct observation of evolutionary rescue. Still, it has been suggested as a mechanism that has saved a few wild populations from extinction \citep[e.g.][]{vanderwal_2012,digiallonardo_2015,gignoux_2018}.} 
+Current anthropogenic environmental changes such as deforestation, soil and water contamination or rising temperatures, contribute to the decline of the populations of many species, that might eventually go extinct \citep{bellard_2012, diniz_2019}. Pests and pathogens experience similarly strong selective pressures as a result of increased consumption of antibiotics and use of pesticides \citep{ramsayer_2013, kreiner_2018}. 
+The process of genetic\footnote{\florence{rescue by plasticity as well}} adaptation that saves populations from extinction is termed evolutionary rescue. This \linelabel{R1-3}\chg{process is characterized by an initial population decline (that would result in population extinction) followed by recovery due to the establishment of adapted genotypes, } \florence{classically} resulting in a U-shaped demographic trajectory over time~\citep{gomulkiewicz_1995}.
+In recent years, empirical examples of evolutionary rescue have accumulated \citep[as reviewed by ][]{alexander_2014,carlson_2014,bell_2017}. Laboratory experiments have provided direct evidence of evolutionary rescue \linelabel{R1-4} \citep[e.g.][]{bell_2009, agashe_2011, lachapelle_2012, lindsey_2013, stelkens_2014}. In the wild, however, demographic and genotypic data are rarely monitored together at the same time, which impedes direct observation of evolutionary rescue. Still, evolutionary rescue has been suggested as a mechanism that has saved a few wild populations from extinction \citep[e.g.][]{vanderwal_2012, digiallonardo_2015, gignoux_2018}. 
+
+
+%% Genetic setting
+
+\florence{[Need a paragraph on the genetic makeup. We are not explaining this at all at the moment and this is lacking] Rescue can occur through plasticity (refs Chevin? \footnote{https://royalsocietypublishing.org/doi/full/10.1098/rspb.2016.1690 , https://royalsocietypublishing.org/doi/abs/10.1098/rstb.2012.0089 and/or https://onlinelibrary.wiley.com/doi/full/10.1111/j.1558-5646.2009.00875.x}) or genetic adaptation (refs). The traits involves can be continuous (ref) or discrete (ref). In this work, we consider genetic adaptation mediated by discrete traits. Specifically, we consider that a single mutation can prevent extinction, and...}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Evol rescue and dispersal %%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 In mathematical models, evolutionary rescue is often studied in a spatially homogeneous situation where the whole population experiences a sudden decrease in habitat quality. In this setting, a large number of theoretical results have been established, for example on the effects of recombination \citep{uecker_2015} and horizontal gene transfer \citep{tazzyman_2014}, reproduction mechanisms \citep{glemin_2013,uecker_2017}, intra- and interspecific competition \citep{osmond_2013}, predation pressure \linelabel{R1-5}\chg{\citep{yamamichi_2015}}, bottlenecks \citep{martin_2013}, different genetic pathways \citep{osmond_2019}, and the context-dependent fitness effects of mutations \citep{anciaux_2018}. \chg{In contrast to these abrupt change scenarios, evolutionary rescue can also be studied in a gradually changing environment \citep[e.g.][]{osmond_2017}}\footnote{\pete{Does anybody know other references?} \hildegard{What about Lynch et al. 1991. Adaptive and  demographic responses of plankton populations to environmental change. Limnology and Oceanography 36:1301--1312., B{\"u}rger and Lynch 1995. Evolution and extinction in a changing environment: a quantitative genetic analysis. Evolution 49:151--163 and Lande and Shannon 1996. The role of  genetic  variation  in adaptation and population persistence in a changing environment. Evolution 50:434--437? But please check; it's a long time that I read those...}}. 
-In fragmented environments, habitat deterioration is not necessarily synchronized across patches: there can be a transient spatially heterogeneous environment consisting of old- and new-habitat patches until eventually the whole environment has deteriorated. If individuals that populate different patches are able to move between those, the effect of dispersal on evolutionary rescue needs to be taken into account \citep{uecker_2014, tomasini_2019}. Experiments that study the effect of dispersal on evolutionary rescue are rare but indicate that \linelabel{R1-6} dispersal can increase the likelihood of successful genetic adaptation \citep{bell_2011}. 
+Such gradual changes can in particular occur in fragmented environments.
 
-\linelabel{R1-1}\chg{Evolutionary rescue in a fragmented environment can be interpreted as the intermediate situation between abrupt change and gradual change: if dispersal is very low, patches are approximately isolate and thus each patch undergoes an abrupt change independent of the other patches; if the dispersal rate and the number of patches are very high, the whole environment is gradually changing since spatial structure and the contribution of a single patch are negligible.}
+In fragmented environments, habitat deterioration is not necessarily synchronized across patches: there can be a transient spatially heterogeneous environment consisting of a mosaic of old and of degraded habitat patches, until eventually the whole environment has deteriorated. If individuals that populate different patches are able to move between those, the effect of dispersal on evolutionary rescue needs to be taken into account \citep{uecker_2014, tomasini_2019}. \linelabel{R1-1}\chg{The intensity of dispersal among patches tunes how abruptly environmental change is experienced. With very low dispersal, patches are essentially isolated from each other, and each patch undergoes an abrupt change independently of the other patches. With higher dispersal, asynchronous deterioration among patches is experienced as a more gradual change overall.}
+Experiments that study the effect of dispersal on evolutionary rescue are rare, but, for instance, \citet{bell_2011} found that \linelabel{R1-6} dispersal can increase the likelihood of successful genetic adaptation. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Adaptation and dispersal %%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Evolutionary rescue in a situation where one patch after \linelabel{R2-2}\chg{another} deteriorates is tightly linked to the study of adaptation to a heterogeneous environment with source-sink dynamics. These describe a spatially heterogeneous environment that is constant in time where a population in unfavorable habitats can be maintained by constant immigration of the wild type. Experimental and theoretical studies have found that \linelabel{R2-3}\chg{increasing} dispersal can have a positive or a negative effect on genetic adaptation in a heterogeneous environment (see e.g. \citet{holt_1997,gomulkiewicz_1999} for positive; \citet{storfer_1998,garcia_1997,kirkpatrick_1997,fedorka_2012} for negative; and \linelabel{R1-7}\chg{\citet{kawecki_2000,ronce_2001,gallet_2018}} for both effects).
+The transient mosaic of degraded and non-degraded patches that results from asynchronous degradation in a fragmented habitat is similar to the setting of models of source-sink dynamics. These models represent a spatially heterogeneous environment, constant in time, in which wild-type populations in unfavorable habitats can only be maintained thanks to recurrent immigration from favorable habitats. 
+Experimental and theoretical studies have found that \linelabel{R2-3}\chg{increasing} dispersal can have a positive or a negative effect on genetic adaptation in a heterogeneous environment (see e.g., for studies on discrete traits, \florence{[refocus the citations with papers on discrete traits; otherwise there are too many possible citations -- it's fine to do so given that we now explicitly say the paper is focused on discrete traits]}\citet{holt_1997,gomulkiewicz_1999} for positive; \citet{storfer_1998,garcia_1997,kirkpatrick_1997,fedorka_2012} for negative; and \linelabel{R1-7}\chg{\citet{kawecki_2000, gallet_2018}} for both effects).
 %Reason for different results: (i) demography or not (Kawecki); (ii) selection strength (Gallet), (iii) selection strength (Ronce)
-\florence{suggestion: focus on discrete traits - thousands of possible papers to cite; avoid RK2001}
 
-In theoretical studies of local adaptation and evolutionary rescue, dispersal is typically assumed to be \chg{unbiased}, i.e. dispersing individuals are distributed uniformly among patches. Only few investigations in the context of local adaptation in source-sink systems have taken into account non-\chg{uniform} dispersal patterns \citep[e.g.][]{kawecki_1995,holt_1996,kawecki_2002,amarasekare_2004}. This analytical focus on \chg{unbiased} dispersal is in stark contrast to actually observed dispersal schemes in nature \citep[][]{edelaar_2008,clobert_2009,edelaar_2012}. Here, we explore and compare the effects of several biologically motivated dispersal schemes on adaptation and evolutionary rescue.
+%%% DISPERSAL, biased or not
+In theoretical studies of local adaptation and evolutionary rescue, dispersal is typically assumed to be \chg{unbiased}, i.e. dispersing individuals are distributed uniformly among patches. Only few investigations in the context of local adaptation in source-sink systems have taken into account non-\chg{uniform} dispersal patterns \citep[e.g.][]{kawecki_1995,holt_1996,kawecki_2002,amarasekare_2004}. This analytical focus on \chg{unbiased} dispersal is in stark contrast to dispersal schemes observed in nature \citep[][]{edelaar_2008,clobert_2009,edelaar_2012}. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Empirical examples for non-random dispersal %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 One of the best documented modes of non-\chg{uniform} dispersal is density-dependent dispersal. Density dependence can be positive or negative: either individuals prefer to settle or stay in large groups (positive density-dependence), or they choose to remain in or move to less populated regions (negative density-dependence). Density-dependent dispersal, of either form, is ubiquitously found in nature and has been reported in many species across the tree of life, including insects \citep{endriss_2019}, spiders \citep{meester2010}, amphibians \citep{gautier_2006}, birds \citep{wilson_2017}, fishes \citep{turgeon_2012}, and mammals~\citep{stoen_2006}.
 
-Another well-established dispersal scheme is habitat choice, whereby individuals tend to immigrate into habitats they are best adapted to. This mechanism has for example been reported in lizards \citep{bestion_2015}, birds \citep{dreiss_2011,benkman_2017}, fishes \citep{bolnick_2009}, worms \citep{mathieu_2010}, and ciliates \citep{jacob_2017,jacob_2018}. 
+Another well-established dispersal scheme is a type of habitat choice, whereby individuals tend to immigrate into habitats they are best adapted to. This mechanism has for example been reported in lizards \citep{bestion_2015}, birds \citep{dreiss_2011,benkman_2017}, fishes \citep{bolnick_2009}, worms \citep{mathieu_2010}, and ciliates \citep{jacob_2017,jacob_2018}. 
 
-\linelabel{R1-8}\chg{Although density-dependence or habitat choice can also affect the emigration behavior, i.e. the likelihood that an individual leaves its current location, or even the vagrant stage when the individual is in the process of dispersal \citep{bowler_2005,ronce_2007}, we ignore this here. Instead, we concentrate on \chg{non-uniform} dispersal effects of the immigration process.} \\
+\linelabel{R1-8} Dispersal biases can affect the different steps of dispersal (the probability to emigrate, the vagrant stage, and immigration \citep{bowler_2005,ronce_2007}). In this work, we focus on effects on the immigration step. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % What do we do? %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-In the following, we explicitly account for these \chg{biased} dispersal schemes in the context of genetic adaptation to a deteriorating and spatially structured environment. We model an environment that consists of various patches with one of two possible habitats: the `old' habitat, in which both \linelabel{R1-9-1}\chg{types, wild type and mutant, have a positive growth rate}, and the `new' habitat, where in the absence of immigration the wild-type population will eventually go extinct. In this framework, we study four biologically motivated dispersal patterns and compare them to the \chg{unbiased} dispersal scheme. We start by investigating their consequences for the establishment dynamics of an adapted mutant in a time-constant heterogeneous environment. 
-From there, we derive an approximation for adaptation in a source-sink setting.
-Using these results, we study the probability of evolutionary rescue, i.e. of adaptation in the scenario where patches, one after \chg{another}, deteriorate over time until all locations contain the new habitat. We find that dispersal bias has a direct effect on the local growth rates which in turn affect the probability of establishment and evolutionary rescue.
+We model an environment that consists of various patches with one of two possible habitats: the `old' habitat, in which both \linelabel{R1-9-1}\chg{types, wild type and mutant, have a positive growth rate}, and the `new' habitat, where in the absence of immigration the wild-type population will eventually go extinct. We study four biologically motivated dispersal schemes, which correspond to the four combinations of biases towards old vs.\ new patches for wild type and mutants, and we compare these dispersal schemes to \chg{unbiased} dispersal. Our analysis is carried out step-wise. We first consider a temporally constant but spatially heterogeneous environment with two (`old' and `new') patch types. In this setting, we first study the probability of establishment of a single mutant, assuming there are no further mutations between types. We then relax the assumption of no further mutations, and compute a probability of adaptation, i.e. of establishment of the mutant lineage\footnote{\florence{not sure about this defn, please check}}. Finally, we let habitat degradation proceed, assuming that patches, one after \chg{another}, deteriorate over time until all locations contain the new habitat. Using the previous results, we approximate a probability of evolutionary rescue, i.e.\ that a mutation appears, establishes, thereby allowing the population to persist in spite of environmental degradation. We find that dispersal biases affect the probabilities of establishment and of evolutionary rescue, because it directly affects the local growth rates. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%% MODEL %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -155,37 +163,15 @@ Using these results, we study the probability of evolutionary rescue, i.e. of ad
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 % General description %%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%
-We consider a spatially structured environment consisting of $M$ patches all connected to each other. The habitat of a patch is either in the \textit{old} or in the \textit{new} state, corresponding to habitat quality before and after environmental deterioration, respectively. The transition from the old to the new habitat is assumed to be irreversible. Patches are populated by two types of asexually reproducing, haploid individuals, either wild type or mutant. Generations are measured in discrete time steps and are non-overlapping. \linelabel{R1-9-2}\linelabel{R2-6}\chg{Wild-type and mutant individuals both have a positive growth rate} in old-habitat patches; the mutant has a lower growth rate there. In new-habitat patches, the wild type population declines locally while the mutant has a positive growth rate -- we will therefore call it a `rescue mutant'. \chg{Both habitat types, old and new, have a (potentially different) carrying capacity. At the end of a life cycle, the local population size is reduced to the carrying capacity if necessary.}
+We consider a spatially structured environment consisting of $M$ patches all connected to each other. The habitat of a patch is either in the \textit{old} or in the \textit{new} state, corresponding to habitat quality before and after environmental deterioration, respectively. One after \chg{another} every $\tau$ generations, the habitat of a patch deteriorates, from old to new state, the transition being irreversible. Initially ($t<0$), all patches are of the old-habitat type. At time $t=0$, the first patch deteriorates. After $(M-1)\tau$ generations, all patches are of the new-habitat type. We denote the time-dependent frequency of old-habitat patches by $f_{\text{old}}$. It equals $1$ before the first environmental change takes place ($t<0$), and decreases by $1/M$ after each environmental deterioration event, until it eventually hits~$0$, when all patches have undergone the environmental change. This setting corresponds to the one analyzed by \citet{uecker_2014}, and more recently by \citet{tomasini_2019} in the special case of just two patches\footnote{\florence{what about carrying capacities in these papers?}}. The maximum numbers of individuals that can live in a patch of a given habitat type, i.e.\ the carrying capacities, are denoted $K_{\text{old}}$ and $K_{\text{new}}$ for old- and new-habitat patches respectively; $K_{\text{old}}$ and $K_{\text{new}}$ may differ.
 
-We consider a time-varying environment, such that one after \chg{another} every $\tau$ generations, the habitat of a patch deteriorates (from old to new state). Initially ($t<0$), all patches are of the old-habitat type. At time $t=0$, the first patch deteriorates. After $(M-1)\tau$ generations, all patches are of the new-habitat type. We denote the time-dependent frequency of old-habitat patches by $f_{\text{old}}$. It equals $1$ before the first environmental change takes place ($t<0$), and decreases by $1/M$ after each environmental deterioration event until it eventually hits~$0$, when all patches have undergone the environmental change. This environmental setting corresponds to the one analyzed by \citet{uecker_2014} and more recently in the special case of just two patches by \citet{tomasini_2019}.
-
-The individuals are assumed to go through the following life-cycle: (i) Dispersal: individuals may move between patches; (ii) Reproduction: individuals reproduce within patches. \linelabel{R2-7}\chg{The number of offspring per parent is modeled by a Poisson number}; (iii) Mutation: wild-type individuals mutate to the rescue mutant type with probability $\theta$ -- back mutations from the mutant to the wild type are neglected; (iv) Regulation: the population size is, \chg{if necessary, down-regulated to the carrying capacity $K_k$ where $k$ refers to the habitat type (old or new - the two habitat types can have different carrying capacities)}. If the population size is below the carrying capacity, the regulation step is ignored. 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Old habitat dynamics %%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection*{Old-habitat dynamics}
-\linelabel{R1-10}We assume that in old-habitat patches, \linelabel{R1-9-3}\chg{both types have a positive growth rate such that the population in these patches is typically at carrying capacity $K_{\text{old}}$.} We denote the fecundities of the \textbf{w}ild-type and the \textbf{m}utant by $\omega_w$ and $\omega_m$, respectively. 
-We impose an adaptation trade-off for the rescue mutant, i.e. the mutant is less fit than the wild type in old-habitat patches ($\omega_m<\omega_w$).
-%
-\linelabel{R2-9}\chg{We assume that mutation from the wild type to the mutant is tied to reproduction. The probability that an offspring of a wild-type individual is a mutant is given by $\theta$. We neglect back-mutation from mutant to wild type.} 
-\linelabel{R2-8}\chg{After reproduction, if the population size exceeds the carrying capacity $K_{\text{old}}$ we randomly remove individuals from the population until the carrying capacity is reached\linelabel{AE-3}, i.e. we assume that the wild type and the mutant are competitively equivalent. The mean number of offspring of\footnote{\francois{produced by}} one mutant after reproduction and population regulation is then given by   
-\begin{equation}\label{eq:sold}
-     K_{\text{old}}\, \frac{\omega_m}{\omega_w \widetilde{N}^{\text{old}}_w + \omega_m}\approx K_{\text{old}}\, \frac{\omega_m}{\omega_w \widetilde{N}^{\text{old}}_w} =1 + a_{\text{old}} \, ,
-\end{equation}
-where the random variable $\widetilde{N}_{i}^{k}$ denotes the population sizes of type $i$ (mutant or wild-type) in patches with habitat $k$ (old or new) after the dispersal step. Additionally, we have defined the local growth rate of a single mutant, denoted by $1+a_{\text{old}}$. \linelabel{R1-11}The approximation in eq.~\eqref{eq:sold} holds if the number of mutants is much lower than the number of wild types in old-habitat patches -- a reasonable assumption since the establishment of the mutant is decided when it is still rare.}
-%Then, while still rare, mutant individuals will reproduce independently of each other and their dynamics will be described by the local growth rate given in eq.~\eqref{eq:sold}. 
-\chg{Compared to the wild type we assume a reduced fecundity of the mutant in the old habitat, i.e. $\omega_m<\omega_w$. Still, the local growth rate can be positive, that is, larger than one ($a_{\text{old}}>0$).} This happens when the \linelabel{R2-12}\chg{wild-type population in a single old-habitat patch after dispersal,} \linelabel{R1-13}$\widetilde{N}^{\text{old}}_w$, becomes very small. This strongly depends on the dispersal scheme and rate. \linelabel{R1-14}\chg{The population dynamics of the wild type are analyzed explicitly in Section~1 of the Supplementary Information (SI).}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%
-% New habitat dynamics %%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection*{New habitat dynamics}
-In the new habitat and in the absence of immigration, the wild-type population will go extinct. To account for this, we assume that the number of wild-type \linelabel{R1-15}offspring \chg{per parent} in new-habitat patches is a Poisson distributed value with parameter $(1-r)$, where $r$ measures how strongly the wild type is affected by the environmental deterioration. For $r=1$ the wild-type population becomes locally extinct in new-habitat patches after one generation.
-
-The mutant type, in contrast, has a local growth rate larger than one and will (in expectation) grow in numbers. The number of offspring is again Poisson distributed with per-capita rate $(1+a_{\text{new}})$, the local growth rate of the mutant in new-habitat patches. 
-
-\linelabel{R1-17}\linelabel{R2-13}\chg{In the following analysis we will assume that the mutant dynamics in new-habitat patches are density-independent. This is a valid assumption as long as the carrying capacity in these patches, $K_{\text{new}}$, is not reached. Of course, in the simulations the carrying capacity might sometimes be reached, especially for large frequencies of old-habitat patches. This assumption on density-independence also restricts our choice for the carrying capacity in the new habitat. If the carrying capacity in new-habitat patches is much smaller than in old-habitat patches, the new habitat can reach its carrying capacity merely due to immigration of wild-type individuals (even after reproduction where the wild-type population is reduced).\footnote{\francois{Rephrase, as this is not clear. What carrying capacity do you choose and whether your approximation holds or not. Maybe: `Here we examine a carrying capacity in new habitats which is half that in old habitats. If the carrying capacity were much smaller, our analytical approximation would break down.}}}
+The population living in this environment consists of asexually reproducing, haploid individuals; generations are discrete and non-overlapping. There are two possible types of individuals, wild types and mutants. The individuals go through the following life-cycle: \begin{enumerate}[label = (\roman*)]
+	\item Dispersal: individuals may move between patches. Further details about this step are given below.
+	\item Reproduction: individuals reproduce within patches. \linelabel{R2-7}The number of offspring produced by an individual of type $i$ in habitat $k$ (before density regulation, if any), i.e.\ its fecundity, is drawn in a Poisson distribution of expectation $\omega_i^k$. Having fewer than $1$ offspring in expectation means that the local subpopulation will get extinct in the absence of immigration, because the deaths of the parents at each generation are not compensated by enough births on average. On the contrary, the local population is viable if the expected fecundity is greater than $1$. We assume that wild-type and mutant populations are viable in old-habitat patches, and that the mutant's expected fecundity there is lower than the wild type's: $1 \leq \omega^{\text{old}}_m < \omega^{\text{old}}_w$ \footnote{\florence{In the table, it is $0 \leq $, yet the populations are supposed to be viable}}. In new-habitat patches, a wild-type population will eventually go extinct, while a mutant one would persist, hence the term ``rescue mutant'': $\omega^{\text{new}}_w < 1 < \omega^{\text{new}}_m$. All parents die.
+	\item Mutation: wild-type offspring mutate to the rescue mutant type with probability $\theta$ (back mutations from the mutant to the wild type are neglected).
+	\item Regulation: if the number of offspring produced locally exceeds the local carrying capacity $K_k$ (where $k$ refers to the habitat type, old or new), the population size is down-regulated to the $K_k$: individuals are randomly removed until the local population size is equal to $K_k$. One mutant offspring has the same chance of being removed as one wild-type offspring: \linelabel{AE-3} we assume that wild-type and mutant individuals are competitively equivalent. If the number of offspring is below the carrying capacity, the regulation step is ignored. 
+	At the end of this step, all offspring become adults, and a new cycle then begins.
+\end{enumerate}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -198,28 +184,28 @@ We assume that dispersal is cost-free, i.e. all emigrating individuals will sett
 We consider equal and constant emigration rates for both types and habitats throughout the manuscript. Note again that the method would allow for type- and habitat-dependent emigration rates. We denote the probability \chg{that an individual leaves} its natal patch by $m$. 
 Then, the probability \chg{that an individual of type $i$} \chg{emigrates (from any habitat type) and immigrates into }the new habitat is given by 
 \begin{equation}\label{eq:dispersal}
-	\begin{aligned}
-		m_i^{\text{new}} &= m\, \frac{1-f_{\text{old}}}{1-f_{\text{old}}+\chg{e^{\pi_i}} f_{\text{old}}} = 1-m_i^{\text{old}},\\
-	\end{aligned}
+\begin{aligned}
+m_i^{\text{new}} &= m\, \frac{1-f_{\text{old}}}{1-f_{\text{old}}+\chg{e^{\pi_i}} f_{\text{old}}} = 1-m_i^{\text{old}},\\
+\end{aligned}
 \end{equation}
 where $f_{\text{old}}$ is the frequency of old-habitat patches. \linelabel{R1-19}\chg{
-%Since we are working with a time-discrete model the dispersal step needs to be a probability (and not a rate as is common in continuous-time models). 
-We transformed the bias $\pi_i$ which can take any real value to a positive number, $e^{\pi_i}$. This ensures that the fraction in eq.~\eqref{eq:dispersal} is positive and between zero and one. For the ease of notation we will write $\widehat{\pi}_i=e^{\pi_i}$.}
+	%Since we are working with a time-discrete model the dispersal step needs to be a probability (and not a rate as is common in continuous-time models). 
+	We transformed the bias $\pi_i$ which can take any real value to a positive number, $e^{\pi_i}$. This ensures that the fraction in eq.~\eqref{eq:dispersal} is positive and between zero and one. For the ease of notation we will write $\widehat{\pi}_i=e^{\pi_i}$.}
 
 From a biological perspective, a number of dispersal schemes are of particular interest. Precisely, we distinguish between the following five scenarios (see also Fig.~\ref{fig:disp_schemes} for an overview):
 
 \begin{itemize}
-	\item \textbf{Old-Old:} Individuals prefer to immigrate into the habitat where they have the largest number of offspring before regulation. \linelabel{R1-22}\linelabel{R2-16}\chg{Since the average number of offspring per parent is higher in the old habitat for both types ($\omega_w>1-r$ and $\omega_m>1+a_{\text{new}}$), this translates} to both $\pi_w$ and $\pi_m$ being larger than~$0$, i.e. a bias towards old-habitat patches. In practice, individuals are thought to use biotic or abiotic cues to preferentially immigrate into habitats where their fecundity is highest when compared to other habitats. This type of dispersal, i.e. matching habitat choice, has for example been observed with common lizards \textit{Zootoca vivipara} \citep{bestion_2015}, three-spine sticklebacks \textit{Gasterosteus aculeatus} \citep{bolnick_2009}, and barn owls \textit{Tyto alba} \citep{dreiss_2011}. 
+	\item \textbf{Old-Old:} Individuals prefer to immigrate into the habitat where they have the largest number of offspring before regulation. \linelabel{R1-22}\linelabel{R2-16}\chg{Since the average number of offspring per parent is higher in the old habitat for both types ($\omega^\text{old}_w>1-r$ and $\omega^\text{old}_m>1+a_{\text{new}}$), this translates} to both $\pi_w$ and $\pi_m$ being larger than~$0$, i.e. a bias towards old-habitat patches. In practice, individuals are thought to use biotic or abiotic cues to preferentially immigrate into habitats where their fecundity is highest when compared to other habitats. This type of dispersal, i.e. matching habitat choice, has for example been observed with common lizards \textit{Zootoca vivipara} \citep{bestion_2015}, three-spine sticklebacks \textit{Gasterosteus aculeatus} \citep{bolnick_2009}, and barn owls \textit{Tyto alba} \citep{dreiss_2011}. 
 	
 	The same range of parameters ($\pi_w,\pi_m>0$) is obtained when implementing positive density-dependent dispersal \chg{on immigration. I}ndividuals are more likely to immigrate into patches with higher population densities, so both, the wild type and the mutant, will prefer the old habitat.\footnote{\francois{I would turn this around, otherwise this sounds like a fact. `Indeed, if both the wt and the mutant prefer the old habitat, individuals are more likely to immigrate into patches with...}} Highly populated locations can be an indication for a safe shelter, relevant for prey species, and potentially increase the mating success of individuals. This type of positive density-dependent dispersal on immigration (also called conspecific attraction) is for example found in several amphibians, e.g. the salamander species \textit{Mertensiella luschani} \citep{gautier_2006} and \textit{Ambystoma maculatum} \citep{greene_2016} or the frogs \textit{Oophaga pumilio} \citep{folt_2018}.
 	
 	\item \textbf{Old-New:} Under this dispersal scheme, individuals tend to immigrate into habitats where they are fitter than the other type. This translates into the wild type preferring old patches, i.e. $\pi_w>0$, while mutant has a bias towards the new habitat, i.e. $\pi_m<0$. 
 	Empirical evidence of this mechanism is scarce. It resembles the recently observed dispersal pattern of the ciliates \textit{Tetrahymena thermophila} with a specialist and generalist type \citep{jacob_2018}. The specialist disperses to its preferred habitat while the generalist prefers to immigrate to a suboptimal habitat where it outcompetes the specialist. 
-		
+	
 	\item \textbf{New-New:} \chg{This dispersal scheme can be\footnote{\francois{is}} motivated by negative density-dependent dispersal on immigration,} whereby individuals are more likely to move to less populated patches. In these locations, resources might be more abundant, intra-specific competition alleviated and the chance of infection transmission decreased, which may compensate for the potentially reduced habitat quality. The corresponding parameter choice in our model is $\pi_w,\pi_m<0$, i.e. both types have a higher likelihood to immigrate to new-habitat patches. \linelabel{R1-23}\chg{We emphasize that population density in the patches changes over time but the biases are constant. We use the comparison with density-dependent dispersal only to motivate our chosen biases during the relevant phase of rescue, i.e. when the population density in new-habitat patches is low.}
 	The mutant being initially rare, it is unlikely that the carrying capacity is reached in new-habitat patches -- as assumed throughout the analysis.\footnote{\francois{Unclear to me. Suggestion: `Because the carrying capacity is not typically reached in new patches in the initial phase of rescue, this bias amounts to negative density-dependent dispersal in that phase.}} 
-    Various empirical examples of negative density-dependent dispersal exist. Density-dependent immigration effects as described here, are for example found in the damselfish species \textit{Stegastes adustus} \citep{turgeon_2012} and the migratory birds \textit{Setophaga ruticilla} \citep{wilson_2017}. %In both species, immigrants fill the empty space left by dead or emigrated individuals. Notably, in the fish species, negative density-dependent immigration is further enhanced by residents defending their territory against potential immigrants.
-
+	Various empirical examples of negative density-dependent dispersal exist. Density-dependent immigration effects as described here, are for example found in the damselfish species \textit{Stegastes adustus} \citep{turgeon_2012} and the migratory birds \textit{Setophaga ruticilla} \citep{wilson_2017}. %In both species, immigrants fill the empty space left by dead or emigrated individuals. Notably, in the fish species, negative density-dependent immigration is further enhanced by residents defending their territory against potential immigrants.
+	
 	\item \textbf{New-Old:} For completeness, we also consider the scenario in which both types disperse preferentially into the habitat they are relatively less fit in, i.e. we have $\pi_w<0$ and $\pi_m>0$. This dispersal scheme is \chg{vaguely} related to the concept of an `ecological trap': Individuals tend to immigrate into patches that cannot sustain a population, in its most extreme form resulting in the extinction of the species \citep{battin_2004}. \chg{Note however,} that this does not exactly apply to our framework since here the mutant is able to maintain a population in old-habitat patches.\footnote{\francois{Consider removing the last part about the ecological trap.}} 
 	
 	\item \textbf{Unbiased dispersal (0-0):} Individuals do not have a bias towards any of the two habitats, $\pi_w=\pi_m=0$. Most theoretical results examining the interplay of dispersal and establishment have \chg{used} this dispersal scheme. Therefore, we use it as a benchmark to which we compare the above defined dispersal patterns.
@@ -227,10 +213,10 @@ From a biological perspective, a number of dispersal schemes are of particular i
 \end{itemize}
 
 \begin{figure}[t]
-    \centering
-    \includegraphics[width=0.5\textwidth]{fig1.pdf}
-    \caption{\textbf{Parameter sets for the different dispersal schemes.} \small The colors and markers are the same across all figures. The $x$ and $y$ axes show the dispersal bias of the wild type and mutant, respectively, to immigrate into old-habitat patches ($\pi_w$ and $\pi_m$). The markers are located at the parameter values used for the simulations: $\pi_m=\pi_w=0$ for unbiased dispersal (0-0; {\Large $\bullet$}), $\pi_m=\pi_w=0.5$ for a type-independent bias towards old-habitat patches (Old-Old; {\color{blue} $\blacksquare$}), $\pi_m=-0.5,\pi_w=0.5$ for a wild-type preference towards the old habitat, and a mutant-bias to the new habitat (Old-New; {\color{orange}$\blacktriangle$}), $\pi_m=\pi_w=-0.5$ for a type-independent bias towards the new habitat (New-New; {\color{darkgreen}$\blacktriangledown$}), and $\pi_m=0.5,\pi_w=-0.5$ for the mutant-bias towards the old habitat and a preference of the wild type for the new habitat (New-Old; {\color{purple}$\blacklozenge$}). All the results derived below depend continuously on these parameters, so that varying any of the parameters will not result in a sudden change or discontinuity of the corresponding curves. {\color{orange} Do we need this last sentence?\color{blue}No.}}
-    \label{fig:disp_schemes}
+	\centering
+	\includegraphics[width=0.5\textwidth]{fig1.pdf}
+	\caption{\textbf{Parameter sets for the different dispersal schemes.} \small The colors and markers are the same across all figures. The $x$ and $y$ axes show the dispersal bias of the wild type and mutant, respectively, to immigrate into old-habitat patches ($\pi_w$ and $\pi_m$). The markers are located at the parameter values used for the simulations: $\pi_m=\pi_w=0$ for unbiased dispersal (0-0; {\Large $\bullet$}), $\pi_m=\pi_w=0.5$ for a type-independent bias towards old-habitat patches (Old-Old; {\color{blue} $\blacksquare$}), $\pi_m=-0.5,\pi_w=0.5$ for a wild-type preference towards the old habitat, and a mutant-bias to the new habitat (Old-New; {\color{orange}$\blacktriangle$}), $\pi_m=\pi_w=-0.5$ for a type-independent bias towards the new habitat (New-New; {\color{darkgreen}$\blacktriangledown$}), and $\pi_m=0.5,\pi_w=-0.5$ for the mutant-bias towards the old habitat and a preference of the wild type for the new habitat (New-Old; {\color{purple}$\blacklozenge$}). All the results derived below depend continuously on these parameters, so that varying any of the parameters will not result in a sudden change or discontinuity of the corresponding curves. {\color{orange} Do we need this last sentence?\color{blue}No.}}
+	\label{fig:disp_schemes}
 \end{figure}
 
 \linespread{1}
@@ -240,7 +226,7 @@ From a biological perspective, a number of dispersal schemes are of particular i
 			\textbf{Parameter} & \textbf{Interpretation} & \textbf{Range} & \textbf{Default value} \\
 			\midrule
 			$K_k$ & Carrying capacity in a patch of type $k$ & -- & \makecell{$K_{\text{old}}=1000$,\\ $K_{\text{new}}=500$} \\
-			$\omega_j$ & \makecell{Expected per-capita number of\\ type $j$ offspring in the old habitat\\ before regulation} & $0\leq \omega_m < \omega_w$ & \makecell{$\omega_w = 1.5$,\\ $\omega_m=1.45$ {\footnotesize (weak sel.)},\\ $\omega_m=1.35$ {\footnotesize (strong sel.)}}\\
+			$\omega_j$ & \makecell{Expected per-capita number of\\ type $j$ offspring in the old habitat\\ before regulation} & $0\leq \omega^\text{old}_m < \omega^\text{old}_w$ & \makecell{$\omega^\text{old}_w = 1.5$,\\ $\omega^\text{old}_m=1.45$ {\footnotesize (weak sel.)},\\ $\omega^\text{old}_m=1.35$ {\footnotesize (strong sel.)}}\\
 			$1+a_{\text{old}}$ & \makecell{Growth rate of the mutant\\ in the old habitat} & $-1\leq a_{\text{old}}$ & -- \\
 			$1-r$ & \makecell{Mean number of wild-type offspring\\ in the new habitat} & $0<r\leq 1$ & \makecell{$0.75$\\ $(r=0.25)$}\\
 			$1+a_{\text{new}}$ & \makecell{Growth rate of the mutant\\ in the new habitat} & $0<a_{\text{new}}$ & \makecell{$1.02$ \\ ($a_{\text{new}}=0.02$)} \\
@@ -262,6 +248,34 @@ From a biological perspective, a number of dispersal schemes are of particular i
 \linespread{1.7}
 
 All the model parameters are summarized in Table~\ref{tab:parameters} along with the default parameter values and ranges. If not stated otherwise, the default parameter values are used for the stochastic simulations. 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Old habitat dynamics %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{Old-habitat dynamics}
+\florence{It is not clear whether population size is at Kold or not}
+\linelabel{R1-10}\chg{We assume that the populations in old-habitat patches \linelabel{R1-9-3}are at carrying capacity $K_{\text{old}}$, since both types have a positive growth rate in these patches.} We denote the fecundities of the \textbf{w}ild-type and the \textbf{m}utant by $\omega^\text{old}_w$ and $\omega^\text{old}_m$, respectively. We assume that adaptation to the new habitat comes at a cost, such that the mutant is less fit than the wild type in old-habitat patches ($\omega^\text{old}_m<\omega^\text{old}_w$).
+%
+\linelabel{R2-9}Mutations occur upon reproduction\footnote{\florence{please check my phrasing}}. The probability that the offspring of a wild-type individual is mutant is given by $\theta$. We neglect back-mutation from mutant to wild type.
+\linelabel{R2-8}\chg{After reproduction, if the population size exceeds the carrying capacity $K_{\text{old}}$ we randomly remove individuals from the population until the carrying capacity is reached\linelabel{AE-3}, i.e. we assume that the wild type and the mutant are competitively equivalent. The mean number of offspring of\footnote{\francois{produced by}} one mutant after reproduction and population regulation is then given by   
+\begin{equation}\label{eq:sold}
+     K_{\text{old}}\, \frac{\omega^\text{old}_m}{\omega^\text{old}_w \widetilde{N}^{\text{old}}_w + \omega^\text{old}_m}\approx K_{\text{old}}\, \frac{\omega^\text{old}_m}{\omega^\text{old}_w \widetilde{N}^{\text{old}}_w} =1 + a_{\text{old}} \, ,
+\end{equation}
+where the random variable $\widetilde{N}_{i}^{k}$ denotes the population sizes of type $i$ (mutant or wild-type) in patches with habitat $k$ (old or new) after the dispersal step. Additionally, we have defined the local growth rate of a single mutant, denoted by $1+a_{\text{old}}$. \linelabel{R1-11}The approximation in eq.~\eqref{eq:sold} holds if the number of mutants is much lower than the number of wild types in old-habitat patches -- a reasonable assumption since the establishment of the mutant is decided when it is still rare.}
+%Then, while still rare, mutant individuals will reproduce independently of each other and their dynamics will be described by the local growth rate given in eq.~\eqref{eq:sold}. 
+\chg{Compared to the wild type we assume a reduced fecundity of the mutant in the old habitat, i.e. $\omega^\text{old}_m<\omega^\text{old}_w$. Still, the local growth rate can be positive, that is, larger than one ($a_{\text{old}}>0$).} This happens when the \linelabel{R2-12}\chg{wild-type population in a single old-habitat patch after dispersal,} \linelabel{R1-13}$\widetilde{N}^{\text{old}}_w$, becomes very small. This strongly depends on the dispersal scheme and rate. \linelabel{R1-14}\chg{The population dynamics of the wild type are analyzed explicitly in Section~1 of the Supplementary Information (SI).}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+% New habitat dynamics %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{New habitat dynamics}
+In the new habitat and in the absence of immigration, the wild-type population will go extinct. To account for this, we assume that the number of wild-type \linelabel{R1-15}offspring \chg{per parent} in new-habitat patches is a Poisson distributed value with parameter $(1-r)$, where $r$ measures how strongly the wild type is affected by the environmental deterioration. For $r=1$ the wild-type population becomes locally extinct in new-habitat patches after one generation.
+
+The mutant type, in contrast, has a local growth rate larger than one and will (in expectation) grow in numbers. The number of offspring is again Poisson distributed with per-capita rate $(1+a_{\text{new}})$, the local growth rate of the mutant in new-habitat patches. 
+
+\linelabel{R1-17}\linelabel{R2-13}\chg{In the following analysis we will assume that the mutant dynamics in new-habitat patches are density-independent. This is a valid assumption as long as the carrying capacity in these patches, $K_{\text{new}}$, is not reached. Of course, in the simulations the carrying capacity might sometimes be reached, especially for large frequencies of old-habitat patches. This assumption on density-independence also restricts our choice for the carrying capacity in the new habitat. If the carrying capacity in new-habitat patches is much smaller than in old-habitat patches, the new habitat can reach its carrying capacity merely due to immigration of wild-type individuals (even after reproduction where the wild-type population is reduced).\footnote{\francois{Rephrase, as this is not clear. What carrying capacity do you choose and whether your approximation holds or not. Maybe: `Here we examine a carrying capacity in new habitats which is half that in old habitats. If the carrying capacity were much smaller, our analytical approximation would break down.}}}
+
 
 \subsection*{Simulations}
 The algorithm implements the life cycle described above. First, a random number of dispersing individuals \chg{from each patch} is drawn from a binomial distribution with success probability $m$ and sample size equal to the \chg{current patch} population size. The dispersing individuals \chg{are pooled and} distributed according to their type and the dispersal pattern. \linelabel{R2-18}\chg{More precisely, we draw a binomial number of individuals of each type to immigrate into an old-habitat patch with probability $\frac{m_i^{\text{old}}}{m}$ (eq.~\eqref{eq:dispersal}) and then distribute these individuals uniformly at random over the old-habitat patches. The same is done with the remaining dispersing individuals who are distributed uniformly into the new-habitat patches.} \linelabel{R2-19}\chg{In each patch, reproduction is simulated by drawing a Poisson distributed number for each type. The mean of this Poisson number is given by the number of individuals of type $i$ in that patch times the mean number of offspring of a single individual of type $i$ which depends on the patch type (old or new).} 
@@ -340,28 +354,28 @@ We compare in Fig.~\ref{fig:vary_m_est} our predictions from eqs.~\eqref{eq:ext_
 	\begin{subfigure}{.5\textwidth}
   		\centering
   		\includegraphics[width=\linewidth]{fig2a.pdf}
-  		\caption{$\varphi_{\text{old}}$ with $\omega_m = 1.35$ (large fecundity difference)}
+  		\caption{$\varphi_{\text{old}}$ with $\omega^\text{old}_m = 1.35$ (large fecundity difference)}
 	\end{subfigure}%
 	\begin{subfigure}{.5\textwidth}
  		 \centering
  		 \includegraphics[width=\linewidth]{fig2b.pdf}
-  		\caption{$\varphi_{\text{new}}$ with $\omega_m = 1.35$}
+  		\caption{$\varphi_{\text{new}}$ with $\omega^\text{old}_m = 1.35$}
 	\end{subfigure}
 	\begin{subfigure}{.5\textwidth}
   		\centering
   		\includegraphics[width=\linewidth]{fig2c.pdf}
-  		\caption{$\varphi_{\text{old}}$ with $\omega_m = 1.45$ (small fecundity difference)}
+  		\caption{$\varphi_{\text{old}}$ with $\omega^\text{old}_m = 1.45$ (small fecundity difference)}
 	\end{subfigure}%
 	\begin{subfigure}{.5\textwidth}
  		 \centering
  		 \includegraphics[width=\linewidth]{fig2d.pdf}
-  		\caption{$\varphi_{\text{new}}$ with $\omega_m = 1.45$}
+  		\caption{$\varphi_{\text{new}}$ with $\omega^\text{old}_m = 1.45$}
 	\end{subfigure}
-	\caption{\textbf{Establishment probability when varying the emigration rate.} \small We plot the theoretical results for $\varphi_{\text{old}}$ in (a) and (c), and for $\varphi_{\text{new}}$ in (b) and (d) for $\omega_m=1.35$ in (a), (b) and $\omega_m=1.45$ in (c), (d). Comparison with the results from stochastic simulations (symbols) show very good agreement with our approximation found in eq.~\eqref{eq:estab_approx} (dashed lines). The solid lines are the numerical solution of eq.~\eqref{eq:ext_prob}. The lines in (a) show a clear separation of the three regions of the establishment probability as discussed in the main text: {\color{change}(i) an initial increase due to higher probabilities of dispersal from old- to new-habitat patches; (ii) a local maximum due to increasing number of mutants emigrating from new-habitat patches; (iii) an increase due to relaxed competition in old-habitat patches, a result of wild-type emigration.}}
+	\caption{\textbf{Establishment probability when varying the emigration rate.} \small We plot the theoretical results for $\varphi_{\text{old}}$ in (a) and (c), and for $\varphi_{\text{new}}$ in (b) and (d) for $\omega^\text{old}_m=1.35$ in (a), (b) and $\omega^\text{old}_m=1.45$ in (c), (d). Comparison with the results from stochastic simulations (symbols) show very good agreement with our approximation found in eq.~\eqref{eq:estab_approx} (dashed lines). The solid lines are the numerical solution of eq.~\eqref{eq:ext_prob}. The lines in (a) show a clear separation of the three regions of the establishment probability as discussed in the main text: {\color{change}(i) an initial increase due to higher probabilities of dispersal from old- to new-habitat patches; (ii) a local maximum due to increasing number of mutants emigrating from new-habitat patches; (iii) an increase due to relaxed competition in old-habitat patches, a result of wild-type emigration.}}
 	\label{fig:vary_m_est}
 \end{figure}
 
-The qualitative dependence of the establishment probabilities $\varphi_{\text{old}}$ and $\varphi_{\text{new}}$ on the dispersal probability $m$ is similar for all dispersal schemes. The shape of the curve however strongly depends on the fecundity $\omega_m$ of mutants in the old habitat. Before discussing the differences between the dispersal schemes, we first provide a qualitative understanding of this general behavior.
+The qualitative dependence of the establishment probabilities $\varphi_{\text{old}}$ and $\varphi_{\text{new}}$ on the dispersal probability $m$ is similar for all dispersal schemes. The shape of the curve however strongly depends on the fecundity $\omega^\text{old}_m$ of mutants in the old habitat. Before discussing the differences between the dispersal schemes, we first provide a qualitative understanding of this general behavior.
 
 For the probability of establishment of a single mutant in an old-habitat patch ($\varphi_{\text{old}}$), we observe up to three different regions, cf. Fig.~\ref{fig:vary_m_est}(a). This is in line with previous observations in the context of local adaptation \citep[e.g.][]{kawecki_1995,tomasini_2018} and evolutionary rescue \citep{uecker_2014}. We define the regions as follows: (i) an initial increase of the establishment probability at low dispersal rates $m$; (ii) a local maximum with a subsequent decrease of the establishment probability; (iii) an increase of the establishment probability for high dispersal rates.
 
@@ -373,9 +387,9 @@ Region (ii), beginning with the local maximum, is a result of two counteracting 
 
 %Depending on the onset of this effect, the establishment probability either has a local maximum or not, compare \ref{fig:vary_m_est}(a) and (c).
  
-\chg{In line with this reasoning we find} that the width of region (ii) strongly depends on the fecundity of the mutant in the old habitat, $\omega_m$. If $\omega_m$ is high, the local growth rate of the mutant $a_{\text{old}}$ starts to increase at a lower dispersal rate 
+\chg{In line with this reasoning we find} that the width of region (ii) strongly depends on the fecundity of the mutant in the old habitat, $\omega^\text{old}_m$. If $\omega^\text{old}_m$ is high, the local growth rate of the mutant $a_{\text{old}}$ starts to increase at a lower dispersal rate 
 %(see Fig.~S1). 
-\chg{and }region (ii) disappears, as visible in Fig.~\ref{fig:vary_m_est}(c). In contrast, for low mutant fecundity values $\omega_m$, region (iii) might vanish (see Fig. S2 in SI). There, the mutant is strongly disadvantageous in old-habitat patches when compared to the wild type, and the wild-type population will always outcompete the mutant due to the much higher offspring numbers.
+\chg{and }region (ii) disappears, as visible in Fig.~\ref{fig:vary_m_est}(c). In contrast, for low mutant fecundity values $\omega^\text{old}_m$, region (iii) might vanish (see Fig. S2 in SI). There, the mutant is strongly disadvantageous in old-habitat patches when compared to the wild type, and the wild-type population will always outcompete the mutant due to the much higher offspring numbers.
 
 We analyze the qualitative behavior of the establishment probability of a mutant emerging in the new habitat, $\varphi_{\text{new}}$ in a similar way (Figs.~\ref{fig:vary_m_est}(b,d)). The establishment probability $\varphi_{\text{new}}$ decreases at low dispersal rates: Since we let the mutant start in a new-habitat patch, where it fares better than the wild type, there is no initial benefit due to dispersal (the third term in eq.~\eqref{eq:estab_approx} is negative for $\varphi_{\text{new}}$). The interpretation of region (ii), describing the trajectory for intermediate emigration rates $m$, is the same as for $\varphi_{\text{old}}$ above. For large emigration rates $m$, region (iii), the resulting establishment probability is a combination of the local growth rate and the dispersal effect, the first and third terms in eq.~\eqref{eq:estab_approx}. This is because the mutant can migrate to old-habitat patches, where it will enjoy relaxed competition. %%
 
@@ -411,29 +425,29 @@ More precisely, the exponential is the probability of zero successes of a Poisso
 Note also, that for $t_{\text{fin}}$ tending to infinity, there will almost surely be a successful mutant so that $P_{\text{adapt}}=1$. \\
 %For finite values of $t_{\text{fin}}$, the average number of mutations that appear until that time is given by the product of the mutation probability $\theta$, the length of the time window of interest $t_{\text{fin}}$, the number of patches $M$ and the stationary number of wild-type individuals present in the different habitats, that is $K$ and $\widehat{N}_w^{\text{new}}$ for old- and new-habitat patches, respectively (cf. SI eq.~(S5)). Once such a mutant appears, it then has the previously computed establishment probability $\varphi_{k}$ to establish, depending on the patch type $k$ (old or new) it arises in. This explains the factor $\varphi_k$ in the exponential.  \\
 
-In Fig.~\ref{fig:source_sink} we compare our predictions to simulation results. The shape of the probability of adaptation as function of the emigration probability $m$ depends on the fecundity of the mutant in old-habitat patches, $\omega_m$ (Figs.~\ref{fig:source_sink}(a,c)). This is similar to the behavior of the establishment probability $\varphi_{\text{old}}$ in Fig.~\ref{fig:vary_m_est}. Likewise, the qualitative effects of the different dispersal schemes are comparable to the ones observed for the establishment probability. \linelabel{R1-33}\chg{This holds because the probability of adaptation, $P_{\text{adapt}}$, is given by $1-\exp(-C_1 \varphi_{\text{old}} -C_2 \varphi_{\text{new}})$ where two constants $C_1$ and $C_2$ depend on the dispersal scheme (see eq.~\eqref{eq:source_sink}). \linelabel{R2-35}The small differences in the ranking of the dispersal schemes between subfigures Figs.~\ref{fig:vary_m_est}(c) and Figs.~\ref{fig:source_sink}(c) can be explained by the mutational input, i.e. larger stationary populations sizes of the wild type in new habitats, $\widehat{N}_w^{\text{new}}$ result in more mutations during the observed time frame. This population size is altered by the different dispersal schemes, most importantly it is largest for the wild type having a bias towards old habitats, i.e. the Old-Old and the Old-New dispersal schemes.} 
+In Fig.~\ref{fig:source_sink} we compare our predictions to simulation results. The shape of the probability of adaptation as function of the emigration probability $m$ depends on the fecundity of the mutant in old-habitat patches, $\omega^\text{old}_m$ (Figs.~\ref{fig:source_sink}(a,c)). This is similar to the behavior of the establishment probability $\varphi_{\text{old}}$ in Fig.~\ref{fig:vary_m_est}. Likewise, the qualitative effects of the different dispersal schemes are comparable to the ones observed for the establishment probability. \linelabel{R1-33}\chg{This holds because the probability of adaptation, $P_{\text{adapt}}$, is given by $1-\exp(-C_1 \varphi_{\text{old}} -C_2 \varphi_{\text{new}})$ where two constants $C_1$ and $C_2$ depend on the dispersal scheme (see eq.~\eqref{eq:source_sink}). \linelabel{R2-35}The small differences in the ranking of the dispersal schemes between subfigures Figs.~\ref{fig:vary_m_est}(c) and Figs.~\ref{fig:source_sink}(c) can be explained by the mutational input, i.e. larger stationary populations sizes of the wild type in new habitats, $\widehat{N}_w^{\text{new}}$ result in more mutations during the observed time frame. This population size is altered by the different dispersal schemes, most importantly it is largest for the wild type having a bias towards old habitats, i.e. the Old-Old and the Old-New dispersal schemes.} 
 
 \begin{figure}[t!]
 	\centering
 		\begin{subfigure}{.5\textwidth}
  		 \centering
  		 \includegraphics[width=\linewidth]{fig3a.pdf}
-  		\caption{$\omega_m=1.35$ (large fecundity difference)}
+  		\caption{$\omega^\text{old}_m=1.35$ (large fecundity difference)}
 	\end{subfigure}%
 	    \begin{subfigure}{.5\textwidth}
  		 \centering
  		 \includegraphics[width=\linewidth]{fig3b.pdf}
-  		\caption{$\omega_m=1.35$}
+  		\caption{$\omega^\text{old}_m=1.35$}
 	\end{subfigure}
 	\begin{subfigure}{.5\textwidth}
  		 \centering
  		 \includegraphics[width=\linewidth]{fig3c.pdf}
-  		\caption{$\omega_m=1.45$  (small fecundity difference)}
+  		\caption{$\omega^\text{old}_m=1.45$  (small fecundity difference)}
 	\end{subfigure}%
 	\begin{subfigure}{.5\textwidth}
   		\centering
   		\includegraphics[width=\linewidth]{fig3d.pdf}
-  		\caption{$\omega_m=1.45$}
+  		\caption{$\omega^\text{old}_m=1.45$}
 	\end{subfigure}
 	\caption{\textbf{Probability of adaptation in a heterogeneous environment.} \small In (a) and (c), we vary the emigration rate $m$ and observe a similar qualitative behavior as for the establishment probability $\varphi_k$ in Fig.~\ref{fig:vary_m_est}. In (b) and (d), we vary the frequency of old-habitat patches. The maximum is the result of two counteracting processes. The higher the number of old-habitat patches (the greater $f_{\text{old}}$), the larger the wild-type population. As a consequence, more mutants appear in the studied time-frame. In contrast, the less old-patch habitats there are in the environment (the lower $f_{\text{old}}$), the higher the probability of successful establishment of a mutant population. The curves labeled `approx.' are given by eq.~\eqref{eq:source_sink}, the exact solution refers to solving the establishment probabilities $\varphi_k$ from eq.~\eqref{eq:ext_prob} numerically and plugging these solutions into eq.~\eqref{eq:source_sink}. In all panels, the mutation probability is $u=1/(M K)$ and the final time for a mutant to appear is $t_{\text{fin}}=100$. }
 	\label{fig:source_sink}
@@ -461,8 +475,8 @@ We now identify the habitat type where the successful mutation arises. The estab
 %The probabilities for the other two scenarios can be computed analogously. 
 In Fig.~\ref{fig:origin} we compare simulation results with our predictions for the origin of a successful mutant when varying the old habitat frequency $f_{\text{old}}$. \chg{\linelabel{R2-36}We see that for both mutant fecundity values most successful mutations arise in old-habitat patches. The difference in the input from the two different patches is the factor $\varphi_{k} \widehat{N}_w^k f_k$. In Fig.~SX we plot the establishment probability $\varphi_k$ and the stationary population sizes $\widehat{N}_w^k$ when varying the frequency of old-habitat patches $f_{\text{old}}$. We see that the establishment probability for mutants arising in new-habitat patches, $\varphi_{\text{new}}$, is always larger than the corresponding probability for mutants from old-habitat patches, $\varphi_{\text{old}}$. Conversely, the stationary population size of the wild type in the old habitat measured over the whole environment is always larger then that of the wild type in new habitats. Combining these two observations we find that for this choice of parameters the mutational input, i.e. the absolute number of rescue mutants, has a larger influence on the origin of the rescue mutant than the corresponding establishment probability.}
 
-%Even for a relatively strong fecundity disadvantage of the mutant in the old habitat, i.e. $\omega_m$ is $10\%$ smaller than $\omega_w$, we find that most successful mutations arise in old-habitat patches (Fig.~\ref{fig:origin}(a)). Decreasing the fecundity disadvantage of the mutant by increasing its fecundity $\omega_m$ further increases the number of successful mutant lineages from old-habitat patches (Fig.~\ref{fig:origin}(b)). 
-%If we instead increase the fecundity difference in old habitats by decreasing $\omega_m$, we observe the opposite, i.e. \chg{the two lines approach each other} (see Fig.~S4 in SI).
+%Even for a relatively strong fecundity disadvantage of the mutant in the old habitat, i.e. $\omega^\text{old}_m$ is $10\%$ smaller than $\omega^\text{old}_w$, we find that most successful mutations arise in old-habitat patches (Fig.~\ref{fig:origin}(a)). Decreasing the fecundity disadvantage of the mutant by increasing its fecundity $\omega^\text{old}_m$ further increases the number of successful mutant lineages from old-habitat patches (Fig.~\ref{fig:origin}(b)). 
+%If we instead increase the fecundity difference in old habitats by decreasing $\omega^\text{old}_m$, we observe the opposite, i.e. \chg{the two lines approach each other} (see Fig.~S4 in SI).
 
 \begin{figure}[t!]
 	\centering
@@ -499,44 +513,44 @@ This explains why the simulation results are higher than our approximation.
 %which ignores these ``left-over'' mutants present prior to the deterioration event. 
 \chg{A time-dependent establishment probability could account for these effects but unfortunately is not amenable to approximations in our framework.}
 %As a result, instead of assuming a constant establishment probability between two deterioration events, we should rather use a time-dependent establishment probability -- which can however not be approximated in our general framework. 
-\linelabel{R1-43}\chg{In \citet{uecker_2014}, scenarios with an accessible time-dependent solution were studied, more precisely situations with either full mixing of the global population ($m=1$) or a non-viable mutant in old-habitat patches ($\omega_m=0$).}
+\linelabel{R1-43}\chg{In \citet{uecker_2014}, scenarios with an accessible time-dependent solution were studied, more precisely situations with either full mixing of the global population ($m=1$) or a non-viable mutant in old-habitat patches ($\omega^\text{old}_m=0$).}
 
 \begin{figure}[t!]
 	\centering
 	\begin{subfigure}{.5\textwidth}
   		\centering
   		\includegraphics[width=\linewidth]{fig5a.pdf}
-  		\caption{$\omega_m=1.45$ (small fecundity difference)}
+  		\caption{$\omega^\text{old}_m=1.45$ (small fecundity difference)}
 	\end{subfigure}%
 	\begin{subfigure}{.5\textwidth}
   		\centering
   		\includegraphics[width=\linewidth]{fig5b.pdf}
-  		\caption{$\omega_m=1.35$ (large fecundity difference)}
+  		\caption{$\omega^\text{old}_m=1.35$ (large fecundity difference)}
 	\end{subfigure}
 	\begin{subfigure}{.5\textwidth}
   		\centering
   		\includegraphics[width=\linewidth]{fig5c.pdf}
-  		\caption{$\omega_m=1.1$ (very large fecundity difference)}
+  		\caption{$\omega^\text{old}_m=1.1$ (very large fecundity difference)}
 	\end{subfigure}%
 	\begin{subfigure}{.5\textwidth}
   		\centering
   		\includegraphics[width=\linewidth]{fig5d.pdf}
-  		\caption{$\omega_m=0$ (lethal mutant)}
+  		\caption{$\omega^\text{old}_m=0$ (lethal mutant)}
 	\end{subfigure}
 	\caption{\textbf{The probability of evolutionary rescue compared to simulation results.} \small Our predictions, computed with eq.~\eqref{eq:evol_rescue}, match the qualitative behavior of the simulated data for the probability of evolutionary rescue. All rankings of the dispersal schemes align well. Quantitatively though, we find that our predictions tend to underestimate the simulated data. In (a,b) the mutation probability is set to $u=1/(25MK_{\text{new}})$ while in (c,d) it is $u=1/(MK_{\text{new}})$. The label `exact' refers to the exact solution of eq.~\eqref{eq:ext_prob} which is then plugged into the approximation of the probability of evolutionary rescue in eq.~\eqref{eq:evol_rescue}.}
 	\label{fig:rescue}
 \end{figure}
 
-The different dispersal schemes exhibit substantial differences. The dispersal schemes affect the dispersal pattern of both types and as such alter their respective population dynamics. Both small and large fecundity differences in the old habitat, $\omega_m=1.45$ and $\omega_m=1.35$, conserve the ranking of dispersal schemes obtained for the probabilities of establishment and adaptation\footnote{\francois{difficult to follow}\pete{We could also get rid of the explict description of the figure and remove the following sentence}}: \linelabel{R2-43}\chg{New-New (green) is higher than unbiased dispersal (black) which is higher than Old-Old (blue), with Old-New decreasing and New-Old increasing their positions with increasing emigration probability $m$}, cf. Fig.~\ref{fig:rescue}(a,b). Based on our discussion of the same behavior in Fig.~\ref{fig:vary_m_est}(a,c), \linelabel{R2-44}\chg{i.e. the change in hierarchy of the dispersal schemes Old-New and New-Old,} The most influential factor in these parameter sets is the growth rate of the mutant in old-habitat patches, $a_{\text{old}}$, \chg{as discussed around Fig.~\ref{fig:vary_m_est}.} \chg{The ranking of the symmetric dispersal schemes is mostly determined by the mutant dispersal bias.}
+The different dispersal schemes exhibit substantial differences. The dispersal schemes affect the dispersal pattern of both types and as such alter their respective population dynamics. Both small and large fecundity differences in the old habitat, $\omega^\text{old}_m=1.45$ and $\omega^\text{old}_m=1.35$, conserve the ranking of dispersal schemes obtained for the probabilities of establishment and adaptation\footnote{\francois{difficult to follow}\pete{We could also get rid of the explict description of the figure and remove the following sentence}}: \linelabel{R2-43}\chg{New-New (green) is higher than unbiased dispersal (black) which is higher than Old-Old (blue), with Old-New decreasing and New-Old increasing their positions with increasing emigration probability $m$}, cf. Fig.~\ref{fig:rescue}(a,b). Based on our discussion of the same behavior in Fig.~\ref{fig:vary_m_est}(a,c), \linelabel{R2-44}\chg{i.e. the change in hierarchy of the dispersal schemes Old-New and New-Old,} The most influential factor in these parameter sets is the growth rate of the mutant in old-habitat patches, $a_{\text{old}}$, \chg{as discussed around Fig.~\ref{fig:vary_m_est}.} \chg{The ranking of the symmetric dispersal schemes is mostly determined by the mutant dispersal bias.}
 
-For very large fecundity differences in the old habitat ($\omega_m = 1.1$ and $\omega_m=0$), the ranking of dispersal schemes is the same for all emigration probabilities; from highest to lowest, we find \chg{New-New, Old-New, unbiased dispersal, New-Old, and Old-Old} (cf. Fig.~\ref{fig:rescue}(c,d)). In this parameter setting, the probability of evolutionary rescue is dominated by the dispersal behavior of the mutant. Since the mutant is barely viable in old-habitat patches, it is always preferential for it to disperse towards new-habitat patches. Two schemes follow this rule, \chg{the New-New and Old-New dispersal scheme}, but differ in the preference of the wild type. 
+For very large fecundity differences in the old habitat ($\omega^\text{old}_m = 1.1$ and $\omega^\text{old}_m=0$), the ranking of dispersal schemes is the same for all emigration probabilities; from highest to lowest, we find \chg{New-New, Old-New, unbiased dispersal, New-Old, and Old-Old} (cf. Fig.~\ref{fig:rescue}(c,d)). In this parameter setting, the probability of evolutionary rescue is dominated by the dispersal behavior of the mutant. Since the mutant is barely viable in old-habitat patches, it is always preferential for it to disperse towards new-habitat patches. Two schemes follow this rule, \chg{the New-New and Old-New dispersal scheme}, but differ in the preference of the wild type. 
 Since wild-type individuals also preferentially disperse to new-habitat patches under \chg{the New-New scheme}, more individuals are present in those patches. Therefore, the total amount of mutations over the deterioration time is increased which generates more mutants on average. This explains the New-New dispersal scheme being consistently higher than the Old-New dispersal scheme.
 %This effect is even stronger for large dispersal rates that increase the wild-type population size in the whole environment. Together with the effect of relaxed competition, this explains the strong increase of the \chg{New-Old}, and the \chg{unbiased} dispersal scheme for large emigration probabilities $m$ in Fig.~\ref{fig:rescue}(c). 
 
 Lastly, the probability of evolutionary rescue often reaches a local (or global) maximum for intermediate emigration probabilities (Figs.~\ref{fig:rescue}(c,d)). This extends previous results \citep{uecker_2014,tomasini_2019} to arbitrary dispersal schemes affecting the immigration process. The maximum can be attributed to the interaction of the three regions we identified when analyzing the establishment probability $\varphi_k$ (see also Fig.~\ref{fig:vary_m_est}). As such it is a result of the largely positive effect of dispersal (initial increase of the probability of evolutionary rescue) and the negative effect of population mixing \chg{(dispersal to old patches)}. \footnote{\francois{This discussion is still difficult.}}
 
 \subsection*{Habitat of origin of the rescue mutant and standing genetic variation}
-Similar to what \chg{we} found for the probability of adaptation, rescue mutants mainly originate from old-habitat patches. Mutations are more likely to appear in the more populated patches (old-habitat). However, a low mutant fecundity $\omega_m$ decreases the chance of establishment of these mutants that appear in old-habitat patches (compare black and yellow symbols in Fig.~\ref{fig:sgv}(a)). Lower fecundity values $\omega_m$ therefore comparatively increase the probability for the rescue mutation to have appeared in the already deteriorated habitat, i.e. in new-habitat patches. \linelabel{R1-35-2}\chg{The probability of a soft selective sweep for evolutionary rescue from mutants of the different habitat types is very low (circles in Fig.~\ref{fig:sgv}(a)). Our choice of a small mutation rate implies a hard selective sweep regime ($\theta K_{\text{old}} M = 0.08<1$) \citep{wilson_2018,hermisson_2017}. }
+Similar to what \chg{we} found for the probability of adaptation, rescue mutants mainly originate from old-habitat patches. Mutations are more likely to appear in the more populated patches (old-habitat). However, a low mutant fecundity $\omega^\text{old}_m$ decreases the chance of establishment of these mutants that appear in old-habitat patches (compare black and yellow symbols in Fig.~\ref{fig:sgv}(a)). Lower fecundity values $\omega^\text{old}_m$ therefore comparatively increase the probability for the rescue mutation to have appeared in the already deteriorated habitat, i.e. in new-habitat patches. \linelabel{R1-35-2}\chg{The probability of a soft selective sweep for evolutionary rescue from mutants of the different habitat types is very low (circles in Fig.~\ref{fig:sgv}(a)). Our choice of a small mutation rate implies a hard selective sweep regime ($\theta K_{\text{old}} M = 0.08<1$) \citep{wilson_2018,hermisson_2017}. }
 
 \begin{figure}[t]
 	\centering
@@ -550,7 +564,7 @@ Similar to what \chg{we} found for the probability of adaptation, rescue mutants
  		 \includegraphics[width=\linewidth]{fig6b.pdf}
   		\caption{}
 	\end{subfigure}
-	\caption{\textbf{Habitat of origin of the rescue mutation and the impact of standing genetic variation.} \small (a) We compare the source of successful mutations under small (black) and large (yellow) fecundity differences in the old habitat. Decreasing the fecundity of the mutant results in more successful mutations emerging in new-habitat patches ($+$) when compared to the contribution from old-habitat patches ($\times$). We have chosen $\pi_m=\pi_w=0$. (b) For slower environmental degradation, i.e. $\tau=200$, the influence of standing genetic variation (sgv) on the probability of evolutionary rescue decreases. The simulations are done by letting the system evolve for $1,000$ generations before the first deterioration event happens. Parameters: $\pi_m=\pi_w=0$ in all scenarios and $\omega_m=1.45$. The relative contribution is then determined by $(P_{\text{rescue with sgv}}-P_{\text{rescue only de novo}})/P_{\text{rescue with sgv}}$.}
+	\caption{\textbf{Habitat of origin of the rescue mutation and the impact of standing genetic variation.} \small (a) We compare the source of successful mutations under small (black) and large (yellow) fecundity differences in the old habitat. Decreasing the fecundity of the mutant results in more successful mutations emerging in new-habitat patches ($+$) when compared to the contribution from old-habitat patches ($\times$). We have chosen $\pi_m=\pi_w=0$. (b) For slower environmental degradation, i.e. $\tau=200$, the influence of standing genetic variation (sgv) on the probability of evolutionary rescue decreases. The simulations are done by letting the system evolve for $1,000$ generations before the first deterioration event happens. Parameters: $\pi_m=\pi_w=0$ in all scenarios and $\omega^\text{old}_m=1.45$. The relative contribution is then determined by $(P_{\text{rescue with sgv}}-P_{\text{rescue only de novo}})/P_{\text{rescue with sgv}}$.}
 	\label{fig:sgv}
 \end{figure}
 
@@ -576,10 +590,10 @@ Theoretical studies that investigated the effects of spatial subdivision on the 
 
 The second type of models explicitly takes into account demographic effects due to dispersal, often in the context of source-sink systems \citep{holt_1985,pulliam_1988}. 
 Here, the effect of dispersal on adaptation depends on the growth rate differences of the mutant and the wild type in the two habitats \citep{kawecki_2000}. 
-In accordance with this result \francois{these results}, we find that dispersal \francois{monotonically} increases the probability of adaptation if the mutant is just slightly less fit than the wild type in the old habitat %, $\omega_m / \omega_w= 0.99$
+In accordance with this result \francois{these results}, we find that dispersal \francois{monotonically} increases the probability of adaptation if the mutant is just slightly less fit than the wild type in the old habitat %, $\omega^\text{old}_m / \omega^\text{old}_w= 0.99$
 (Fig.~\ref{fig:vary_m_est}(c)). 
-When the mutant's fecundity in old habitats, $\omega_m$, is smaller \francois{than what?}, establishment probabilities are non-monotonic with a local maximum at intermediate dispersal rates \francois{and increases at large dispersal rates thanks to relaxed competition} (Fig.~\ref{fig:vary_m_est}(a)). 
-\st{However, if the mutant's disadvantage in old-habitat patches is even greater, i.e. $\omega_m$} \francois{When the fecundity of the mutant is even smaller, the local maximum remains but relaxed competition no longer occurs} \st{adaptation is also hindered for large dispersal rates. The establishment probability becomes hump-shaped } (cf. Fig.~S2 in SI). \footnote{\francois{I was confused by this paragraph so rephrased to make it more uniform and better describe the figures and the key differences}}.
+When the mutant's fecundity in old habitats, $\omega^\text{old}_m$, is smaller \francois{than what?}, establishment probabilities are non-monotonic with a local maximum at intermediate dispersal rates \francois{and increases at large dispersal rates thanks to relaxed competition} (Fig.~\ref{fig:vary_m_est}(a)). 
+\st{However, if the mutant's disadvantage in old-habitat patches is even greater, i.e. $\omega^\text{old}_m$} \francois{When the fecundity of the mutant is even smaller, the local maximum remains but relaxed competition no longer occurs} \st{adaptation is also hindered for large dispersal rates. The establishment probability becomes hump-shaped } (cf. Fig.~S2 in SI). \footnote{\francois{I was confused by this paragraph so rephrased to make it more uniform and better describe the figures and the key differences}}.
 
 \st{Hence, models with and without demographic change differ most at higher emigration rates. This corresponds to region (iii) in our analysis; we illustrate this point in} \francois{Compared to models with implicit demography, explicitly modelling the population dynamics causes relaxed competition that increases the probability of establishment at high dispersal rates }Fig.~S5 in SI, the non-demographic version of Fig.~\ref{fig:vary_m_est}. 
 
