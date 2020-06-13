@@ -1,0 +1,13 @@
+\babel@toc {english}{}
+\contentsline {part}{\hspace {1em}}{2}{part.1}% 
+\contentsline {xpart}{}{2}{part.1}% 
+\contentsline {section}{Appendix}{S1}{figure.caption.8}% 
+\contentsline {part}{\hspace {1em}Appendix}{S1}{part.2}% 
+\contentsline {xpart}{Appendix}{S1}{part.2}% 
+\contentsline {section}{\numberline {A}Deriving the model dynamics }{S2}{appendix.A}% 
+\contentsline {section}{\numberline {B}Approximation of the establishment probability}{S6}{appendix.B}% 
+\contentsline {subsection}{\numberline {B.1}Disentangling the contributions to the establishment probability}{S9}{subsection.B.1}% 
+\contentsline {section}{\numberline {C}Habitat of origin of the adaptive mutation}{S11}{appendix.C}% 
+\contentsline {section}{\numberline {D}Probability of establishment for large frequencies of old-habitat patches}{S12}{appendix.D}% 
+\contentsline {section}{\numberline {E}Establishment probability in a model without demography}{S13}{appendix.E}% 
+\contentsline {section}{\numberline {F}Habitat of origin dependent on the dispersal scheme}{S15}{appendix.F}% 

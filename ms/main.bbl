@@ -1,623 +1,497 @@
-\begin{thebibliography}{79}
+\begin{thebibliography}{78}
 \providecommand{\natexlab}[1]{#1}
-\providecommand{\url}[1]{\texttt{#1}}
-\expandafter\ifx\csname urlstyle\endcsname\relax
-  \providecommand{\doi}[1]{doi: #1}\else
-  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
-\bibitem[Agashe et~al.(2011)Agashe, Falk, and Bolnick]{agashe_2011}
-Deepa Agashe, Jay~J. Falk, and Daniel~I. Bolnick.
+\bibitem[{Agashe et~al.(2011)Agashe, Falk, and Bolnick}]{agashe_2011}
+Agashe, D., J.~J. Falk, and D.~I. Bolnick. 2011.
 \newblock Effects of founding genetic variation on adaptation to a novel
   resource.
-\newblock \emph{Evolution}, 65\penalty0 (9):\penalty0 2481--2491, 2011.
-\newblock \doi{10.1111/j.1558-5646.2011.01307.x}.
+\newblock Evolution 65:2481--2491.
 
-\bibitem[Alexander et~al.(2014)Alexander, Martin, Martin, and
-  Bonhoeffer]{alexander_2014}
-Helen~K. Alexander, Guillaume Martin, Oliver~Y. Martin, and Sebastian
-  Bonhoeffer.
+\bibitem[{Alexander et~al.(2014)Alexander, Martin, Martin, and
+  Bonhoeffer}]{alexander_2014}
+Alexander, H.~K., G.~Martin, O.~Y. Martin, and S.~Bonhoeffer. 2014.
 \newblock Evolutionary rescue: linking theory for conservation and medicine.
-\newblock \emph{Evolutionary Applications}, 7\penalty0 (10):\penalty0
-  1161--1179, 2014.
-\newblock \doi{10.1111/eva.12221}.
+\newblock Evolutionary Applications 7:1161--1179.
 
-\bibitem[Amarasekare(2004)]{amarasekare_2004}
-Priyanga Amarasekare.
+\bibitem[{Amarasekare(2004)}]{amarasekare_2004}
+Amarasekare, P. 2004.
 \newblock The role of density-dependent dispersal in source–sink dynamics.
-\newblock \emph{Journal of Theoretical Biology}, 226\penalty0 (2):\penalty0 159
-  -- 168, 2004.
-\newblock \doi{https://doi.org/10.1016/j.jtbi.2003.08.007}.
+\newblock Journal of Theoretical Biology 226:159 -- 168.
 
-\bibitem[Anciaux et~al.(2018)Anciaux, Chevin, Ronce, and Martin]{anciaux_2018}
-Yoann Anciaux, Luis-Miguel Chevin, Oph{\'e}lie Ronce, and Guillaume Martin.
+\bibitem[{Anciaux et~al.(2018)Anciaux, Chevin, Ronce, and
+  Martin}]{anciaux_2018}
+Anciaux, Y., L.-M. Chevin, O.~Ronce, and G.~Martin. 2018.
 \newblock Evolutionary rescue over a fitness landscape.
-\newblock \emph{Genetics}, 209\penalty0 (1):\penalty0 265--279, 2018.
-\newblock \doi{10.1534/genetics.118.300908}.
+\newblock Genetics 209:265--279.
 
-\bibitem[Battin(2004)]{battin_2004}
-James Battin.
+\bibitem[{Battin(2004)}]{battin_2004}
+Battin, J. 2004.
 \newblock When good animals love bad habitats: Ecological traps and the
   conservation of animal populations.
-\newblock \emph{Conservation Biology}, 18\penalty0 (6):\penalty0 1482--1491,
-  2004.
+\newblock Conservation Biology 18:1482--1491.
 
-\bibitem[Bell(2017)]{bell_2017}
-Graham Bell.
+\bibitem[{Bell(2017)}]{bell_2017}
+Bell, G. 2017.
 \newblock Evolutionary rescue.
-\newblock \emph{Annual Review of Ecology, Evolution, and Systematics},
-  48\penalty0 (1):\penalty0 605--627, 2017.
-\newblock \doi{10.1146/annurev-ecolsys-110316-023011}.
+\newblock Annual Review of Ecology, Evolution, and Systematics 48:605--627.
 
-\bibitem[Bell and Gonzalez(2009)]{bell_2009}
-Graham Bell and Andrew Gonzalez.
+\bibitem[{Bell and Gonzalez(2009)}]{bell_2009}
+Bell, G., and A.~Gonzalez. 2009.
 \newblock Evolutionary rescue can prevent extinction following environmental
   change.
-\newblock \emph{Ecology Letters}, 12\penalty0 (9):\penalty0 942--948, 2009.
-\newblock \doi{10.1111/j.1461-0248.2009.01350.x}.
+\newblock Ecology Letters 12:942--948.
 
-\bibitem[Bell and Gonzalez(2011)]{bell_2011}
-Graham Bell and Andrew Gonzalez.
+\bibitem[{Bell and Gonzalez(2011)}]{bell_2011}
+---{}---{}---. 2011.
 \newblock Adaptation and evolutionary rescue in metapopulations experiencing
   environmental deterioration.
-\newblock \emph{Science}, 332\penalty0 (6035):\penalty0 1327--1330, 2011.
-\newblock \doi{10.1126/science.1203105}.
+\newblock Science 332:1327--1330.
 
-\bibitem[Bellard et~al.(2012)Bellard, Bertelsmeier, Leadley, Thuiller, and
-  Courchamp]{bellard_2012}
-C{\'{e}}line Bellard, Cleo Bertelsmeier, Paul Leadley, Wilfried Thuiller, and
-  Franck Courchamp.
+\bibitem[{Bellard et~al.(2012)Bellard, Bertelsmeier, Leadley, Thuiller, and
+  Courchamp}]{bellard_2012}
+Bellard, C., C.~Bertelsmeier, P.~Leadley, W.~Thuiller, and F.~Courchamp. 2012.
 \newblock Impacts of climate change on the future of biodiversity.
-\newblock \emph{Ecology Letters}, 15\penalty0 (4):\penalty0 365--377, 2012.
-\newblock \doi{10.1111/j.1461-0248.2011.01736.x}.
+\newblock Ecology Letters 15:365--377.
 
-\bibitem[Benkman(2017)]{benkman_2017}
-Craig~W. Benkman.
+\bibitem[{Benkman(2017)}]{benkman_2017}
+Benkman, C.~W. 2017.
 \newblock Matching habitat choice in nomadic crossbills appears most pronounced
   when food is most limiting.
-\newblock \emph{Evolution}, 71\penalty0 (3):\penalty0 778--785, 2017.
-\newblock \doi{10.1111/evo.13146}.
+\newblock Evolution 71:778--785.
 
-\bibitem[Bestion et~al.(2015)Bestion, Clobert, and Cote]{bestion_2015}
-Elvire Bestion, Jean Clobert, and Julien Cote.
+\bibitem[{Bestion et~al.(2015)Bestion, Clobert, and Cote}]{bestion_2015}
+Bestion, E., J.~Clobert, and J.~Cote. 2015.
 \newblock Dispersal response to climate change: scaling down to intraspecific
   variation.
-\newblock \emph{Ecology Letters}, 18\penalty0 (11):\penalty0 1226--1233, 2015.
-\newblock \doi{10.1111/ele.12502}.
+\newblock Ecology Letters 18:1226--1233.
 
-\bibitem[Bolnick et~al.(2009)Bolnick, Snowberg, Patenia, Stutz, Ingram, and
-  Lau]{bolnick_2009}
-Daniel~I. Bolnick, Lisa~K. Snowberg, Claire Patenia, William~E. Stutz, Travis
-  Ingram, and On~Lee Lau.
+\bibitem[{Bolnick et~al.(2009)Bolnick, Snowberg, Patenia, Stutz, Ingram, and
+  Lau}]{bolnick_2009}
+Bolnick, D.~I., L.~K. Snowberg, C.~Patenia, W.~E. Stutz, T.~Ingram, and O.~L.
+  Lau. 2009.
 \newblock {Phenotype-dependent native habitat preference facilitates divergence
   between parapatric lake and stream stickleback}.
-\newblock \emph{Evolution}, 63\penalty0 (8):\penalty0 2004--2016, 2009.
-\newblock \doi{10.1111/j.1558-5646.2009.00699.x}.
+\newblock Evolution 63:2004--2016.
 
-\bibitem[Bowler and Benton(2005)]{bowler_2005}
-Diana~E. Bowler and Tim~G. Benton.
+\bibitem[{Bowler and Benton(2005)}]{bowler_2005}
+Bowler, D.~E., and T.~G. Benton. 2005.
 \newblock Causes and consequences of animal dispersal strategies: relating
   individual behaviour to spatial dynamics.
-\newblock \emph{Biological Reviews}, 80\penalty0 (2):\penalty0 205--225, 2005.
-\newblock \doi{10.1017/S1464793104006645}.
+\newblock Biological Reviews 80:205--225.
 
-\bibitem[Carlson et~al.(2014)Carlson, Cunningham, and Westley]{carlson_2014}
-Stephanie~M. Carlson, Curry~J. Cunningham, and Peter~A.H. Westley.
+\bibitem[{Carlson et~al.(2014)Carlson, Cunningham, and Westley}]{carlson_2014}
+Carlson, S.~M., C.~J. Cunningham, and P.~A. Westley. 2014.
 \newblock Evolutionary rescue in a changing world.
-\newblock \emph{Trends in Ecology {\&} Evolution}, 29\penalty0 (9):\penalty0
-  521--530, 2014.
-\newblock \doi{10.1016/j.tree.2014.06.005}.
+\newblock Trends in Ecology {\&} Evolution 29:521--530.
 
-\bibitem[Clobert et~al.(2009)Clobert, Le~Galliard, Cote, Meylan, and
-  Massot]{clobert_2009}
-Jean Clobert, Jean-Fran\c{c}ois Le~Galliard, Julien Cote, Sandrine Meylan, and
-  Manuel Massot.
+\bibitem[{Clobert et~al.(2009)Clobert, Le~Galliard, Cote, Meylan, and
+  Massot}]{clobert_2009}
+Clobert, J., J.-F. Le~Galliard, J.~Cote, S.~Meylan, and M.~Massot. 2009.
 \newblock Informed dispersal, heterogeneity in animal dispersal syndromes and
   the dynamics of spatially structured populations.
-\newblock \emph{Ecology Letters}, 12\penalty0 (3):\penalty0 197--209, 2009.
-\newblock \doi{10.1111/j.1461-0248.2008.01267.x}.
+\newblock Ecology Letters 12:197--209.
 
-\bibitem[De~Meester and Bonte(2010)]{meester2010}
-Nele De~Meester and Dries Bonte.
+\bibitem[{De~Meester and Bonte(2010)}]{meester2010}
+De~Meester, N., and D.~Bonte. 2010.
 \newblock {Information use and density-dependent emigration in an agrobiont
   spider}.
-\newblock \emph{Behavioral Ecology}, 21\penalty0 (5):\penalty0 992--998, 2010.
-\newblock \doi{10.1093/beheco/arq088}.
+\newblock Behavioral Ecology 21:992--998.
 
-\bibitem[Di~Giallonardo and Holmes(2015)]{digiallonardo_2015}
-Francesca Di~Giallonardo and Edward~C. Holmes.
+\bibitem[{Di~Giallonardo and Holmes(2015)}]{digiallonardo_2015}
+Di~Giallonardo, F., and E.~C. Holmes. 2015.
 \newblock Viral biocontrol: grand experiments in disease emergence and
   evolution.
-\newblock \emph{Trends in Microbiology}, 23\penalty0 (2):\penalty0 83--90,
-  2015.
-\newblock \doi{10.1016/j.tim.2014.10.004}.
+\newblock Trends in Microbiology 23:83--90.
 
-\bibitem[Diniz-Filho et~al.(2019)Diniz-Filho, Souza, Bini, Loyola, Dobrovolski,
-  Rodrigues, Lima-Ribeiro, Terribile, Rangel, Bione, Freitas, Machado, Rocha,
-  Lorini, Vale, Navas, Maciel, Villalobos, Olalla-Tarraga, and
-  Gouveia]{diniz_2019}
-Jos{\'{e}} Alexandre~F. Diniz-Filho, Kelly~S. Souza, Luis~M. Bini, Rafael
-  Loyola, Ricardo Dobrovolski, Jo{\~{a}}o Fabricio~M. Rodrigues,
-  S.~Lima-Ribeiro, Levi~C. Terribile, Thiago~F. Rangel, Igor Bione, Roniel
-  Freitas, Iber{\^{e}}~F. Machado, Tain{\'{a}} Rocha, Maria~L. Lorini,
-  Mariana~M. Vale, Carlos~A. Navas, Natan~M. Maciel, Fabricio Villalobos,
-  Miguel~A. Olalla-Tarraga, and Sidney Gouveia.
+\bibitem[{Diniz-Filho et~al.(2019)Diniz-Filho, Souza, Bini, Loyola,
+  Dobrovolski, Rodrigues, Lima-Ribeiro, Terribile, Rangel, Bione, Freitas,
+  Machado, Rocha, Lorini, Vale, Navas, Maciel, Villalobos, Olalla-Tarraga, and
+  Gouveia}]{diniz_2019}
+Diniz-Filho, J. A.~F., K.~S. Souza, L.~M. Bini, R.~Loyola, R.~Dobrovolski,
+  J.~F.~M. Rodrigues, S.~Lima-Ribeiro, L.~C. Terribile, T.~F. Rangel, I.~Bione,
+  R.~Freitas, I.~F. Machado, T.~Rocha, M.~L. Lorini, M.~M. Vale, C.~A. Navas,
+  N.~M. Maciel, F.~Villalobos, M.~A. Olalla-Tarraga, and S.~Gouveia. 2019.
 \newblock A macroecological approach to evolutionary rescue and adaptation to
   climate change.
-\newblock \emph{Ecography}, 2019.
-\newblock \doi{10.1111/ecog.04264}.
+\newblock Ecography .
 
-\bibitem[Dreiss et~al.(2011)Dreiss, Antoniazza, Burri, Fumagalli, Sonnay, Frey,
-  Goudet, and Roulin]{dreiss_2011}
-A.~N. Dreiss, S.~Antoniazza, R.~Burri, L.~Fumagalli, C.~Sonnay, C.~Frey,
-  J.~Goudet, and A.~Roulin.
+\bibitem[{Dreiss et~al.(2011)Dreiss, Antoniazza, Burri, Fumagalli, Sonnay,
+  Frey, Goudet, and Roulin}]{dreiss_2011}
+Dreiss, A.~N., S.~Antoniazza, R.~Burri, L.~Fumagalli, C.~Sonnay, C.~Frey,
+  J.~Goudet, and A.~Roulin. 2011.
 \newblock Local adaptation and matching habitat choice in female barn owls with
   respect to melanic coloration.
-\newblock \emph{Journal of Evolutionary Biology}, 25\penalty0 (1):\penalty0
-  103--114, 2011.
-\newblock \doi{10.1111/j.1420-9101.2011.02407.x}.
+\newblock Journal of Evolutionary Biology 25:103--114.
 
-\bibitem[Edelaar and Bolnick(2012)]{edelaar_2012}
-Pim Edelaar and Daniel~I. Bolnick.
+\bibitem[{Edelaar and Bolnick(2012)}]{edelaar_2012}
+Edelaar, P., and D.~I. Bolnick. 2012.
 \newblock Non-random gene flow: an underappreciated force in evolution and
   ecology.
-\newblock \emph{Trends in Ecology {\&} Evolution}, 27\penalty0 (12):\penalty0
-  659--665, 2012.
-\newblock \doi{10.1016/j.tree.2012.07.009}.
+\newblock Trends in Ecology {\&} Evolution 27:659--665.
 
-\bibitem[Edelaar et~al.(2008)Edelaar, Siepielski, and Clobert]{edelaar_2008}
-Pim Edelaar, Adam~M. Siepielski, and Jean Clobert.
+\bibitem[{Edelaar et~al.(2008)Edelaar, Siepielski, and Clobert}]{edelaar_2008}
+Edelaar, P., A.~M. Siepielski, and J.~Clobert. 2008.
 \newblock Matching habitat choice causes directed gene flow: A neglected
   dimension in evolution and ecology.
-\newblock \emph{Evolution}, 62\penalty0 (10):\penalty0 2462--2472, 2008.
-\newblock \doi{10.1111/j.1558-5646.2008.00459.x}.
+\newblock Evolution 62:2462--2472.
 
-\bibitem[Endriss et~al.(2019)Endriss, Vahsen, Bitume, Grey~Monroe, Turner,
-  Norton, and Hufbauer]{endriss_2019}
-Stacy~B. Endriss, Megan~L. Vahsen, Ellyn~V. Bitume, J.~Grey~Monroe, Kathryn~G.
-  Turner, Andrew~P. Norton, and Ruth~A. Hufbauer.
+\bibitem[{Endriss et~al.(2019)Endriss, Vahsen, Bitume, Grey~Monroe, Turner,
+  Norton, and Hufbauer}]{endriss_2019}
+Endriss, S.~B., M.~L. Vahsen, E.~V. Bitume, J.~Grey~Monroe, K.~G. Turner, A.~P.
+  Norton, and R.~A. Hufbauer. 2019.
 \newblock The importance of growing up: juvenile environment influences
   dispersal of individuals and their neighbours.
-\newblock \emph{Ecology Letters}, 22\penalty0 (1):\penalty0 45--55, 2019.
-\newblock \doi{10.1111/ele.13166}.
+\newblock Ecology Letters 22:45--55.
 
-\bibitem[Fedorka et~al.(2012)Fedorka, Winterhalter, Shaw, Brogan, and
-  Mousseau]{fedorka_2012}
-K.~M. Fedorka, W.~E. Winterhalter, K.~L. Shaw, W.~R. Brogan, and T.~A.
-  Mousseau.
+\bibitem[{Fedorka et~al.(2012)Fedorka, Winterhalter, Shaw, Brogan, and
+  Mousseau}]{fedorka_2012}
+Fedorka, K.~M., W.~E. Winterhalter, K.~L. Shaw, W.~R. Brogan, and T.~A.
+  Mousseau. 2012.
 \newblock The role of gene flow asymmetry along an environmental gradient in
   constraining local adaptation and range expansion.
-\newblock \emph{Journal of Evolutionary Biology}, 25\penalty0 (8):\penalty0
-  1676--1685, 2012.
-\newblock \doi{10.1111/j.1420-9101.2012.02552.x}.
+\newblock Journal of Evolutionary Biology 25:1676--1685.
 
-\bibitem[Folt et~al.(2018)Folt, Donnelly, and Guyer]{folt_2018}
-Brian Folt, Maureen~A. Donnelly, and Craig Guyer.
+\bibitem[{Folt et~al.(2018)Folt, Donnelly, and Guyer}]{folt_2018}
+Folt, B., M.~A. Donnelly, and C.~Guyer. 2018.
 \newblock Spatial patterns of the frog \textit{Oophaga pumilio} in a plantation
   system are consistent with conspecific attraction.
-\newblock \emph{Ecology and Evolution}, 8\penalty0 (5):\penalty0 2880--2889,
-  2018.
-\newblock \doi{10.1002/ece3.3748}.
+\newblock Ecology and Evolution 8:2880--2889.
 
-\bibitem[Gallet et~al.(2018)Gallet, Froissart, and Ravign\'{e}]{gallet_2018}
-Romain Gallet, R\'{e}my Froissart, and Virginie Ravign\'{e}.
+\bibitem[{Gallet et~al.(2018)Gallet, Froissart, and Ravign\'{e}}]{gallet_2018}
+Gallet, R., R.~Froissart, and V.~Ravign\'{e}. 2018.
 \newblock Experimental demonstration of the impact of hard and soft selection
   regimes on polymorphism maintenance in spatially heterogeneous
   environments†.
-\newblock \emph{Evolution}, 72\penalty0 (8):\penalty0 1677--1688, 2018.
-\newblock \doi{10.1111/evo.13513}.
+\newblock Evolution 72:1677--1688.
 
-\bibitem[Garc\'{i}a-Ramos and Kirkpatrick(1997)]{garcia_1997}
-Gisela Garc\'{i}a-Ramos and Mark Kirkpatrick.
+\bibitem[{Garc\'{i}a-Ramos and Kirkpatrick(1997)}]{garcia_1997}
+Garc\'{i}a-Ramos, G., and M.~Kirkpatrick. 1997.
 \newblock Genetic models of adaptation and gene flow in peripheral populations.
-\newblock \emph{Evolution}, 51\penalty0 (1):\penalty0 21, 1997.
-\newblock \doi{10.2307/2410956}.
+\newblock Evolution 51:21.
 
-\bibitem[Gautier et~al.(2006)Gautier, Olgun, Uzum, and Miaud]{gautier_2006}
-Patrick Gautier, Kurtulus Olgun, Nazan Uzum, and Claude Miaud.
+\bibitem[{Gautier et~al.(2006)Gautier, Olgun, Uzum, and Miaud}]{gautier_2006}
+Gautier, P., K.~Olgun, N.~Uzum, and C.~Miaud. 2006.
 \newblock Gregarious behaviour in a salamander: attraction to conspecific
   chemical cues in burrow choice.
-\newblock \emph{Behavioral Ecology and Sociobiology}, 59\penalty0 (6):\penalty0
-  836--841, 2006.
-\newblock \doi{10.1007/s00265-005-0130-8}.
+\newblock Behavioral Ecology and Sociobiology 59:836--841.
 
-\bibitem[Gignoux-Wolfsohn et~al.(2018)Gignoux-Wolfsohn, Pinsky, Kerwin, Herzog,
-  Hall, Bennett, Fefferman, and Maslo]{gignoux_2018}
-Sarah~A Gignoux-Wolfsohn, Malin Pinsky, Kathleen Kerwin, Carl Herzog, Mackenzie
-  Hall, Alyssa Bennett, Nina Fefferman, and Brooke Maslo.
+\bibitem[{Gignoux-Wolfsohn et~al.(2018)Gignoux-Wolfsohn, Pinsky, Kerwin,
+  Herzog, Hall, Bennett, Fefferman, and Maslo}]{gignoux_2018}
+Gignoux-Wolfsohn, S.~A., M.~Pinsky, K.~Kerwin, C.~Herzog, M.~Hall, A.~Bennett,
+  N.~Fefferman, and B.~Maslo. 2018.
 \newblock Genomic signatures of evolutionary rescue in bats surviving
   white-nose syndrome.
-\newblock \emph{bioRxiv}, 2018.
-\newblock \doi{10.1101/470294}.
+\newblock bioRxiv .
 
-\bibitem[Gl{\'e}min and Ronfort(2013)]{glemin_2013}
-Sylvain Gl{\'e}min and Jo{\"e}lle Ronfort.
+\bibitem[{Gl{\'e}min and Ronfort(2013)}]{glemin_2013}
+Gl{\'e}min, S., and J.~Ronfort. 2013.
 \newblock Adaptation and maladaptation in selfing and outcrossing species: New
   mutations versus standing variation.
-\newblock \emph{Evolution}, 67\penalty0 (1):\penalty0 225--240, 2013.
-\newblock \doi{10.1111/j.1558-5646.2012.01778.x}.
+\newblock Evolution 67:225--240.
 
-\bibitem[Gomulkiewicz and Holt(1995)]{gomulkiewicz_1995}
-Richard Gomulkiewicz and Robert~D. Holt.
+\bibitem[{Gomulkiewicz and Holt(1995)}]{gomulkiewicz_1995}
+Gomulkiewicz, R., and R.~D. Holt. 1995.
 \newblock When does evolution by natural selection prevent extinction?
-\newblock \emph{Evolution}, 49\penalty0 (1):\penalty0 201, 1995.
-\newblock \doi{10.2307/2410305}.
+\newblock Evolution 49:201.
 
-\bibitem[Gomulkiewicz et~al.(1999)Gomulkiewicz, Holt, and
-  Barfield]{gomulkiewicz_1999}
-Richard Gomulkiewicz, Robert~D. Holt, and Michael Barfield.
+\bibitem[{Gomulkiewicz et~al.(1999)Gomulkiewicz, Holt, and
+  Barfield}]{gomulkiewicz_1999}
+Gomulkiewicz, R., R.~D. Holt, and M.~Barfield. 1999.
 \newblock The effects of density dependence and immigration on local adaptation
   and niche evolution in a black-hole sink environment.
-\newblock \emph{Theoretical Population Biology}, 55\penalty0 (3):\penalty0 283
-  -- 296, 1999.
-\newblock \doi{10.1006/tpbi.1998.1405}.
+\newblock Theoretical Population Biology 55:283 -- 296.
 
-\bibitem[Greene et~al.(2016)Greene, Pittman, and Dorcas]{greene_2016}
-Kathryn~M. Greene, Shannon~E. Pittman, and Michael~E. Dorcas.
+\bibitem[{Greene et~al.(2016)Greene, Pittman, and Dorcas}]{greene_2016}
+Greene, K.~M., S.~E. Pittman, and M.~E. Dorcas. 2016.
 \newblock The effects of conspecifics on burrow selection in juvenile spotted
   salamanders (ambystoma maculatum).
-\newblock \emph{Journal of Ethology}, 34\penalty0 (3):\penalty0 309--314, 2016.
-\newblock \doi{10.1007/s10164-016-0476-6}.
+\newblock Journal of Ethology 34:309--314.
 
-\bibitem[Guzella et~al.(2018)Guzella, Dey, Chelo, Pino-Querido, Pereira,
-  Proulx, and Teot\'{o}nio]{guzella_2018}
-Thiago~S. Guzella, Snigdhadip Dey, Ivo~M. Chelo, Ania Pino-Querido, Veronica~F.
-  Pereira, Stephen~R. Proulx, and Henrique Teot\'{o}nio.
+\bibitem[{Guzella et~al.(2018)Guzella, Dey, Chelo, Pino-Querido, Pereira,
+  Proulx, and Teot\'{o}nio}]{guzella_2018}
+Guzella, T.~S., S.~Dey, I.~M. Chelo, A.~Pino-Querido, V.~F. Pereira, S.~R.
+  Proulx, and H.~Teot\'{o}nio. 2018.
 \newblock Slower environmental change hinders adaptation from standing genetic
   variation.
-\newblock \emph{PLOS Genetics}, 14\penalty0 (11):\penalty0 1--28, 11 2018.
-\newblock \doi{10.1371/journal.pgen.1007731}.
+\newblock PLOS Genetics 14:1--28.
 
-\bibitem[Haccou et~al.(2005)Haccou, Jagers, and Vatutin]{haccou_book}
-Patsy Haccou, Peter Jagers, and Vladimir~A. Vatutin.
-\newblock \emph{Branching Processes: Variation, Growth, and Extinction of
-  Populations}.
-\newblock Cambridge Studies in Adaptive Dynamics. Cambridge University Press,
-  2005.
-\newblock \doi{10.1017/CBO9780511629136}.
+\bibitem[{Haccou et~al.(2005)Haccou, Jagers, and Vatutin}]{haccou_book}
+Haccou, P., P.~Jagers, and V.~A. Vatutin. 2005.
+\newblock Branching Processes: Variation, Growth, and Extinction of
+  Populations.
+\newblock Cambridge Studies in Adaptive Dynamics. Cambridge University Press.
 
-\bibitem[Haldane(1927)]{haldane_1927}
-J.~B.~S. Haldane.
+\bibitem[{Haldane(1927)}]{haldane_1927}
+Haldane, J. B.~S. 1927.
 \newblock A mathematical theory of natural and artificial selection, part v:
   Selection and mutation.
-\newblock \emph{Mathematical Proceedings of the Cambridge Philosophical
-  Society}, 23\penalty0 (7):\penalty0 838–844, 1927.
-\newblock \doi{10.1017/S0305004100015644}.
+\newblock Mathematical Proceedings of the Cambridge Philosophical Society
+  23:838–844.
 
-\bibitem[Hermisson and Pennings(2017)]{hermisson_2017}
-Joachim Hermisson and Pleuni~S. Pennings.
+\bibitem[{Hermisson and Pennings(2017)}]{hermisson_2017}
+Hermisson, J., and P.~S. Pennings. 2017.
 \newblock Soft sweeps and beyond: understanding the patterns and probabilities
   of selection footprints under rapid adaptation.
-\newblock \emph{Methods in Ecology and Evolution}, 8\penalty0 (6):\penalty0
-  700--716, 2017.
-\newblock \doi{10.1111/2041-210X.12808}.
+\newblock Methods in Ecology and Evolution 8:700--716.
 
-\bibitem[Holt(1985)]{holt_1985}
-Robert~D. Holt.
+\bibitem[{Holt(1985)}]{holt_1985}
+Holt, R.~D. 1985.
 \newblock Population dynamics in two-patch environments: Some anomalous
   consequences of an optimal habitat distribution.
-\newblock \emph{Theoretical Population Biology}, 28\penalty0 (2):\penalty0 181
-  -- 208, 1985.
-\newblock \doi{https://doi.org/10.1016/0040-5809(85)90027-9}.
+\newblock Theoretical Population Biology 28:181 -- 208.
 
-\bibitem[Holt(1996)]{holt_1996}
-Robert~D. Holt.
+\bibitem[{Holt(1996)}]{holt_1996}
+---{}---{}---. 1996.
 \newblock Adaptive evolution in source-sink environments: Direct and indirect
   effects of density-dependence on niche evolution.
-\newblock \emph{Oikos}, 75\penalty0 (2):\penalty0 182--192, 1996.
+\newblock Oikos 75:182--192.
 
-\bibitem[Holt and Barfield(2015)]{holt_2015}
-Robert~D. Holt and Michael Barfield.
+\bibitem[{Holt and Barfield(2015)}]{holt_2015}
+Holt, R.~D., and M.~Barfield. 2015.
 \newblock The influence of imperfect matching habitat choice on evolution in
   source--sink environments.
-\newblock \emph{Evolutionary Ecology}, 29\penalty0 (6):\penalty0 887--904,
-  2015.
-\newblock \doi{10.1007/s10682-015-9789-0}.
+\newblock Evolutionary Ecology 29:887--904.
 
-\bibitem[Holt and Gomulkiewicz(1997)]{holt_1997}
-Robert~D. Holt and Richard Gomulkiewicz.
+\bibitem[{Holt and Gomulkiewicz(1997)}]{holt_1997}
+Holt, R.~D., and R.~Gomulkiewicz. 1997.
 \newblock How does immigration influence local adaptation? a reexamination of a
   familiar paradigm.
-\newblock \emph{The American Naturalist}, 149\penalty0 (3):\penalty0 563--572,
-  1997.
-\newblock \doi{10.1086/286005}.
+\newblock The American Naturalist 149:563--572.
 
-\bibitem[Jacob et~al.(2017)Jacob, Legrand, Chaine, Bonte, Schtickzelle, Huet,
-  and Clobert]{jacob_2017}
-Staffan Jacob, Delphine Legrand, Alexis~S. Chaine, Dries Bonte, Nicolas
-  Schtickzelle, Mich{\`{e}}le Huet, and Jean Clobert.
-\newblock Gene flow favours local adaptation under habitat choice in ciliate
-  microcosms.
-\newblock \emph{Nature Ecology {\&} Evolution}, 1\penalty0 (9):\penalty0
-  1407--1410, 2017.
-\newblock \doi{10.1038/s41559-017-0269-5}.
-
-\bibitem[Jacob et~al.(2018)Jacob, Laurent, Haegeman, Bertrand, Prunier,
-  Legrand, Cote, Chaine, Loreau, Clobert, and Schtickzelle]{jacob_2018}
-Staffan Jacob, Estelle Laurent, Bart Haegeman, Romain Bertrand,
-  J{\'e}r{\^o}me~G. Prunier, Delphine Legrand, Julien Cote, Alexis~S. Chaine,
-  Michel Loreau, Jean Clobert, and Nicolas Schtickzelle.
+\bibitem[{Jacob et~al.(2018)Jacob, Laurent, Haegeman, Bertrand, Prunier,
+  Legrand, Cote, Chaine, Loreau, Clobert, and Schtickzelle}]{jacob_2018}
+Jacob, S., E.~Laurent, B.~Haegeman, R.~Bertrand, J.~G. Prunier, D.~Legrand,
+  J.~Cote, A.~S. Chaine, M.~Loreau, J.~Clobert, and N.~Schtickzelle. 2018.
 \newblock Habitat choice meets thermal specialization: Competition with
   specialists may drive suboptimal habitat preferences in generalists.
-\newblock \emph{Proceedings of the National Academy of Sciences}, 115\penalty0
-  (47):\penalty0 11988--11993, 2018.
-\newblock \doi{10.1073/pnas.1805574115}.
+\newblock Proceedings of the National Academy of Sciences 115:11988--11993.
 
-\bibitem[Kawecki(1995)]{kawecki_1995}
-Tadeusz~J. Kawecki.
+\bibitem[{Jacob et~al.(2017)Jacob, Legrand, Chaine, Bonte, Schtickzelle, Huet,
+  and Clobert}]{jacob_2017}
+Jacob, S., D.~Legrand, A.~S. Chaine, D.~Bonte, N.~Schtickzelle, M.~Huet, and
+  J.~Clobert. 2017.
+\newblock Gene flow favours local adaptation under habitat choice in ciliate
+  microcosms.
+\newblock Nature Ecology {\&} Evolution 1:1407--1410.
+
+\bibitem[{Kawecki(1995)}]{kawecki_1995}
+Kawecki, T.~J. 1995.
 \newblock Demography of source---sink populations and the evolution of
   ecological niches.
-\newblock \emph{Evolutionary Ecology}, 9\penalty0 (1):\penalty0 38--44, 1995.
-\newblock \doi{10.1007/BF01237695}.
+\newblock Evolutionary Ecology 9:38--44.
 
-\bibitem[Kawecki(2000)]{kawecki_2000}
-Tadeusz~J. Kawecki.
+\bibitem[{Kawecki(2000)}]{kawecki_2000}
+---{}---{}---. 2000.
 \newblock Adaptation to marginal habitats: contrasting influence of the
   dispersal rate on the fate of alleles with small and large effects.
-\newblock \emph{Proceedings of the Royal Society of London. Series B:
-  Biological Sciences}, 267\penalty0 (1450):\penalty0 1315--1320, 2000.
-\newblock \doi{10.1098/rspb.2000.1144}.
+\newblock Proceedings of the Royal Society of London. Series B: Biological
+  Sciences 267:1315--1320.
 
-\bibitem[Kawecki and Holt(2002)]{kawecki_2002}
-Tadeusz~J. Kawecki and Robert~D. Holt.
+\bibitem[{Kawecki and Holt(2002)}]{kawecki_2002}
+Kawecki, T.~J., and R.~D. Holt. 2002.
 \newblock Evolutionary consequences of asymmetric dispersal rates.
-\newblock \emph{The American Naturalist}, 160\penalty0 (3):\penalty0 333--347,
-  2002.
-\newblock \doi{10.1086/341519}.
+\newblock The American Naturalist 160:333--347.
 
-\bibitem[Kirkpatrick and Barton(1997)]{kirkpatrick_1997}
-Mark Kirkpatrick and N. H. Barton.
+\bibitem[{Kirkpatrick and Barton(1997)}]{kirkpatrick_1997}
+Kirkpatrick, M., and N.~Barton. 1997.
 \newblock Evolution of a species' range.
-\newblock \emph{The American Naturalist}, 150\penalty0 (1):\penalty0 1--23,
-  1997.
-\newblock \doi{10.1086/286054}.
+\newblock The American Naturalist 150:1--23.
 
-\bibitem[Kreiner et~al.(2018)Kreiner, Stinchcombe, and Wright]{kreiner_2018}
-Julia~M. Kreiner, John~R. Stinchcombe, and Stephen~I. Wright.
+\bibitem[{Kreiner et~al.(2018)Kreiner, Stinchcombe, and Wright}]{kreiner_2018}
+Kreiner, J.~M., J.~R. Stinchcombe, and S.~I. Wright. 2018.
 \newblock Population genomics of herbicide resistance: Adaptation via
   evolutionary rescue.
-\newblock \emph{Annual Review of Plant Biology}, 69\penalty0 (1):\penalty0
-  611--635, 2018.
-\newblock \doi{10.1146/annurev-arplant-042817-040038}.
+\newblock Annual Review of Plant Biology 69:611--635.
 
-\bibitem[Lachapelle and Bell(2012)]{lachapelle_2012}
-Josianne Lachapelle and Graham Bell.
+\bibitem[{Lachapelle and Bell(2012)}]{lachapelle_2012}
+Lachapelle, J., and G.~Bell. 2012.
 \newblock Evolutionary rescue of sexual and asexual populations in a
   deteriorating environment.
-\newblock \emph{Evolution}, 66\penalty0 (11):\penalty0 3508--3518, 2012.
-\newblock \doi{10.1111/j.1558-5646.2012.01697.x}.
+\newblock Evolution 66:3508--3518.
 
-\bibitem[Lenormand(2002)]{lenormand_2002}
-Thomas Lenormand.
+\bibitem[{Lenormand(2002)}]{lenormand_2002}
+Lenormand, T. 2002.
 \newblock Gene flow and the limits to natural selection.
-\newblock \emph{Trends in Ecology {\&} Evolution}, 17\penalty0 (4):\penalty0
-  183--189, 2002.
-\newblock \doi{10.1016/s0169-5347(02)02497-7}.
+\newblock Trends in Ecology {\&} Evolution 17:183--189.
 
-\bibitem[Lindsey et~al.(2013)Lindsey, Gallie, Taylor, and Kerr]{lindsey_2013}
-H.A. Lindsey, J.~Gallie, S.~Taylor, and B.~Kerr.
+\bibitem[{Lindsey et~al.(2013)Lindsey, Gallie, Taylor, and Kerr}]{lindsey_2013}
+Lindsey, H., J.~Gallie, S.~Taylor, and B.~Kerr. 2013.
 \newblock Evolutionary rescue from extinction is contingent on a lower rate of
   environmental change.
-\newblock \emph{Nature}, 494:\penalty0 463--468, 2013.
+\newblock Nature 494:463--468.
 
-\bibitem[Martin et~al.(2013)Martin, Aguilée, Ramsayer, Kaltz, and
-  Ronce]{martin_2013}
-Guillaume Martin, Robin Aguilée, Johan Ramsayer, Oliver Kaltz, and Ophélie
-  Ronce.
+\bibitem[{Martin et~al.(2013)Martin, Aguil\'ee, Ramsayer, Kaltz, and
+  Ronce}]{martin_2013}
+Martin, G., R.~Aguil\'ee, J.~Ramsayer, O.~Kaltz, and O.~Ronce. 2013.
 \newblock The probability of evolutionary rescue: towards a quantitative
   comparison between theory and evolution experiments.
-\newblock \emph{Philosophical Transactions of the Royal Society B: Biological
-  Sciences}, 368\penalty0 (1610):\penalty0 20120088, 2013.
-\newblock \doi{10.1098/rstb.2012.0088}.
+\newblock Philosophical Transactions of the Royal Society B: Biological
+  Sciences 368:20120088.
 
-\bibitem[Massol and D\'{e}barre(2015)]{massol_2015}
-François Massol and Florence D\'{e}barre.
+\bibitem[{Massol and D\'{e}barre(2015)}]{massol_2015}
+Massol, F., and F.~D\'{e}barre. 2015.
 \newblock Evolution of dispersal in spatially and temporally variable
   environments: The importance of life cycles.
-\newblock \emph{Evolution}, 69\penalty0 (7):\penalty0 1925--1937, 2015.
-\newblock \doi{10.1111/evo.12699}.
+\newblock Evolution 69:1925--1937.
 
-\bibitem[Mathieu et~al.(2010)Mathieu, Barot, Blouin, Caro, Deca\"{e}ns, Dubs,
-  Dupont, Jouquet, and Nai]{mathieu_2010}
-J\'{e}r\^{o}me Mathieu, S\'{e}bastien Barot, Manuel Blouin, Ga\"{e}l Caro,
-  Thibaud Deca\"{e}ns, Florence Dubs, Lise Dupont, Pascal Jouquet, and Philippe
-  Nai.
+\bibitem[{Mathieu et~al.(2010)Mathieu, Barot, Blouin, Caro, Deca\"{e}ns, Dubs,
+  Dupont, Jouquet, and Nai}]{mathieu_2010}
+Mathieu, J., S.~Barot, M.~Blouin, G.~Caro, T.~Deca\"{e}ns, F.~Dubs, L.~Dupont,
+  P.~Jouquet, and P.~Nai. 2010.
 \newblock Habitat quality, conspecific density, and habitat pre-use affect the
   dispersal behaviour of two earthworm species, \textit{Aporrectodea icterica}
   and \textit{Dendrobaena veneta}, in a mesocosm experiment.
-\newblock \emph{Soil Biology and Biochemistry}, 42\penalty0 (2):\penalty0 203
-  -- 209, 2010.
-\newblock \doi{https://doi.org/10.1016/j.soilbio.2009.10.018}.
+\newblock Soil Biology and Biochemistry 42:203 -- 209.
 
-\bibitem[Matuszewski et~al.(2015)Matuszewski, Hermisson, and
-  Kopp]{matuszewski_2015}
-Sebastian Matuszewski, Joachim Hermisson, and Michael Kopp.
+\bibitem[{Matuszewski et~al.(2015)Matuszewski, Hermisson, and
+  Kopp}]{matuszewski_2015}
+Matuszewski, S., J.~Hermisson, and M.~Kopp. 2015.
 \newblock Catch me if you can: Adaptation from standing genetic variation to a
   moving phenotypic optimum.
-\newblock \emph{Genetics}, 200\penalty0 (4):\penalty0 1255--1274, 2015.
-\newblock \doi{10.1534/genetics.115.178574}.
+\newblock Genetics 200:1255--1274.
 
-\bibitem[Mortier et~al.(2018)Mortier, Jacob, Vandegehuchte, and
-  Bonte]{mortier_2018}
-Frederik Mortier, Staffan Jacob, Martijn~L. Vandegehuchte, and Dries Bonte.
+\bibitem[{Mortier et~al.(2018)Mortier, Jacob, Vandegehuchte, and
+  Bonte}]{mortier_2018}
+Mortier, F., S.~Jacob, M.~L. Vandegehuchte, and D.~Bonte. 2018.
 \newblock Habitat choice stabilizes metapopulation dynamics by enabling
   ecological specialization.
-\newblock \emph{Oikos}, 128\penalty0 (4):\penalty0 529--539, December 2018.
-\newblock \doi{10.1111/oik.05885}.
+\newblock Oikos 128:529--539.
 
-\bibitem[Nagylaki(1978)]{nagylaki_1978}
-Thomas Nagylaki.
+\bibitem[{Nagylaki(1978)}]{nagylaki_1978}
+Nagylaki, T. 1978.
 \newblock Clines with asymmetric migration.
-\newblock \emph{Genetics}, 88\penalty0 (4):\penalty0 813--827, 1978.
+\newblock Genetics 88:813--827.
 
-\bibitem[Osmond et~al.(2017)Osmond, Otto, and Klausmeier]{osmond_2017}
-Matthew~M. Osmond, Sarah~P. Otto, and Christopher~A. Klausmeier.
+\bibitem[{Osmond and de~Mazancourt(2013)}]{osmond_2013}
+Osmond, M.~M., and C.~de~Mazancourt. 2013.
+\newblock How competition affects evolutionary rescue.
+\newblock Philosophical Transactions of the Royal Society B: Biological
+  Sciences 368:20120085.
+
+\bibitem[{Osmond et~al.(2017)Osmond, Otto, and Klausmeier}]{osmond_2017}
+Osmond, M.~M., S.~P. Otto, and C.~A. Klausmeier. 2017.
 \newblock When predators help prey adapt and persist in a changing environment.
-\newblock \emph{The American Naturalist}, 190\penalty0 (1):\penalty0 83--98,
-  2017.
-\newblock \doi{10.1086/691778}.
+\newblock The American Naturalist 190:83--98.
 
-\bibitem[Osmond et~al.(2019)Osmond, Otto, and Martin]{osmond_2019}
-Matthew~M. Osmond, Sarah~P. Otto, and Guillaume Martin.
+\bibitem[{Osmond et~al.(2019)Osmond, Otto, and Martin}]{osmond_2019}
+Osmond, M.~M., S.~P. Otto, and G.~Martin. 2019.
 \newblock Genetic paths to evolutionary rescue and the distribution of fitness
   effects along them.
-\newblock \emph{Genetics}, 2019.
-\newblock \doi{10.1534/genetics.119.302890}.
+\newblock Genetics .
 
-\bibitem[Osmond and de~Mazancourt(2013)]{osmond_2013}
-Matthew~Miles Osmond and Claire de~Mazancourt.
-\newblock How competition affects evolutionary rescue.
-\newblock \emph{Philosophical Transactions of the Royal Society B: Biological
-  Sciences}, 368\penalty0 (1610):\penalty0 20120085, 2013.
-\newblock \doi{10.1098/rstb.2012.0085}.
-
-\bibitem[Pellerin et~al.(2018)Pellerin, Cote, Bestion, and
-  Aguil{\'{e}}e]{pellerin_2018}
-F{\'{e}}lix Pellerin, Julien Cote, Elvire Bestion, and Robin Aguil{\'{e}}e.
+\bibitem[{Pellerin et~al.(2018)Pellerin, Cote, Bestion, and
+  Aguil{\'{e}}e}]{pellerin_2018}
+Pellerin, F., J.~Cote, E.~Bestion, and R.~Aguil{\'{e}}e. 2018.
 \newblock Matching habitat choice promotes species persistence under climate
   change.
-\newblock \emph{Oikos}, 128\penalty0 (2):\penalty0 221--234, September 2018.
-\newblock \doi{10.1111/oik.05309}.
+\newblock Oikos 128:221--234.
 
-\bibitem[Pulliam(1988)]{pulliam_1988}
-H.~Ronald Pulliam.
+\bibitem[{Pulliam(1988)}]{pulliam_1988}
+Pulliam, H.~R. 1988.
 \newblock Sources, sinks, and population regulation.
-\newblock \emph{The American Naturalist}, 132\penalty0 (5):\penalty0 652--661,
-  1988.
+\newblock The American Naturalist 132:652--661.
 
-\bibitem[Ramsayer et~al.(2013)Ramsayer, Kaltz, and Hochberg]{ramsayer_2013}
-Johan Ramsayer, Oliver Kaltz, and Michael~E. Hochberg.
+\bibitem[{Ramsayer et~al.(2013)Ramsayer, Kaltz, and Hochberg}]{ramsayer_2013}
+Ramsayer, J., O.~Kaltz, and M.~E. Hochberg. 2013.
 \newblock Evolutionary rescue in populations of pseudomonas fluorescens across
   an antibiotic gradient.
-\newblock \emph{Evolutionary Applications}, 6\penalty0 (4):\penalty0 608--616,
-  2013.
-\newblock \doi{10.1111/eva.12046}.
+\newblock Evolutionary Applications 6:608--616.
 
-\bibitem[Ronce(2007)]{ronce_2007}
-Oph\'{e}lie Ronce.
+\bibitem[{Ronce(2007)}]{ronce_2007}
+Ronce, O. 2007.
 \newblock How does it feel to be like a rolling stone? ten questions about
   dispersal evolution.
-\newblock \emph{Annual Review of Ecology, Evolution, and Systematics},
-  38\penalty0 (1):\penalty0 231--253, 2007.
-\newblock \doi{10.1146/annurev.ecolsys.38.091206.095611}.
+\newblock Annual Review of Ecology, Evolution, and Systematics 38:231--253.
 
-\bibitem[Ronce and Kirkpatrick(2001)]{ronce_2001}
-Oph\'{e}lie Ronce and Mark Kirkpatrick.
-\newblock When sources become sinks: migrational meltdown in heterogeneous
-  habitats.
-\newblock \emph{Evolution}, 55\penalty0 (8):\penalty0 1520--1531, 2001.
-\newblock \doi{10.1111/j.0014-3820.2001.tb00672.x}.
-
-\bibitem[Stelkens et~al.(2014)Stelkens, Brockhurst, Hurst, and
-  Greig]{stelkens_2014}
-Rike~B. Stelkens, Michael~A. Brockhurst, Gregory D.~D. Hurst, and Duncan Greig.
+\bibitem[{Stelkens et~al.(2014)Stelkens, Brockhurst, Hurst, and
+  Greig}]{stelkens_2014}
+Stelkens, R.~B., M.~A. Brockhurst, G.~D.~D. Hurst, and D.~Greig. 2014.
 \newblock Hybridization facilitates evolutionary rescue.
-\newblock \emph{Evolutionary Applications}, 7\penalty0 (10):\penalty0
-  1209--1217, 2014.
-\newblock \doi{10.1111/eva.12214}.
+\newblock Evolutionary Applications 7:1209--1217.
 
-\bibitem[St{\o}en et~al.(2006)St{\o}en, Zedrosser, S{\ae}b{\o}, and
-  Swenson]{stoen_2006}
-Ole-Gunnar St{\o}en, Andreas Zedrosser, Solve S{\ae}b{\o}, and Jon~E. Swenson.
+\bibitem[{St{\o}en et~al.(2006)St{\o}en, Zedrosser, S{\ae}b{\o}, and
+  Swenson}]{stoen_2006}
+St{\o}en, O.-G., A.~Zedrosser, S.~S{\ae}b{\o}, and J.~E. Swenson. 2006.
 \newblock Inversely density-dependent natal dispersal in brown bears ursus
   arctos.
-\newblock \emph{Oecologia}, 148\penalty0 (2):\penalty0 356, 2006.
-\newblock \doi{10.1007/s00442-006-0384-5}.
+\newblock Oecologia 148:356.
 
-\bibitem[Storfer and Sih(1998)]{storfer_1998}
-Andrew Storfer and Andrew Sih.
+\bibitem[{Storfer and Sih(1998)}]{storfer_1998}
+Storfer, A., and A.~Sih. 1998.
 \newblock Gene flow and ineffective antipredator behavior in a stream-breeding
   salamander.
-\newblock \emph{Evolution}, 52\penalty0 (2):\penalty0 558--565, 1998.
-\newblock \doi{10.1111/j.1558-5646.1998.tb01654.x}.
+\newblock Evolution 52:558--565.
 
-\bibitem[Tazzyman and Bonhoeffer(2014)]{tazzyman_2014}
-Samuel~J. Tazzyman and Sebastian Bonhoeffer.
+\bibitem[{Tazzyman and Bonhoeffer(2014)}]{tazzyman_2014}
+Tazzyman, S.~J., and S.~Bonhoeffer. 2014.
 \newblock Plasmids and evolutionary rescue by drug resistance.
-\newblock \emph{Evolution}, 68\penalty0 (7):\penalty0 2066--2078, 2014.
-\newblock \doi{10.1111/evo.12423}.
+\newblock Evolution 68:2066--2078.
 
-\bibitem[Tomasini and Peischl(2018)]{tomasini_2018}
-Matteo Tomasini and Stephan Peischl.
+\bibitem[{Tomasini and Peischl(2018)}]{tomasini_2018}
+Tomasini, M., and S.~Peischl. 2018.
 \newblock Establishment of locally adapted mutations under divergent selection.
-\newblock \emph{Genetics}, 209\penalty0 (3):\penalty0 885--895, 2018.
-\newblock \doi{10.1534/genetics.118.301104}.
+\newblock Genetics 209:885--895.
 
-\bibitem[Tomasini and Peischl(2019)]{tomasini_2019}
-Matteo Tomasini and Stephan Peischl.
+\bibitem[{Tomasini and Peischl(2019)}]{tomasini_2019}
+---{}---{}---. 2019.
 \newblock When does gene flow facilitate evolutionary rescue?
-\newblock \emph{bioRxiv}, 2019.
-\newblock \doi{10.1101/622142}.
+\newblock bioRxiv .
 
-\bibitem[Turgeon and Kramer(2012)]{turgeon_2012}
-Katrine Turgeon and Donald~L. Kramer.
+\bibitem[{Turgeon and Kramer(2012)}]{turgeon_2012}
+Turgeon, K., and D.~L. Kramer. 2012.
 \newblock Compensatory immigration depends on adjacent population size and
   habitat quality but not on landscape connectivity.
-\newblock \emph{Journal of Animal Ecology}, 81\penalty0 (6):\penalty0
-  1161--1170, 2012.
-\newblock \doi{10.1111/j.1365-2656.2012.01990.x}.
+\newblock Journal of Animal Ecology 81:1161--1170.
 
-\bibitem[Uecker(2017)]{uecker_2017}
-Hildegard Uecker.
+\bibitem[{Uecker(2017)}]{uecker_2017}
+Uecker, H. 2017.
 \newblock Evolutionary rescue in randomly mating, selfing, and clonal
   populations.
-\newblock \emph{Evolution}, 71\penalty0 (4):\penalty0 845--858, 2017.
-\newblock \doi{10.1111/evo.13191}.
+\newblock Evolution 71:845--858.
 
-\bibitem[Uecker and Hermisson(2016)]{uecker_2015}
-Hildegard Uecker and Joachim Hermisson.
+\bibitem[{Uecker and Hermisson(2016)}]{uecker_2015}
+Uecker, H., and J.~Hermisson. 2016.
 \newblock The role of recombination in evolutionary rescue.
-\newblock \emph{Genetics}, 202\penalty0 (2):\penalty0 721--732, 2016.
-\newblock \doi{10.1534/genetics.115.180299}.
+\newblock Genetics 202:721--732.
 
-\bibitem[Uecker et~al.(2014)Uecker, Otto, and Hermisson]{uecker_2014}
-Hildegard Uecker, Sarah~P. Otto, and Joachim Hermisson.
+\bibitem[{Uecker et~al.(2014)Uecker, Otto, and Hermisson}]{uecker_2014}
+Uecker, H., S.~P. Otto, and J.~Hermisson. 2014.
 \newblock Evolutionary rescue in structured populations.
-\newblock \emph{The American Naturalist}, 183\penalty0 (1):\penalty0 E17--E35,
-  2014.
-\newblock \doi{10.1086/673914}.
+\newblock The American Naturalist 183:E17--E35.
 
-\bibitem[Vander~Wal et~al.(2012)Vander~Wal, Garant, Festa-Bianchet, and
-  Pelletier]{vanderwal_2012}
-E.~Vander~Wal, D.~Garant, M.~Festa-Bianchet, and F.~Pelletier.
+\bibitem[{Vander~Wal et~al.(2012)Vander~Wal, Garant, Festa-Bianchet, and
+  Pelletier}]{vanderwal_2012}
+Vander~Wal, E., D.~Garant, M.~Festa-Bianchet, and F.~Pelletier. 2012.
 \newblock Evolutionary rescue in vertebrates: evidence, applications and
   uncertainty.
-\newblock \emph{Philosophical Transactions of the Royal Society B: Biological
-  Sciences}, 368\penalty0 (1610):\penalty0 20120090--20120090, 2012.
-\newblock \doi{10.1098/rstb.2012.0090}.
+\newblock Philosophical Transactions of the Royal Society B: Biological
+  Sciences 368:20120090--20120090.
 
-\bibitem[Vuilleumier et~al.(2010)Vuilleumier, Goudet, and
-  Perrin]{vuilleumier_2010}
-S.~Vuilleumier, J.~Goudet, and N.~Perrin.
+\bibitem[{Vuilleumier et~al.(2010)Vuilleumier, Goudet, and
+  Perrin}]{vuilleumier_2010}
+Vuilleumier, S., J.~Goudet, and N.~Perrin. 2010.
 \newblock Evolution in heterogeneous populations: From migration models to
   fixation probabilities.
-\newblock \emph{Theoretical Population Biology}, 78\penalty0 (4):\penalty0 250
-  -- 258, 2010.
-\newblock \doi{https://doi.org/10.1016/j.tpb.2010.08.004}.
+\newblock Theoretical Population Biology 78:250 -- 258.
 
-\bibitem[Wilson et~al.(2017{\natexlab{a}})Wilson, Pennings, and
-  Petrov]{wilson_2018}
-Benjamin~A. Wilson, Pleuni~S. Pennings, and Dmitri~A. Petrov.
+\bibitem[{Wilson et~al.(2017{\natexlab{\emph{a}}})Wilson, Pennings, and
+  Petrov}]{wilson_2018}
+Wilson, B.~A., P.~S. Pennings, and D.~A. Petrov. 2017{\natexlab{\emph{a}}}.
 \newblock Soft selective sweeps in evolutionary rescue.
-\newblock \emph{Genetics}, 205\penalty0 (4):\penalty0 1573--1586,
-  2017{\natexlab{a}}.
-\newblock \doi{10.1534/genetics.116.191478}.
+\newblock Genetics 205:1573--1586.
 
-\bibitem[Wilson et~al.(2017{\natexlab{b}})Wilson, McKellar, Reudink, Marra, and
-  Ratcliffe]{wilson_2017}
-Scott Wilson, Ann~E. McKellar, Matthew~W. Reudink, Peter~P. Marra, and
-  Laurene~M. Ratcliffe.
+\bibitem[{Wilson et~al.(2017{\natexlab{\emph{b}}})Wilson, McKellar, Reudink,
+  Marra, and Ratcliffe}]{wilson_2017}
+Wilson, S., A.~E. McKellar, M.~W. Reudink, P.~P. Marra, and L.~M. Ratcliffe.
+  2017{\natexlab{\emph{b}}}.
 \newblock Density-dependent immigration promotes population stability in a
   long-distance migratory bird.
-\newblock \emph{Population Ecology}, 59\penalty0 (2):\penalty0 169--178,
-  2017{\natexlab{b}}.
-\newblock \doi{10.1007/s10144-017-0582-5}.
+\newblock Population Ecology 59:169--178.
 
-\bibitem[Yamamichi and Miner(2015)]{yamamichi_2015}
-Masato Yamamichi and Brooks~E. Miner.
+\bibitem[{Yamamichi and Miner(2015)}]{yamamichi_2015}
+Yamamichi, M., and B.~E. Miner. 2015.
 \newblock Indirect evolutionary rescue: prey adapts, predator avoids
   extinction.
-\newblock \emph{Evolutionary Applications}, 8\penalty0 (8):\penalty0 787--795,
-  2015.
-\newblock \doi{10.1111/eva.12295}.
+\newblock Evolutionary Applications 8:787--795.
 
 \end{thebibliography}

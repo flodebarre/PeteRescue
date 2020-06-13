@@ -1,46 +1,47 @@
 This is BibTeX, Version 0.99d (TeX Live 2019)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: main.aux
-The style file: plainnat.bst
+The style file: amnatnatbib.bst.bst
 Database file #1: dispersal.bib
-You've used 79 entries,
-            2773 wiz_defined-function locations,
-            1117 strings with 21262 characters,
-and the built_in function-call counts, 41460 in all, are:
-= -- 3783
-> -- 2540
-< -- 39
-+ -- 857
-- -- 777
-* -- 3793
-:= -- 6469
-add.period$ -- 312
-call.type$ -- 79
-change.case$ -- 495
-chr.to.int$ -- 78
-cite$ -- 158
-duplicate$ -- 1616
-empty$ -- 3193
-format.name$ -- 906
-if$ -- 8578
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+You've used 78 entries,
+            3251 wiz_defined-function locations,
+            1099 strings with 19296 characters,
+and the built_in function-call counts, 49708 in all, are:
+= -- 4160
+> -- 2533
+< -- 38
++ -- 870
+- -- 771
+* -- 3642
+:= -- 8112
+add.period$ -- 313
+call.type$ -- 78
+change.case$ -- 646
+chr.to.int$ -- 77
+cite$ -- 78
+duplicate$ -- 3447
+empty$ -- 3446
+format.name$ -- 1025
+if$ -- 9844
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 80
-newline$ -- 477
-num.names$ -- 316
-pop$ -- 785
+missing$ -- 716
+newline$ -- 394
+num.names$ -- 312
+pop$ -- 1347
 preamble$ -- 1
-purify$ -- 417
+purify$ -- 569
 quote$ -- 0
-skip$ -- 1251
+skip$ -- 978
 stack$ -- 0
-substring$ -- 1983
-swap$ -- 84
+substring$ -- 2676
+swap$ -- 1576
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 864
+type$ -- 699
 warning$ -- 0
-while$ -- 348
+while$ -- 344
 width$ -- 0
-write$ -- 1178
+write$ -- 1013
