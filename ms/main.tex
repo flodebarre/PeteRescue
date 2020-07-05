@@ -67,6 +67,27 @@
 \newcommand{\chg}[1]{\textcolor{change}{#1}}
 
 
+%%% Fix for lineno and align
+\newcommand*\patchAmsMathEnvironmentForLineno[1]{%
+	\expandafter\let\csname old#1\expandafter\endcsname\csname #1\endcsname
+	\expandafter\let\csname oldend#1\expandafter\endcsname\csname end#1\endcsname
+	\renewenvironment{#1}%
+	{\linenomath\csname old#1\endcsname}%
+	{\csname oldend#1\endcsname\endlinenomath}}% 
+\newcommand*\patchBothAmsMathEnvironmentsForLineno[1]{%
+	\patchAmsMathEnvironmentForLineno{#1}%
+	\patchAmsMathEnvironmentForLineno{#1*}}%
+\AtBeginDocument{%
+	\patchBothAmsMathEnvironmentsForLineno{equation}%
+	\patchBothAmsMathEnvironmentsForLineno{align}%
+	\patchBothAmsMathEnvironmentsForLineno{flalign}%
+	\patchBothAmsMathEnvironmentsForLineno{alignat}%
+	\patchBothAmsMathEnvironmentsForLineno{gather}%
+	\patchBothAmsMathEnvironmentsForLineno{multline}%
+}
+%%%
+
+
 %%%APPENDIX
 \usepackage[toc,page,header]{appendix}
 \usepackage{minitoc}
@@ -220,13 +241,14 @@ We split the dispersal step into emigration and immigration. Emigration is unbia
 We denote by $\pi_{i}$ the bias for immigration to an old-habitat patch, where the index $i$ refers to the type of the dispersing individual ($w$ for wild type, $m$ for mutant). When $\pi_i<0$, individuals of type $i$ are relatively more likely to settle in new-habitat patches than in old-habitat patches; conversely, their bias is towards old-habitat patches when $\pi_i>0$. The case $\pi_i=0$ corresponds to unbiased dispersal. 
 For simplicity, we assume that dispersal is cost-free. While local population sizes may be affected by dispersal, the global size of the metapopulation remains the same before and after dispersal. \linelabel{R1-18}\linelabel{R2-14} Note that our methods can readily be applied to costly dispersal (including to costs that differ among wild-type and mutant individuals), and also to type- and habitat-dependent emigration probabilities. 
 
-The probability that an individual of type $i$ migrates from a patch of any habitat type into a patch of the new-habitat type is
+The probability that an individual of type $i$ migrates from a patch of any habitat type into a patch of the new-habitat type is\florence{TODO change into simple bias (remove m)}
 %
 \begin{equation}\label{eq:dispersal}
 \begin{aligned}
 m_i^{\text{new}} &= m\, \frac{1-f_{\text{old}}}{1-f_{\text{old}}+\chg{e^{\pi_i}} f_{\text{old}}} = 1-m_i^{\text{old}},\\
 \end{aligned}
 \end{equation}
+\florence{there seems to be a problem with the second equation, should be $m -$ no? }
 where, as defined above, $f_{\text{old}}$ is the frequency of old-habitat patches and $\pi_i$ the dispersal bias into old-habitat patches. The use of an exponential $e^{\pi_i}$ \linelabel{R1-19} ensures that the fraction in eq.~\eqref{eq:dispersal} is positive and between zero and one. For the ease of notation we will write $\widehat{\pi}_i=e^{\pi_i}$.\footnote{\florence{TODO remove hat notation}}
 
 Qualitatively, there are four possible combinations of dispersal biases. We name them according to the preferences of wild type and then of the mutant (e.g., ``Old-New'', wild-type individuals have a bias toward old-habitat patches, and mutant individuals toward new-habitat patches). We add to these four dispersal schemes the case of unbiased dispersal. Fig.~\ref{fig:disp_schemes} provides an overview of the different schemes, together with the parameter values used in the numerical simulations \footnote{(note that all our results depend continuously on the dispersal parameters, so that varying any of the parameters will not result in a sudden change or discontinuity of the corresponding curves; in other words.).\florence{I am not sure whether this should be said somewhere, and where -- maybe discussion?}} 
@@ -306,19 +328,23 @@ We decompose our analysis into several steps of increasing complexity.
 \subsection*{Additional assumptions for the analytical part}
 We make a few additional assumptions in the analytical part of our work; these assumptions are relaxed in the stochastic simulations. 
 
-Our calculations assume that the subpopulations in old-habitat patches are always at carrying capacity, i.e.\ that there are always enough offspring that are produced to at least replace all the parents. We also consider that mutants are rare compared to wild-type individuals in old-habitat patches. Denoting by $\widetilde{N}_{i}^{k}$ the number of type-$i$ individuals in a $k$-habitat patch right after dispersal, then the expected number of successful offspring of mutant individuals in this old-habitat patch (i.e., of offspring that survive density regulation and become adults in the next generation) is 
+A key assumption to our mathematical analysis is that the mutant individuals are rare enough that their dynamics do not affect the wild-type population, at least during the establishment phase of the mutant lineage. The wild-type population sets a demographic context that affects mutants dynamics. The mathematical analysis therefore focuses on the population dynamics of the mutant population, considering the wild-type population as constant over time.\footnote{\florence{please check this is correct}}
+
+We assume that the subpopulations in old-habitat patches are always at carrying capacity, i.e.\ that there are always enough offspring that are produced to at least replace all the parents. Denoting by $\widetilde{N}_{i}^{k}$ the number of type-$i$ individuals in a $k$-habitat patch right after dispersal, then the expected number of successful offspring of mutant individuals in this old-habitat patch (i.e., of offspring that survive density regulation and become adults in the next generation) is 
 %
 \begin{equation}\label{eq:sold}
 K_{\text{old}}\, \frac{\omega^\text{old}_m \widetilde{N}^{\text{old}}_m}{\omega^\text{old}_w \widetilde{N}^{\text{old}}_w + \omega^\text{old}_m \widetilde{N}^{\text{old}}_m}
 %
 \approx K_{\text{old}}\, \frac{\omega^\text{old}_m \widetilde{N}^{\text{old}}_m}{\omega^\text{old}_w \widetilde{N}^{\text{old}}_w} 
 %
-= \left(1 + a_{\text{old}}\right) \widetilde{N}^{\text{old}}_m \, .
+\overset{\mathrm{def}}{=} \left(1 + a_{\text{old}}\right) \widetilde{N}^{\text{old}}_m \, .
 \end{equation}
 %
-The approximation results from the assumption that mutants are rare compared to wild-type individuals in old-habitat patches. Eq.~\eqref{eq:sold} defines the per-capita expected growth rate of mutants in old-habitat patches, $a_{\text{old}}$. For the analysis, we also further assume that the number of successful offspring of mutant individuals is Poisson distributed, with mean $1+ a_{\text{old}}$. 
+The approximation results from the assumption that mutants are rare compared to wild-type individuals in old-habitat patches. Eq.~\eqref{eq:sold} defines the per-capita expected growth rate of mutants in old-habitat patches, $a_{\text{old}}$. It depends on $\widetilde{N}^{\text{old}}_w$, the size of the local wild-type population right after dispersal, which is calculated in Section~\ref{sec:app:modeldyn} of the Supplementary Information (SI) (Eq.~\eqref{Seq:Ntildeold}).
 
-\hl{The sign of this local growth rate depends on the value of $\widetilde{N}^{\text{old}}_w$, the size of the local wild-type population right after dispersal. Mutants are less fecund that wild-type individuals in old-habitat patches ($\omega^\text{old}_m < \omega^\text{old}_w$), yet the number of mutants can increase in old-habitat patches if $\widetilde{N}^{\text{old}}_w$ is low enough. In this case indeed, the population is far from carrying capacity, and the offspring of all types of individuals can make it to the next generation. Competition is fiercer as carrying capacity is nearer. }\footnote{\florence{I think this is more Results than Model}}. \linelabel{R1-14}The population dynamics of the wild type are analyzed explicitly in Section~\ref{sec:app:modeldyn} of the Supplementary Information (SI); formulas for $a_{\text{old}}$ are given in eq.~\ref{Seq:s_old}.
+\st{For the analysis, we also further assume that the number of successful offspring of mutant individuals is Poisson distributed, with mean $1+ a_{\text{old}}$. }\florence{com eback to this}
+
+%\hl{The sign of this local growth rate depends on the value of $\widetilde{N}^{\text{old}}_w$, the size of the local wild-type population right after dispersal. Mutants are less fecund that wild-type individuals in old-habitat patches ($\omega^\text{old}_m < \omega^\text{old}_w$), yet the number of mutants can increase in old-habitat patches if $\widetilde{N}^{\text{old}}_w$ is low enough. In this case indeed, the population is far from carrying capacity, and the offspring of all types of individuals can make it to the next generation. Competition is fiercer as carrying capacity is nearer. }\footnote{\florence{I think this is more Results than Model}}. \linelabel{R1-14}The population dynamics of the wild type are analyzed explicitly in Section~\ref{sec:app:modeldyn} of the Supplementary Information (SI).
 
 In new-habitat patches, on the contrary, we assume that population size remains much lower than carrying capacity, so that all offspring make it to the next generation (no regulation is necessary after reproduction).\footnote{\florence{I am getting rid of notation $r$}} The expected number of successful offspring of mutant individuals in a new-habitat patch, given that there are $\widetilde{N}^{\text{new}}_m$ mutants in the patch right after dispersal, is 
 %
@@ -382,16 +408,17 @@ The dynamics of the mutant population can be described by a two-type branching p
 where the rows denote the parent locations, and the columns the patch type of the successful offspring. 
 For example, the top-left entry is the probability for the parent to stay in an old-habitat patch ($1-m_m^{\text{new}}$, see eq.\eqref{eq:dispersal}) times the average number of successful offspring in these patches \linelabel{R2-26}(see Section~\ref{sec:app:modeldyn} in SI for the derivation of $a_{\text{old}}$ at the wild-type equilibrium). The other entries are obtained analogously.
 
-\linelabel{R1-24}The survival probability of this multi-type branching process, $\varphi_{k}$ with $k$ indicating the initial habitat type of the mutant, is then given by the unique positive solution of the following system of equations \citep[see][Chapters 5.3 and 5.6]{haccou_book}
+\linelabel{R1-24}We denote by $\varphi_{\text{old}}$ (resp. $\varphi_{\text{new}}$) the probability of establishment of this two-type branching process when the mutant is initially located in a old- (resp. new-) habitat patch. This probability is computed by considering all possible ways of going extinct: the initial individual having $j$ successful offspring in a patch of type $k$, but all lineages descending from these $j$ offspring eventually go extinct; then summing over $k$ and $j$. The establishment probabilities $\varphi_{\text{old}}$ and $\varphi_{\text{new}}$ are then given by the unique positive solution of the following system of equations \citep[see][Chapters 5.3 and 5.6]{haccou_book}:
+%
 \begin{equation}\label{eq:ext_prob}
 	\begin{aligned}
-		1-\varphi_{\text{old}} &= \sum_{j=0}^{\infty}\left( \mathbf{P}(j \text{ offspring in old habitat})(1-\varphi_{\text{old}})^j \right. \\
-		&\qquad \qquad \qquad \left.+ \mathbf{P}(j \text{ offspring in new habitat})(1-\varphi_{\text{new}})^j\right)\\
+		1-\varphi_{\text{old}} &= \sum_{j=0}^{\infty}\left( \mathbf{P}(j \text{ successful offspring in old habitat})(1-\varphi_{\text{old}})^j \right. \\
+		&\qquad \qquad \qquad \left.+ \mathbf{P}(j \text{successful offspring in new habitat})(1-\varphi_{\text{new}})^j\right)\\
 		&=\exp\left[-\left(1-m^{\text{old}\to \text{new}}_m\right)(1+a_{\text{old}})\varphi_{\text{old}} - m^{\text{old}\to \text{new}}_m (1+a_{\text{new}}) \varphi_{\text{new}}\right]\, ,   \\
 		1-\varphi_{\text{new}} &= \exp\left[-m^{\text{new}\to \text{old}}_m(1+a_{\text{old}})\varphi_{\text{old}} - \left(1-m^{\text{new}\to \text{old}}_m\right) (1+a_{\text{new}}) \varphi_{\text{new}}\right]\, .
 	\end{aligned}
 \end{equation}
-Intuitively the left hand side, the extinction probability, equals the sum over all possible scenarios of the trajectories towards extinction, e.g. the initial individual having $j$ offspring in a patch of type $k$, old or new, and all of these $j$ offspring becoming extinct ($(1-\varphi_{\text{k}})^j$). Unfortunately, a general analytical solution to these equations is not accessible, but they can be solved numerically. For weak selection and (potentially) weak dispersal -- i.e. $a_{\text{old}},a_{\text{new}},m\ll 1$ needs to hold for at least two of the three parameters -- an approximation is available: see for example~\citet[Theorem~5.6]{haccou_book} for the general theory and \citet{tomasini_2018} for an application in a similar setting. The detailed derivation is presented in the SI, Section~S2. We find
+This system of equations can be solved numerically. An analytical approximate solution is available in the case of weak selection and (potentially) weak dispersal (i.e. $a_{\text{old}},a_{\text{new}},m\ll 1$ needs to hold for at least two of the three parameters); see for example~\citet[Theorem~5.6]{haccou_book} for the general theory and \citet{tomasini_2018} for an application in a similar setting. The detailed derivation is presented in the SI, Section~\ref{sec:approxestabproba}. We find
 \begin{equation}\label{eq:estab_approx}
 	\begin{aligned}
 		\varphi_{\text{old}} &\approx \qquad \quad \; \; \; \; a_{\text{old}}&+ & \quad a_{\text{old}} \frac{\left(1-f_{\text{old}}+\widehat{\pi}_m f_{\text{old}}\right)}{\sqrt{C}}(a_{\text{old}}-a_{\text{new}}) \\
@@ -759,118 +786,96 @@ PC and FD received funding from the Agence Nationale de la Recherche (ANR-14-ACH
 \setcounter{table}{0}
 
 \section{Deriving the model dynamics \label{sec:app:modeldyn}}
-\linelabel{test}In this section we provide the mathematical \chg{details} of the model that is verbally described in the main text. We start by deriving the population dynamics of the wild type \chg{when alone} in both patch types. This will allow us to compute the local growth rate of the mutant \chg{when rare} in old-habitat patches, $a_{\text{old}}$.  
+\linelabel{test}In this section we provide the mathematical details of the model that is verbally described in the main text. We start by deriving the population dynamics when only the wild type is present. This will allow us to compute the local growth rate of a rare mutant.  
 
-Before we go into the details of the computation, we recall the form of the dispersal rates. For a wild-type individual to disperse to a new-habitat patch, this probability is given by
+Before we go into the details of the computation, we recall the form of the dispersal rates. A dispersing wild-type individual immigrates to a new-habitat patch with probability
 
 \begin{equation}\label{Seq:dispersal_rates_old}
-m_w^{\text{new}} = m\, \frac{1-f_{\text{old}}}{1-f_{\text{old}} + \widehat{\pi}_w f_{\text{old}}}\, ,
+\mu_w^{\text{new}} = \frac{1-f_{\text{old}}}{1-f_{\text{old}} + e^{\pi_w} f_{\text{old}}} = 1 - \mu_w^{\text{old}} \, ,
 \end{equation}
 %
-where $m$ denotes the emigration probability, $f_{\text{old}}$ the frequency of old-habitat patches and $\widehat{\pi}_w$ the transformed wild-type bias towards old-habitat patches.
-Analogously, the probability for a wild-type individual \chg{to emigrate and} to move to an old-habitat patch reads
-%
-\begin{equation}\label{Seq:dispersal_rate_new}
-m_w^{\text{old}} = m\, \frac{\widehat{\pi}_w f_{\text{old}}}{1-f_{\text{old}} + \widehat{\pi}_w f_{\text{old}}}\, .
-\end{equation}
+where $f_{\text{old}}$ is the frequency of old-habitat patches and $\pi_w$ is the wild-type bias towards old-habitat patches. The complement, $\mu_w^{\text{old}}$, is the probability that the dispersing wild-type individual instead immigrates into an old-habitat patch. 
 
 All the subsequent computations can be checked with a symbolic programming language (e.g. \textit{Mathematica}). A \textit{Mathematica} notebook is deposited on Gitlab\footnote{\url{https://gitlab.com/pczuppon/evolutionary\_rescue\_and\_dispersal}}.
 
 \subsection*{Stationary wild-type population sizes}
-We derive the (deterministic) stationary population sizes of the wild-type in both patch types. These values are denoted by $\widehat{N}_w^{k}$, where $k$ corresponds to the patch type (old or new). In old-patch habitats we assume that the population is always at carrying capacity. Therefore, we have $\widehat{N}_w^{\text{old}} = K_{\text{old}}$.
-
-In new-habitat patches, the stationary value is given by the solution of the following equation:
-
-\begin{equation}\label{Seq:wt_deme2}
-\begin{aligned}
-\widehat{N}_w^{\text{new}} &= \left(1-m + m\frac{(1-f_{\text{old}})}{(1-f_{\text{old}}+\widehat{\pi}_w f_{\text{old}})} \frac{(1-f_{\text{old}})M}{(1-f_{\text{old}})M}\right)(1-r)\widehat{N}_w^{\text{new}} \\
-&\qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad + m_w^{\text{new}} \frac{f_{\text{old}} M}{(1-f_{\text{old}})M} (1-r)  \widehat{N}_w^{\text{old}}\\
-&= \left(1-m+m_w^{\text{new}} \right)(1-r)\widehat{N}_w^{\text{new}} + m_w^{\text{new}} \left(\frac{f_{\text{old}}}{1-f_{\text{old}}}\right) (1-r)  K_{\text{old}},
-\end{aligned}
-\end{equation}
+We denote by $\widehat{N}_w^{\text{old}}$ and $\widehat{N}_w^{\text{new}}$ the deterministic stationary population sizes of the wild type in old- and new-habitat patches. We assume that the population is always at carrying capacity in old-habitat patches, so that $\widehat{N}_w^{\text{old}} = K_{\text{old}}$. We now compute $\widehat{N}_w^{\text{new}}$ recursively: it is given by the solution of the following equation: 
 %
-which simplifies to
+\begin{equation}\label{Seq:wt_deme2}
+\widehat{N}_w^{\text{new}} = \left(1-m + m \mu_w^{\text{new}}  \frac{(1-f_{\text{old}})M}{(1-f_{\text{old}})M}\right)  \omega_w^{\text{new}}  \widehat{N}_w^{\text{new}}   + m \mu_w^{\text{new}} \frac{f_{\text{old}} M}{(1-f_{\text{old}})M} \omega_w^{\text{new}}  \widehat{N}_w^{\text{old}}, \nonumber 
+\end{equation}
+where the first term on the right-hand side corresponds to individuals born in a new-habitat patch and staying in it or migrating and landing in a new-habitat patch, and the second term corresponds to individuals born in an old-habitat patch and migrating to a new-habitat patch. Simplifying, using eq.~\eqref{Seq:dispersal_rates_old} to replace $\mu_w^{\text{new}} $ and replacing $\widehat{N}_w^{\text{old}}$ by $K_{\text{old}}$ , we obtain
 %
 \begin{equation}
-\widehat{N}_w^{\text{new}} = \frac{m (1-r) f_{\text{old}}  K_{\text{old}}}{m f_{\text{old}} \widehat{\pi}_w + r(1-f_{\text{old}}+f_{\text{old}}\widehat{\pi}_w -m \widehat{\pi}_w f_{\text{old}})}\ .
+\widehat{N}_w^{\text{new}} = \frac{m \omega_w^{\text{new}} f_{\text{old}}  K_{\text{old}}}{
+1-f_{\text{old}} + e^{\pi_w} f_{\text{old}} - \omega_w^{\text{new}} (1-f_{\text{old}} + e^{\pi_w} f_{\text{old}} (1-m))
+}
+\ .
 \end{equation}
 %
-Since we assume density regulation, this value cannot be larger than $K_{\text{new}}$, the carrying capacity of new-habitat patches. Hence, we find
+This value cannot be larger than $K_{\text{new}}$, the carrying capacity of new-habitat patches. So, 
 \begin{equation}\label{Seq:Nhatnew}
-\widehat{N}_w^{\text{new}} =\left\{ \begin{array}{ll} 
-K_{\text{new}}, & \text{if }\dfrac{m (1-r) f_{\text{old}}  K_{\text{old}}}{m f_{\text{old}} \widehat{\pi}_w + r(1-f_{\text{old}}+f_{\text{old}}\widehat{\pi}_w -m \widehat{\pi}_w f_{\text{old}})}\geq K_{\text{new}}; \\
-%
-\dfrac{m (1-r) f_{\text{old}} K_{\text{old}}
-}{m f_{\text{old}} \widehat{\pi}_w + r(1-f_{\text{old}}+f_{\text{old}}\widehat{\pi}_w -m \widehat{\pi}_w f_{\text{old}})}, & \text{otherwise}.
-\end{array}\right.
+\widehat{N}_w^{\text{new}} = \min\left(K_{\text{new}},  \frac{m \omega_w^{\text{new}} f_{\text{old}}  K_{\text{old}}}{
+	1-f_{\text{old}} + \widehat{\pi}_w f_{\text{old}} - \omega_w^{\text{new}} (1-f_{\text{old}} + \widehat{\pi}_w f_{\text{old}} (1-m))
+} \right).
 \end{equation} 
 
 \subsection*{Wild-type population sizes after dispersal}
-In order to explicitly compute the growth rate of the mutant in old-habitat patches, we need an analytical expression for the number of wild-type individuals after the dispersal step. Later on, in the approximation of the probability of adaptation, we also use the number of wild-type individuals in new-habitat patches before reproduction. We denote these values by $\widetilde{N}_w^k$, where $k$ corresponds to the habitat type (old or new). These are given as the solutions\florence{solution sounds like there is something to solve, which does not seem to be the case. Am I missing something?} to the following equations
 
-\begin{equation}
-\begin{aligned}
-\widetilde{N}_w^{\text{old}} &= \left(1-m + m\, \frac{\widehat{\pi}_w f_{\text{old}}}{(1-f_{\text{old}}+\widehat{\pi}_w f_{\text{old}})}\,  \frac{f_{\text{old}}M}{f_{\text{old}}M} \right) \widehat{N}_w^{\text{old}} + m_w^{\text{old}} \frac{(1-f_{\text{old}})M}{f_{\text{old}}M}\widehat{N}_w^{\text{new}}\ , \\
-\widetilde{N}_w^{\text{new}} &= \left(1-m + m\frac{(1-f_{\text{old}})}{1-f_{\text{old}}+\pi f_{\text{old}}} \frac{(1-f_{\text{old}})M}{(1-f_{\text{old}})M}\right)\widehat{N}_w^{\text{new}} + m_w^{\text{new}} \frac{f_{\text{old}} M}{(1-f_{\text{old}})M} \widehat{N}_w^{\text{old}}\ .
-\end{aligned}
-\end{equation}
-Using $\widehat{N}_w^{\text{old}}=K_{\text{old}}$ and in the case of $\widehat{N}_w^{\text{new}} = K_{\text{new}}$ this reduces to
-\begin{equation}\label{Seq:wt_eq1}
-\begin{aligned}
-\widetilde{N}_w^{\text{old}} &= \frac{(1-f_{\text{old}})m\widehat{\pi}_w K_{\text{new}} + (1-m-f_{\text{old}}(1-m-\widehat{\pi}_w))K_{\text{old}}}{1-f_{\text{old}}+\widehat{\pi}_w f_{\text{old}}} \\ 
-\widetilde{N}_w^{\text{new}}&= \frac{(1-f_{\text{old}}+f_{\text{old}}\widehat{\pi}_w (1-m))K_{\text{new}} + m f_{\text{old}} K_{\text{old}}}{1-f_{\text{old}}+\widehat{\pi}_w f_{\text{old}}}\ .
-\end{aligned}
-\end{equation}
+We denote by $\widetilde{N}_w^{\text{old}}$ and $\widetilde{N}_w^{\text{new}}$ the numbers of wild-type individuals \textit{after the dispersal step}. These quantities are needed to explicitly compute the growth rate of the mutant in old-habitat patches, and to approximate the probability of adaptation. They are given by
 %
-If on the other hand $\widehat{N}_w^{\text{new}}<K_{\text{new}}$ holds, using eq.~\eqref{Seq:Nhatnew}\footnote{\florence{please check the eqref I wrote}}, we obtain\florence{separate into 2 eqs for more precise reference}
-\begin{equation}\label{Seq:wt_eq2}
-\begin{aligned}
-\widetilde{N}_w^{\text{old}} &= \left(1-m+m_w^{\text{old}} \right)K_{\text{old}}\\
-&\qquad \qquad + \left(m_w^{\text{old}} \frac{m (1-r) f_{\text{old}}}{m f_{\text{old}} \widehat{\pi}_w + r(1-f_{\text{old}}+f_{\text{old}}\widehat{\pi}_w -m \widehat{\pi}_w f_{\text{old}})}\left(\frac{1-f_{\text{old}}}{f_{\text{old}}}\right)\right) K_{\text{old}} \\
-%&= \left(1-m_1+\frac{m_1 m_2 (1-r)}{(1-(1-m_2)(1-r))}\right) K \\ 
-&= \frac{m \widehat{\pi}_w f_{\text{old}} + r (1-m) (1-f_{\text{old}} (1-\widehat{\pi}_w))}{m \widehat{\pi}_w f_{\text{old}} + r (1-f_{\text{old}} + \widehat{\pi}_w f_{\text{old}} (1-m))} K_{\text{old}}\ \\
-&= \left(1 - \frac{r m (1-f_{\text{old}}) }{m \widehat{\pi}_w f_{\text{old}} + r (1-f_{\text{old}} + \widehat{\pi}_w f_{\text{old}} (1-m))} \right) K_{\text{old}}\, ,\\
-\widetilde{N}_w^{\text{new}} &= \left(1-m+m_w^{\text{new}}\right) \frac{m (1-r) f_{\text{old}} }{m f_{\text{old}} \widehat{\pi}_w + r(1-f_{\text{old}}+f_{\text{old}}\widehat{\pi}_w -m \widehat{\pi}_w f_{\text{old}})}\, K_{\text{old}}\\
-&\qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad \qquad + m_w^{\text{new}} \frac{f_{\text{old}}}{(1-f_{\text{old}})} K_{\text{old}}\\
-%&= \left(\frac{(1-m_2) m_1 (1-r) f }{(1-f)(1-\left(1-m_2 \right)(1-r))} + \frac{m_1 f}{(1-f)}\right) K\\
-&= \frac{m f_{\text{old}}}{m \widehat{\pi}_w f_{\text{old}} + r(1- f_{\text{old}} + \widehat{\pi}_w f_{\text{old}}  (1-m)) }\, K_{\text{old}}\, .
-\end{aligned}
-\end{equation}
+\begin{subequations}\label{Seq:Ntilde}
+\begin{align}
+\widetilde{N}_w^{\text{old}} &= \left(1-m + m\, \mu_w^{\text{old}} \,  \frac{f_{\text{old}}M}{f_{\text{old}}M} \right) \widehat{N}_w^{\text{old}} + m \mu_w^{\text{old}} \frac{(1-f_{\text{old}})M}{f_{\text{old}}M}\widehat{N}_w^{\text{new}}\ , \label{Seq:Ntildeold}\\
+%
+%
+\widetilde{N}_w^{\text{new}} &= \left(1-m + m \mu_w^{\text{new}} \frac{(1-f_{\text{old}})M}{(1-f_{\text{old}})M}\right)\widehat{N}_w^{\text{new}} + m \mu_w^{\text{new}} \frac{f_{\text{old}} M}{(1-f_{\text{old}})M} \widehat{N}_w^{\text{old}}\ .\label{Seq:Ntildenew}
+\end{align}
+\end{subequations}
+%
+We then replace $\widehat{N}_w^{\text{old}}$ by $K_{\text{old}}$ (since old-habitat patches are assumed to be at carrying capacity after density regulation), and $\widehat{N}_w^{\text{new}}$ by the formula given in eq.~\eqref{Seq:Nhatnew}.
+
 
 \subsection*{Wild-type population sizes during the environmental change}
-\chg{Lastly, compute the (deterministic) wild-type population size over time during the environmental change. This value is used in the approximation of the probability of evolutionary rescue in eq.~\eqref{eq:evol_rescue} in the main text, more precisely to estimate the number of rescue mutants that appear during the deterioration of patches.} 
+Lastly, compute the (deterministic) wild-type population size over time during the environmental change. This value is used in the approximation of the probability of evolutionary rescue in eq.~\eqref{eq:evol_rescue} in the main text, more precisely to estimate the number of rescue mutants that appear during the deterioration of patches.
 
-\chg{If a patch deteriorates its current population size is given by the carrying capacity of the old habitat, $K_{\text{old}}$. Subsequently, it is reduced by $(1-r)$, the fecundity of a single wild-type individual in a new-habitat patch. That is, neglecting dispersal for the moment, in generation $j$ after the degradation of a patch, we would have 
+At the moment a patch deteriorate, its population size is still given by the carrying capacity of the old habitat, $K_{\text{old}}$, but only each adult has now on average $\omega_{m}^{\text{new}}<1$ offspring. As the size of the local population decreases, there is not need for density regulation anymore. Neglecting dispersal for the moment, in generation $\tau$ after the degradation of a patch\footnote{\florence{is this just said/shown for the sake of pedagogy, or do you actually need this equation? If not, I suggest removing it.}} , we would have 
 	\begin{equation}
-	N_w^{\text{new}}(j) = K_{\text{old}}(1-r)^j
+	N_w^{\text{new}}(\tau) = K_{\text{old}}(\omega_w^{\text{new}})^{\tau}
 	\end{equation}
-	wild-type individuals in this patch. Including dispersal between the patches then results in the following number of wild-type individuals in a patch $i$ at time $j$, given that there are $k-1$ other new-habitat patches
+	wild-type individuals in this patch. Including dispersal between the patches then results in the following number of wild-type individuals in a patch $i$ at time $\tau$ post-degradation, given that there are $k-1$ other new-habitat patches
 	\begin{equation}
-	N_w^{i,k}(j) = (1-r)\left((1-m)N_w^{i,k}(j-1) + \frac{m_w^{\text{new}}}{k} (M-k) K_{\text{old}} + \frac{m_w^{\text{new}}}{k} \sum_{l=1}^k N_w^{l,k}(j-1) \right)\ .
+	N_w^{i,k}(\tau) = \omega_w^{\text{new}}\left((1-m)N_w^{i,k}(\tau-1) + \frac{m_w^{\text{new}}}{k} (M-k) K_{\text{old}} + \frac{m_w^{\text{new}}}{k} \sum_{l=1}^k N_w^{l,k}(\tau-1) \right)\ .
 	\end{equation}
-	The first term represents the remaining individuals after emigration, $(1-m)$, the second and third term are immigrants from old- and new-habitat patches (distributed equally among the $k$ new-habitat patches), respectively. 
-}
+	The first term represents the remaining individuals after emigration, the second and third term are immigrants from old- and new-habitat patches (distributed equally among the $k$ new-habitat patches), respectively. 
 
-\subsection*{The local growth rate $a_{\text{old}}$}
-As stated in eq.~\eqref{eq:sold} in the main text, we define the growth rate of a single mutant in the old habitat by
+\subsection*{The local per capita growth rate $a_{\text{old}}$}
+As stated in eq.~\eqref{eq:sold} in the main text, we define the per capita growth rate of rare mutant in the old habitat by
 \begin{equation}
-1 + a_{\text{old}} = K_{\text{old}}\, \dfrac{\omega^\text{old}_m}{\omega^\text{old}_w \widetilde{N}_w^{\text{old}}}\, .    
+1 + a_{\text{old}} = K_{\text{old}}\, \dfrac{\omega^\text{old}_m}{\omega^\text{old}_w \widetilde{N}_w^{\text{old}}}\, ,    
 \end{equation}
 %
-Having computed the number of wild-type individuals after dispersal in an old-habitat patch, $\widetilde{N}_w^{\text{old}}$, we can write the growth rate as follows
+where we replace $\widetilde{N}_w^{\text{old}}$ by the formula given in \eqref{Seq:Ntildeold}. 
+%Having computed the number of wild-type individuals after dispersal in an old-habitat patch, $\widetilde{N}_w^{\text{old}}$, we can write the growth rate as follows \florence{in which case would we have $\widehat{N}_w^{\text{new}} = K_{\text{new}}$ ?}
 
-\begin{equation}\label{Seq:s_old}
-a_{\text{old}} = \left\{ \begin{array}{ll}
-\dfrac{\omega^\text{old}_m K_{\text{old}}}{\omega^\text{old}_w \left(\frac{(1-f_{\text{old}})m\widehat{\pi}_w K_{\text{new}} + (1-m-f_{\text{old}}(1-m-\widehat{\pi}_w))K_{\text{old}}}{1-f_{\text{old}}+\widehat{\pi}_w f_{\text{old}}} \right)}\, - 1 , & \text{if } \widehat{N}_w^{\text{new}} = K_{\text{new}};  \\
-\dfrac{\omega^\text{old}_m}{\omega^\text{old}_w \left(1 - \frac{rm(1-f_{\text{old}})}{f_{\text{old}}m\widehat{\pi}_w + r(1-f_{\text{old}}+\widehat{\pi}_w f_{\text{old}}(1-m))}\right)}\, - 1 , & \text{otherwise}. 
-\end{array}
-\right.
+%\begin{equation}\label{Seq:s_old}
+%a_{\text{old}} = \left\{ \begin{array}{ll}
+%\dfrac{\omega^\text{old}_m K_{\text{old}}}{\omega^\text{old}_w \left(\frac{(1-f_{\text{old}})m\widehat{\pi}_w K_{\text{new}} + (1-m-f_{\text{old}}(1-m-\widehat{\pi}_w))K_{\text{old}}}{1-f_{\text{old}}+\widehat{\pi}_w f_{\text{old}}} \right)}\, - 1 , & \text{if } \widehat{N}_w^{\text{new}} = K_{\text{new}};  \\
+%\dfrac{\omega^\text{old}_m}{\omega^\text{old}_w \left(1 - \frac{rm(1-f_{\text{old}})}{f_{\text{old}}m\widehat{\pi}_w + r(1-f_{\text{old}}+\widehat{\pi}_w f_{\text{old}}(1-m))}\right)}\, - 1 , & \text{otherwise}. 
+%\end{array}
+%\right.
+%\end{equation}
+
+\subsection*{The local per capita growth rate $a_{\text{new}}$}
+In new-habitat patches, we assume that the carrying capacity $K_{\text{new}}$ is not reached during the establishment phase of the mutant. In other words, we assume that there is no density regulation in new-habitat patches. As a result, the local per capita growth rate of the mutant only depends on its fecundity: 
+%
+\begin{equation}
+1 + a_{\text{new}} = \omega_m^{\text{new}}.
 \end{equation}
 
-\subsection*{The local growth rate $a_{\text{new}}$}
-\chg{In new-habitat patches we assume that during the relevant phase of establishment of a rare mutant the carrying capacity $K_{\text{new}}$ is not reached. Then the growth rate of the mutant in these patches, $a_{\text{new}}$, is not affected by the different dispersal schemes.} 
+%\chg{In new-habitat patches we assume that during the relevant phase of establishment of a rare mutant the carrying capacity $K_{\text{new}}$ is not reached\footnote{\florence{This seems at odds with the commented out sentences just above}}. Then the growth rate of the mutant in these patches, $a_{\text{new}}$, is not affected by the different dispersal schemes.} 
 
-\chg{Of course there may be parameter configurations, typically high emigration rates $m$ and a bias of the wild type towards the new habitat ($\pi_w < 0$), where our assumption of density-independent reproduction is violated. Then our approximation and the numerical solution of eq.~\eqref{eq:ext_prob} in the main text strongly deviate from the simulation results (e.g. the New-New dispersal scheme in Fig.~\ref{fig:vary_m_est}(d)).}
+Of course, there may be parameter configurations, typically high emigration rates $m$ and a bias of the wild type towards the new habitat ($\pi_w < 0$), where our assumption of density-independent reproduction is violated. Then our approximation and the numerical solution of eq.~\eqref{eq:ext_prob} in the main text strongly deviate from the simulation results (e.g. the New-New dispersal scheme in Fig.~\ref{fig:vary_m_est}(d)).
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Establishment probability %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -879,12 +884,12 @@ a_{\text{old}} = \left\{ \begin{array}{ll}
 \renewcommand{\theequation}{B\arabic{equation}}
 \setcounter{equation}{0}  % reset counter 
 
-\section{Approximation of the establishment probability}
-We compute the survival probability \chg{of the lineage} of a single mutant starting either in an old- or in a new-habitat patch. We call this probability the establishment probability because it implies the successful establishment of a mutant population within the meta-population. It is denoted by $\varphi_k$ where the index $k$ indicates the initial habitat type of the mutant (old or new).
+\section{Approximation of the establishment probability\label{sec:approxestabproba}}
+We compute the survival probability of the lineage of a single mutant starting either in an old- or in a new-habitat patch. We call this probability the establishment probability because it implies the successful establishment of a mutant population within the metapopulation. It is denoted by $\varphi_k$, $k$ indicating the initial habitat type of the mutant (old or new).
 
-Our method is the same as used in \citet{tomasini_2018} with the exception that our growth rate in old-habitat patches, $a_{\text{old}}$, depends on the demography of the population. The method in general is based on the theory of multi-type branching processes, cf.~Chapter~5.5 in \citet{haccou_book}. For a detailed application of the theory we refer to the Supplementary Information of \citet{tomasini_2018}. 
+Our method is the same as the one used in \citet{tomasini_2018}, with the exception that our per capita growth rate in old-habitat patches, $a_{\text{old}}$, depends on the demography of the population. The method in general is based on the theory of multi-type branching processes, cf.~Chapter~5.5 in \citet{haccou_book}. We refer the reader to the Supplementary Information of \citet{tomasini_2018} for a detailed application of the theory. 
 
-We start by recalling the mean reproduction matrix of a mutant that gives the average number of offspring in a certain habitat, dependent on the habitat type in which the mutant resides. It is given as (see also eq.~\eqref{eq:mean_repro} in the main text)
+The mean reproduction matrix $\mathcal{M}$ of a mutant gives the average number of offspring in a certain habitat, dependent on the habitat type in which the mutant resides (see also eq.~\eqref{eq:mean_repro} in the main text):
 
 \begin{equation}\label{Seq:mean_repro}
 \mathcal{M} = \bordermatrix{ ~ & \text{old patch} & \text{new patch} \cr

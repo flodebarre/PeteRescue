@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.6.30)  13 JUN 2020 19:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.6.30)  5 JUL 2020 15:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1094,51 +1094,53 @@ Package: chapterbib 2010/09/18  v 1.17
 ) (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 83.
-LaTeX Font Info:    Try loading font information for FML+futm on input line 83.
-
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 104.
+LaTeX Font Info:    Try loading font information for FML+futm on input line 104
+.
 (/usr/local/texlive/2019/texmf-dist/tex/latex/fourier/fmlfutm.fd
 File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
 )
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 83.
-LaTeX Font Info:    Try loading font information for FMS+futm on input line 83.
-
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 104.
+LaTeX Font Info:    Try loading font information for FMS+futm on input line 104
+.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/fourier/fmsfutm.fd
 File: fmsfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FMS/futm.
 )
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 83.
-LaTeX Font Info:    Try loading font information for FMX+futm on input line 83.
-
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 104.
+LaTeX Font Info:    Try loading font information for FMX+futm on input line 104
+.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/fourier/fmxfutm.fd
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 83.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 83.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 104.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 104.
+
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Try loading font information for T1+futs on input line 83.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Try loading font information for T1+futs on input line 104.
+
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/fourier/t1futs.fd
 File: t1futs.fd 2004/03/02 Fontinst v1.926 font definitions for T1/futs.
@@ -1179,7 +1181,7 @@ e
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Info: Redefining \microtypecontext on input line 83.
+LaTeX Info: Redefining \microtypecontext on input line 104.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1194,7 +1196,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 \AtBeginShipoutBox=\box48
-Package hyperref Info: Link coloring ON on input line 83.
+Package hyperref Info: Link coloring ON on input line 104.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1204,9 +1206,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count175
 )
-LaTeX Info: Redefining \ref on input line 83.
-LaTeX Info: Redefining \pageref on input line 83.
-LaTeX Info: Redefining \nameref on input line 83.
+LaTeX Info: Redefining \ref on input line 104.
+LaTeX Info: Redefining \pageref on input line 104.
+LaTeX Info: Redefining \nameref on input line 104.
 
 (./main.out) (./main.out)
 \@outlinefile=\write5
@@ -1248,7 +1250,7 @@ Package minitoc(hints) Warning: W0023
 (minitoc(hints))                of loading the ``hyperref'' package.
 
 Package minitoc Info: I0025
-(minitoc)             PREPARING PARTTOCS FROM main.toc on input line 86.
+(minitoc)             PREPARING PARTTOCS FROM main.toc on input line 107.
 Package minitoc Info: I0033
 (minitoc)             Writing main.ptc1.
 \openout4 = `main.ptc1'.
@@ -1260,24 +1262,24 @@ Package minitoc Info: I0033
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
-LaTeX Font Info:    Try loading font information for FML+futmi on input line 97
-.
+LaTeX Font Info:    Try loading font information for FML+futmi on input line 11
+8.
 (/usr/local/texlive/2019/texmf-dist/tex/latex/fourier/fmlfutmi.fd
 File: fmlfutmi.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futmi.
 )
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 97.
+(Font)              scaled to size 11.03998pt on input line 118.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 97.
+(Font)              scaled to size 8.27998pt on input line 118.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 97.
+(Font)              scaled to size 6.43999pt on input line 118.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 97.
+(Font)              scaled to size 11.03998pt on input line 118.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 97.
+(Font)              scaled to size 8.27998pt on input line 118.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 97.
-LaTeX Font Info:    Try loading font information for U+msa on input line 97.
+(Font)              scaled to size 6.43999pt on input line 118.
+LaTeX Font Info:    Try loading font information for U+msa on input line 118.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -1285,7 +1287,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (/usr/local/texlive/2019/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 97.
+LaTeX Font Info:    Try loading font information for U+msb on input line 118.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1293,29 +1295,29 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 (/usr/local/texlive/2019/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 97.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 118.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 99.
+(Font)              scaled to size 10.07397pt on input line 120.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 99.
+(Font)              scaled to size 7.63599pt on input line 120.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 99.
+(Font)              scaled to size 5.51999pt on input line 120.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 99.
+(Font)              scaled to size 10.07397pt on input line 120.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 99.
+(Font)              scaled to size 7.63599pt on input line 120.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 99.
+(Font)              scaled to size 5.51999pt on input line 120.
  [1
 
 {/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 129.
-LaTeX Font Info:    Try loading font information for T1+cmss on input line 129.
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 150.
+LaTeX Font Info:    Try loading font information for T1+cmss on input line 150.
 
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/base/t1cmss.fd
@@ -1326,26 +1328,26 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <20.74> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 129.
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 150.
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <10> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 131.
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 152.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 132.
+(Font)              scaled to size 9.19998pt on input line 153.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 132.
+(Font)              scaled to size 6.99199pt on input line 153.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 132.
+(Font)              scaled to size 9.19998pt on input line 153.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 132.
+(Font)              scaled to size 6.99199pt on input line 153.
  [2]
-Overfull \hbox (43.35461pt too wide) in paragraph at lines 154--154
+Overfull \hbox (43.35461pt too wide) in paragraph at lines 175--175
 [][][]\T1/futs/m/n/9 (-20) https://royalsocietypublishing.org/doi/full/10.1098/
 rspb.2016.1690 , https://royalsocietypublishing.org/doi/abs/10.1098/rstb.2012.0
 089
  []
 
 [3] [4] [5] [6] [7]
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 229.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 250.
 
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/base/t1cmtt.fd
@@ -1357,43 +1359,46 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             See the microtype manual for details.
  [8]
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 237.
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 259.
  [9]
 <fig1.pdf, id=372, 357.71039pt x 351.57248pt>
 File: fig1.pdf Graphic file (type pdf)
 <use fig1.pdf>
-Package pdftex.def Info: fig1.pdf  used on input line 255.
+Package pdftex.def Info: fig1.pdf  used on input line 277.
 (pdftex.def)             Requested size: 234.8775pt x 230.84761pt.
 Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
-ine 290.
+ine 312.
  [10]
 [11 <./fig1.pdf>] [12] [13] [14] [15]
+
+LaTeX Warning: Reference `Seq:s_old' on page 16 undefined on input line 399.
+
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <8.3> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 388.
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 415.
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <6> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 388.
- [16] [17]
-<fig2a.pdf, id=490, 193.50192pt x 147.73393pt>
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 415.
+[16] [17]
+<fig2a.pdf, id=493, 193.50192pt x 147.73393pt>
 File: fig2a.pdf Graphic file (type pdf)
 <use fig2a.pdf>
-Package pdftex.def Info: fig2a.pdf  used on input line 426.
+Package pdftex.def Info: fig2a.pdf  used on input line 453.
 (pdftex.def)             Requested size: 234.8775pt x 179.32442pt.
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <7.6> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 427.
-<fig2b.pdf, id=491, 193.50192pt x 147.73393pt>
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 454.
+<fig2b.pdf, id=494, 193.50192pt x 147.73393pt>
 File: fig2b.pdf Graphic file (type pdf)
 <use fig2b.pdf>
-Package pdftex.def Info: fig2b.pdf  used on input line 431.
+Package pdftex.def Info: fig2b.pdf  used on input line 458.
 (pdftex.def)             Requested size: 234.8775pt x 179.32442pt.
-<fig2c.pdf, id=492, 193.50192pt x 147.73393pt>
+<fig2c.pdf, id=495, 193.50192pt x 147.73393pt>
 File: fig2c.pdf Graphic file (type pdf)
 <use fig2c.pdf>
-Package pdftex.def Info: fig2c.pdf  used on input line 436.
+Package pdftex.def Info: fig2c.pdf  used on input line 463.
 (pdftex.def)             Requested size: 234.8775pt x 179.32442pt.
-<fig2d.pdf, id=493, 193.50192pt x 147.73393pt>
+<fig2d.pdf, id=496, 193.50192pt x 147.73393pt>
 File: fig2d.pdf Graphic file (type pdf)
 <use fig2d.pdf>
-Package pdftex.def Info: fig2d.pdf  used on input line 441.
+Package pdftex.def Info: fig2d.pdf  used on input line 468.
 (pdftex.def)             Requested size: 234.8775pt x 179.32442pt.
  [18]
 
@@ -1413,90 +1418,90 @@ pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./fig2d.pdf): PDF inclusion:
  multiple pdfs with page group included in a single page
 >] [20]
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <9> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 466.
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 493.
  [21] [22]
-Underfull \hbox (badness 10000) in paragraph at lines 491--497
+Underfull \hbox (badness 10000) in paragraph at lines 518--524
 
  []
 
 [23]
-<fig3a.pdf, id=700, 188.57753pt x 149.76955pt>
+<fig3a.pdf, id=702, 188.57753pt x 149.76955pt>
 File: fig3a.pdf Graphic file (type pdf)
 <use fig3a.pdf>
-Package pdftex.def Info: fig3a.pdf  used on input line 504.
+Package pdftex.def Info: fig3a.pdf  used on input line 531.
 (pdftex.def)             Requested size: 234.8775pt x 186.55557pt.
-<fig3b.pdf, id=701, 188.57753pt x 149.77657pt>
+<fig3b.pdf, id=703, 188.57753pt x 149.77657pt>
 File: fig3b.pdf Graphic file (type pdf)
 <use fig3b.pdf>
-Package pdftex.def Info: fig3b.pdf  used on input line 509.
+Package pdftex.def Info: fig3b.pdf  used on input line 536.
 (pdftex.def)             Requested size: 234.8775pt x 186.56432pt.
-<fig3c.pdf, id=702, 188.57753pt x 149.76955pt>
+<fig3c.pdf, id=704, 188.57753pt x 149.76955pt>
 File: fig3c.pdf Graphic file (type pdf)
 <use fig3c.pdf>
-Package pdftex.def Info: fig3c.pdf  used on input line 514.
+Package pdftex.def Info: fig3c.pdf  used on input line 541.
 (pdftex.def)             Requested size: 234.8775pt x 186.55557pt.
-<fig3d.pdf, id=703, 188.57753pt x 149.77657pt>
+<fig3d.pdf, id=705, 188.57753pt x 149.77657pt>
 File: fig3d.pdf Graphic file (type pdf)
 <use fig3d.pdf>
-Package pdftex.def Info: fig3d.pdf  used on input line 519.
+Package pdftex.def Info: fig3d.pdf  used on input line 546.
 (pdftex.def)             Requested size: 234.8775pt x 186.56432pt.
 
 
-LaTeX Warning: Float too large for page by 2.00217pt on input line 524.
+LaTeX Warning: Float too large for page by 2.00217pt on input line 551.
 
-[24]
-<fig4a.pdf, id=720, 188.82043pt x 148.01599pt>
+[24] [25]
+<fig4a.pdf, id=731, 188.82043pt x 148.01599pt>
 File: fig4a.pdf Graphic file (type pdf)
 <use fig4a.pdf>
-Package pdftex.def Info: fig4a.pdf  used on input line 555.
+Package pdftex.def Info: fig4a.pdf  used on input line 582.
 (pdftex.def)             Requested size: 234.8775pt x 184.12514pt.
-<fig4b.pdf, id=721, 188.82043pt x 148.01599pt>
+<fig4b.pdf, id=732, 188.82043pt x 148.01599pt>
 File: fig4b.pdf Graphic file (type pdf)
 <use fig4b.pdf>
-Package pdftex.def Info: fig4b.pdf  used on input line 560.
+Package pdftex.def Info: fig4b.pdf  used on input line 587.
 (pdftex.def)             Requested size: 234.8775pt x 184.12514pt.
- [25] [26]
-<fig5a.pdf, id=750, 187.97829pt x 147.73393pt>
+ [26]
+<fig5a.pdf, id=753, 187.97829pt x 147.73393pt>
 File: fig5a.pdf Graphic file (type pdf)
 <use fig5a.pdf>
-Package pdftex.def Info: fig5a.pdf  used on input line 592.
+Package pdftex.def Info: fig5a.pdf  used on input line 619.
 (pdftex.def)             Requested size: 234.8775pt x 184.59932pt.
-<fig5b.pdf, id=751, 187.97829pt x 147.73393pt>
+<fig5b.pdf, id=754, 187.97829pt x 147.73393pt>
 File: fig5b.pdf Graphic file (type pdf)
 <use fig5b.pdf>
-Package pdftex.def Info: fig5b.pdf  used on input line 597.
+Package pdftex.def Info: fig5b.pdf  used on input line 624.
 (pdftex.def)             Requested size: 234.8775pt x 184.59932pt.
-<fig5c.pdf, id=752, 187.97829pt x 147.73393pt>
+<fig5c.pdf, id=755, 187.97829pt x 147.73393pt>
 File: fig5c.pdf Graphic file (type pdf)
 <use fig5c.pdf>
-Package pdftex.def Info: fig5c.pdf  used on input line 602.
+Package pdftex.def Info: fig5c.pdf  used on input line 629.
 (pdftex.def)             Requested size: 234.8775pt x 184.59932pt.
-<fig5d.pdf, id=753, 187.97829pt x 147.73393pt>
+<fig5d.pdf, id=756, 187.97829pt x 147.73393pt>
 File: fig5d.pdf Graphic file (type pdf)
 <use fig5d.pdf>
-Package pdftex.def Info: fig5d.pdf  used on input line 607.
+Package pdftex.def Info: fig5d.pdf  used on input line 634.
 (pdftex.def)             Requested size: 234.8775pt x 184.59932pt.
- [27]
-<fig6a.pdf, id=784, 187.71732pt x 147.25815pt>
+ [27] [28]
+<fig6a.pdf, id=792, 187.71732pt x 147.25815pt>
 File: fig6a.pdf Graphic file (type pdf)
 <use fig6a.pdf>
-Package pdftex.def Info: fig6a.pdf  used on input line 629.
+Package pdftex.def Info: fig6a.pdf  used on input line 656.
 (pdftex.def)             Requested size: 234.8775pt x 184.26544pt.
-<fig6b.pdf, id=785, 187.71732pt x 147.73393pt>
+<fig6b.pdf, id=793, 187.71732pt x 147.73393pt>
 File: fig6b.pdf Graphic file (type pdf)
 <use fig6b.pdf>
-Package pdftex.def Info: fig6b.pdf  used on input line 634.
+Package pdftex.def Info: fig6b.pdf  used on input line 661.
 (pdftex.def)             Requested size: 234.8775pt x 184.86081pt.
- [28] [29] [30] [31] [32]
-Underfull \hbox (badness 10000) in paragraph at lines 709--710
+ [29] [30] [31] [32]
+Underfull \hbox (badness 10000) in paragraph at lines 736--737
 
  []
 
-[33] (./main.bbl
+[33] (./main.bbl [34]
 (/usr/local/texlive/2019/texmf-dist/tex/latex/ucs/data/uni-32.def
 File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
-) [34]
-[35] [36]
+) [35]
+[36]
 LaTeX Font Info:    Try loading font information for TS1+futs on input line 164
 .
  (/usr/local/texlive/2019/texmf-dist/tex/latex/fourier/ts1futs.fd
@@ -1506,8 +1511,8 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `futs' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-
-[37] [38] [39] [40] [41]) [42] [43 <./fig3a.pdf> <./fig3b.pdf
+ [37]
+[38] [39] [40] [41]) [42] [43 <./fig3a.pdf> <./fig3b.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./fig3b.pdf): PDF inclusion:
  multiple pdfs with page group included in a single page
@@ -1548,118 +1553,130 @@ pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./fig6b.pdf): PDF inclusion:
 
 ] [2
 
-]
-Overfull \hbox (15.95326pt too wide) detected at line 806
-[] \FMS/futm/m/n/10.95  []
- []
+] [3pdfTeX warning (ext4): destination with the same identifier (name{equation.
+A.2}) has been already used, duplicate ignored
 
-[3] [4]
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.847 	\begin{equation}
+                       ]
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 13.24796pt on input line 854.
+(Font)              scaled to size 13.24796pt on input line 852.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 7.35999pt on input line 854.
+(Font)              scaled to size 7.35999pt on input line 852.
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <8> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 854.
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 852.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 13.24796pt on input line 854.
+(Font)              scaled to size 13.24796pt on input line 852.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 7.35999pt on input line 854.
- [5] [6] [7] [8]
+(Font)              scaled to size 7.35999pt on input line 852.
+ [4] [5] [6] [7]
 File: fig2a.pdf Graphic file (type pdf)
 <use fig2a.pdf>
-Package pdftex.def Info: fig2a.pdf  used on input line 980.
+Package pdftex.def Info: fig2a.pdf  used on input line 985.
 (pdftex.def)             Requested size: 234.8775pt x 179.32442pt.
 File: fig2c.pdf Graphic file (type pdf)
 <use fig2c.pdf>
-Package pdftex.def Info: fig2c.pdf  used on input line 985.
+Package pdftex.def Info: fig2c.pdf  used on input line 990.
 (pdftex.def)             Requested size: 234.8775pt x 179.32442pt.
-<figS1c.pdf, id=1423, 180.80649pt x 147.73393pt>
+<figS1c.pdf, id=1424, 180.80649pt x 147.73393pt>
 File: figS1c.pdf Graphic file (type pdf)
 <use figS1c.pdf>
-Package pdftex.def Info: figS1c.pdf  used on input line 990.
+Package pdftex.def Info: figS1c.pdf  used on input line 995.
 (pdftex.def)             Requested size: 234.8775pt x 191.92334pt.
-<figS1d.pdf, id=1424, 180.80649pt x 147.73393pt>
+<figS1d.pdf, id=1425, 180.80649pt x 147.73393pt>
 File: figS1d.pdf Graphic file (type pdf)
 <use figS1d.pdf>
-Package pdftex.def Info: figS1d.pdf  used on input line 995.
+Package pdftex.def Info: figS1d.pdf  used on input line 1000.
 (pdftex.def)             Requested size: 234.8775pt x 191.92334pt.
 
 
-LaTeX Warning: Float too large for page by 22.69731pt on input line 1000.
+LaTeX Warning: Float too large for page by 22.69731pt on input line 1005.
 
-[9]
+[8]
 <figS2a.pdf, id=1447, 188.07765pt x 149.76955pt>
 File: figS2a.pdf Graphic file (type pdf)
 <use figS2a.pdf>
-Package pdftex.def Info: figS2a.pdf  used on input line 1019.
+Package pdftex.def Info: figS2a.pdf  used on input line 1024.
 (pdftex.def)             Requested size: 234.8775pt x 187.05148pt.
 <figS2b.pdf, id=1448, 194.4063pt x 149.76955pt>
 File: figS2b.pdf Graphic file (type pdf)
 <use figS2b.pdf>
-Package pdftex.def Info: figS2b.pdf  used on input line 1024.
+Package pdftex.def Info: figS2b.pdf  used on input line 1029.
 (pdftex.def)             Requested size: 234.8775pt x 180.96117pt.
- [10]
-<figS3a.pdf, id=1457, 189.8854pt x 149.77657pt>
+ [9]
+<figS3a.pdf, id=1458, 189.8854pt x 149.77657pt>
 File: figS3a.pdf Graphic file (type pdf)
 <use figS3a.pdf>
-Package pdftex.def Info: figS3a.pdf  used on input line 1047.
+Package pdftex.def Info: figS3a.pdf  used on input line 1052.
 (pdftex.def)             Requested size: 234.8775pt x 185.27306pt.
-<figS3b.pdf, id=1458, 189.8874pt x 149.77657pt>
+<figS3b.pdf, id=1459, 189.8874pt x 149.77657pt>
 File: figS3b.pdf Graphic file (type pdf)
 <use figS3b.pdf>
-Package pdftex.def Info: figS3b.pdf  used on input line 1052.
+Package pdftex.def Info: figS3b.pdf  used on input line 1057.
 (pdftex.def)             Requested size: 234.8775pt x 185.27306pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[11]
-<figS5a.pdf, id=1468, 186.2709pt x 147.73393pt>
+[10]
+<figS5a.pdf, id=1469, 186.2709pt x 147.73393pt>
 File: figS5a.pdf Graphic file (type pdf)
 <use figS5a.pdf>
-Package pdftex.def Info: figS5a.pdf  used on input line 1083.
+Package pdftex.def Info: figS5a.pdf  used on input line 1088.
 (pdftex.def)             Requested size: 234.8775pt x 186.28775pt.
-<figS5b.pdf, id=1469, 189.8854pt x 149.76955pt>
+<figS5b.pdf, id=1470, 189.8854pt x 149.76955pt>
 File: figS5b.pdf Graphic file (type pdf)
 <use figS5b.pdf>
-Package pdftex.def Info: figS5b.pdf  used on input line 1088.
+Package pdftex.def Info: figS5b.pdf  used on input line 1093.
 (pdftex.def)             Requested size: 234.8775pt x 185.26437pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[12] [13] [14]
-<figS6a.pdf, id=1491, 184.46214pt x 147.73393pt>
+[11]
+
+LaTeX Warning: Reference `Seq:s_old' on page S12 undefined on input line 1108.
+
+
+LaTeX Warning: Reference `Seq:s_old' on page S12 undefined on input line 1112.
+
+
+LaTeX Warning: Reference `Seq:wt_eq1' on page S12 undefined on input line 1116.
+
+
+[12] [13]
+<figS6a.pdf, id=1489, 184.46214pt x 147.73393pt>
 File: figS6a.pdf Graphic file (type pdf)
 <use figS6a.pdf>
-Package pdftex.def Info: figS6a.pdf  used on input line 1125.
+Package pdftex.def Info: figS6a.pdf  used on input line 1130.
 (pdftex.def)             Requested size: 234.8775pt x 188.11818pt.
-<figS6b.pdf, id=1492, 184.46214pt x 146.37585pt>
+<figS6b.pdf, id=1490, 184.46214pt x 146.37585pt>
 File: figS6b.pdf Graphic file (type pdf)
 <use figS6b.pdf>
-Package pdftex.def Info: figS6b.pdf  used on input line 1130.
+Package pdftex.def Info: figS6b.pdf  used on input line 1135.
 (pdftex.def)             Requested size: 234.8775pt x 186.38884pt.
-<figS6c.pdf, id=1493, 192.59654pt x 146.37585pt>
+<figS6c.pdf, id=1491, 192.59654pt x 146.37585pt>
 File: figS6c.pdf Graphic file (type pdf)
 <use figS6c.pdf>
-Package pdftex.def Info: figS6c.pdf  used on input line 1135.
+Package pdftex.def Info: figS6c.pdf  used on input line 1140.
 (pdftex.def)             Requested size: 234.8775pt x 178.51125pt.
-<figS6d.pdf, id=1494, 189.8854pt x 147.73393pt>
+<figS6d.pdf, id=1492, 189.8854pt x 147.73393pt>
 File: figS6d.pdf Graphic file (type pdf)
 <use figS6d.pdf>
-Package pdftex.def Info: figS6d.pdf  used on input line 1140.
+Package pdftex.def Info: figS6d.pdf  used on input line 1145.
 (pdftex.def)             Requested size: 234.8775pt x 182.74634pt.
 
 
-LaTeX Warning: Float too large for page by 45.43404pt on input line 1145.
+LaTeX Warning: Float too large for page by 45.43404pt on input line 1150.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figS7.pdf, id=1499, 186.33313pt x 152.2769pt>
+<figS7.pdf, id=1497, 186.33313pt x 152.2769pt>
 File: figS7.pdf Graphic file (type pdf)
 <use figS7.pdf>
-Package pdftex.def Info: figS7.pdf  used on input line 1159.
+Package pdftex.def Info: figS7.pdf  used on input line 1164.
 (pdftex.def)             Requested size: 281.85587pt x 230.36424pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -1674,15 +1691,15 @@ Package minitoc(hints) Warning: W0024
 (minitoc(hints))                Some hints have been written 
 (minitoc(hints))                in the main.log file.
 
-[15] [16 <./figS1c.pdf> <./figS1d.pdf
+[14] [15 <./figS1c.pdf> <./figS1d.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./figS1d.pdf): PDF inclusion
 : multiple pdfs with page group included in a single page
->] [17 <./figS2a.pdf> <./figS2b.pdf
+>] [16 <./figS2a.pdf> <./figS2b.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./figS2b.pdf): PDF inclusion
 : multiple pdfs with page group included in a single page
->] [18 <./figS3a.pdf> <./figS3b.pdf
+>] [17 <./figS3a.pdf> <./figS3b.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./figS3b.pdf): PDF inclusion
 : multiple pdfs with page group included in a single page
@@ -1694,7 +1711,7 @@ pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./figS5a.pdf): PDF inclusion
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./figS5b.pdf): PDF inclusion
 : multiple pdfs with page group included in a single page
->] [19 <./figS6a.pdf> <./figS6b.pdf
+>] [18 <./figS6a.pdf> <./figS6b.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./figS6b.pdf): PDF inclusion
 : multiple pdfs with page group included in a single page
@@ -1706,22 +1723,26 @@ pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./figS6c.pdf): PDF inclusion
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./figS6d.pdf): PDF inclusion
 : multiple pdfs with page group included in a single page
->] [20 <./figS7.pdf>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1172.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1172.
+>] [19 <./figS7.pdf>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1177.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1177.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1172.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1172.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1177.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1177.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 250D4B032D1962D4271F7CA16A36174F;792.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1172.
+
+
+LaTeX Warning: There were undefined references.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1177.
  ) 
 Here is how much of TeX's memory you used:
- 26161 strings out of 492616
- 462727 string characters out of 6129481
- 601967 words of memory out of 5000000
- 28601 multiletter control sequences out of 15000+600000
+ 26187 strings out of 492616
+ 463087 string characters out of 6129481
+ 604723 words of memory out of 5000000
+ 28629 multiletter control sequences out of 15000+600000
  215384 words of font info for 484 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,21n,81p,2241b,979s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1744,10 +1765,10 @@ fonts/type1/adobe/utopia/putri8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/
 type1/public/cm-super/sfss0600.pfb></usr/local/texlive/2019/texmf-dist/fonts/ty
 pe1/public/cm-super/sftt0900.pfb></usr/local/texlive/2019/texmf-dist/fonts/type
 1/public/cm-super/sftt1000.pfb>
-Output written on main.pdf (66 pages, 770525 bytes).
+Output written on main.pdf (65 pages, 768206 bytes).
 PDF statistics:
- 2030 PDF objects out of 2073 (max. 8388607)
- 1476 compressed objects within 15 object streams
- 246 named destinations out of 1000 (max. 500000)
+ 2028 PDF objects out of 2073 (max. 8388607)
+ 1475 compressed objects within 15 object streams
+ 244 named destinations out of 1000 (max. 500000)
  57171 words of extra memory for PDF output out of 61914 (max. 10000000)
 

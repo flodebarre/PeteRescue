@@ -1,12 +1,12 @@
 This is BibTeX, Version 0.99d (TeX Live 2019)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: main.aux
-The style file: amnatnatbib.bst.bst
+The style file: amnatnat.bst.bst
 Database file #1: dispersal.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 You've used 78 entries,
             3251 wiz_defined-function locations,
-            1099 strings with 19296 characters,
+            1099 strings with 19293 characters,
 and the built_in function-call counts, 49708 in all, are:
 = -- 4160
 > -- 2533
