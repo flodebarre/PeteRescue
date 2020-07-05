@@ -328,7 +328,8 @@ We decompose our analysis into several steps of increasing complexity.
 \subsection*{Additional assumptions for the analytical part}
 We make a few additional assumptions in the analytical part of our work; these assumptions are relaxed in the stochastic simulations. 
 
-A key assumption to our mathematical analysis is that the mutant individuals are rare enough that their dynamics do not affect the wild-type population, at least during the establishment phase of the mutant lineage. The wild-type population sets a demographic context that affects mutants dynamics. The mathematical analysis therefore focuses on the population dynamics of the mutant population, considering the wild-type population as constant over time.\footnote{\florence{please check this is correct}}
+A key assumption to our mathematical analysis is that the mutant individuals are rare enough that their dynamics do not affect the wild-type population, at least during the establishment phase of the mutant lineage. Because of their rarity, we can also consider that \linelabel{R1-27}all mutants reproduce, disperse and die independently of each other. 
+The wild-type population sets a demographic context that affects mutants dynamics. The mathematical analysis therefore focuses on the population dynamics of the mutant population, considering the wild-type population as constant over time.\footnote{\florence{please check this is correct}}
 
 We assume that the subpopulations in old-habitat patches are always at carrying capacity, i.e.\ that there are always enough offspring that are produced to at least replace all the parents. Denoting by $\widetilde{N}_{i}^{k}$ the number of type-$i$ individuals in a $k$-habitat patch right after dispersal, then the expected number of successful offspring of mutant individuals in this old-habitat patch (i.e., of offspring that survive density regulation and become adults in the next generation) is 
 %
@@ -342,8 +343,6 @@ K_{\text{old}}\, \frac{\omega^\text{old}_m \widetilde{N}^{\text{old}}_m}{\omega^
 %
 The approximation results from the assumption that mutants are rare compared to wild-type individuals in old-habitat patches. Eq.~\eqref{eq:sold} defines the per-capita expected growth rate of mutants in old-habitat patches, $a_{\text{old}}$. It depends on $\widetilde{N}^{\text{old}}_w$, the size of the local wild-type population right after dispersal, which is calculated in Section~\ref{sec:app:modeldyn} of the Supplementary Information (SI) (Eq.~\eqref{Seq:Ntildeold}).
 
-\st{For the analysis, we also further assume that the number of successful offspring of mutant individuals is Poisson distributed, with mean $1+ a_{\text{old}}$. }\florence{com eback to this}
-
 %\hl{The sign of this local growth rate depends on the value of $\widetilde{N}^{\text{old}}_w$, the size of the local wild-type population right after dispersal. Mutants are less fecund that wild-type individuals in old-habitat patches ($\omega^\text{old}_m < \omega^\text{old}_w$), yet the number of mutants can increase in old-habitat patches if $\widetilde{N}^{\text{old}}_w$ is low enough. In this case indeed, the population is far from carrying capacity, and the offspring of all types of individuals can make it to the next generation. Competition is fiercer as carrying capacity is nearer. }\footnote{\florence{I think this is more Results than Model}}. \linelabel{R1-14}The population dynamics of the wild type are analyzed explicitly in Section~\ref{sec:app:modeldyn} of the Supplementary Information (SI).
 
 In new-habitat patches, on the contrary, we assume that population size remains much lower than carrying capacity, so that all offspring make it to the next generation (no regulation is necessary after reproduction).\footnote{\florence{I am getting rid of notation $r$}} The expected number of successful offspring of mutant individuals in a new-habitat patch, given that there are $\widetilde{N}^{\text{new}}_m$ mutants in the patch right after dispersal, is 
@@ -353,7 +352,18 @@ In new-habitat patches, on the contrary, we assume that population size remains 
 \end{equation}
 which defines $a_{\text{new}}$, the per-capita growth rate of mutants in new-habitat patches. This assumption constrains the differences in carrying capacities among old- and new-habitat patches under which our analysis remains valid. In particular, $K_{\text{new}}$ cannot be too much lower than $K_{\text{old}}$, because in this case, the flow of migrants from old- to new-habitat patches would substantially increase local population sizes in new-habitat patches. 
 
-To summarize, for the analysis part, we assume that the number of successful offspring of mutant individuals are Poisson-distributed, with means $(1+ a_{\text{old}})$ in old-habitat patches, and $1+ a_{\text{new}}$ in new-habitat patches, where both quantities are treated as constant over time\footnote{\florence{please check this statement}}. \linelabel{R1-17}\linelabel{R2-13} These assumptions, made for the sake of mathematical analysis, are relaxed in our stochastic simulations.
+Combining the different steps of the life cycle, the expected per capita numbers of successful offspring (i.e., offspring that become adults at the next generation) can be gathered in a reproduction matrix
+%
+\begin{equation}\label{eq:repromatrix}
+\mathcal{M} = \bordermatrix{ ~ & \text{old patch} & \text{new patch} \cr
+	\text{old patch} & \left(1 - m \mu_m^{\text{new}} \right) (1+a_{\text{old}}) & m \mu_m^{\text{new}} (1+a_{\text{new}}) \cr
+	\text{new patch} & m \mu_m^{\text{old}} (1+a_{\text{old}}) & \left(1 - m \mu_m^{\text{old}}\right) (1+a_{\text{new}})
+}\ ,
+\end{equation}
+where the rows denote the parent locations, and the columns the patch type of the successful offspring. Our final assumption for the mathematical analysis is that the distributions of numbers of successful offspring are Poisson, with means given by the elements of matrix $\mathcal{M}$ (while in reality, only the production of offspring before density regulation is Poisson)\florence{please check that it is true that dispersal is also lumped in}; these means are treated as constant over time. 
+This way, the dynamics of the mutant population can be described by a two-type branching process. (The two ``types'' in the name of method, two-type branching process, correspond to the two habitat types.) 
+
+\linelabel{R1-17}\linelabel{R2-13} All of these assumptions, made for the sake of mathematical analysis, are relaxed in our stochastic simulations.
 
 
 \subsection*{Simulations}
@@ -396,28 +406,23 @@ We proceed step-wise towards the computation of a probability of evolutionary re
 In this first step, we consider that there is initially a single mutant individual in the population, located either in an old- or a new-habitat patch, and we compute the probability of establishment of the mutant population. In this step, we ignore further mutations and are only concerned with the fate of this single mutant lineage. 
 
 \subsubsection*{Mathematical analysis}
-The dynamics of the mutant population can be described by a two-type branching process. A key assumption of this framework is that \linelabel{R1-27}all mutants reproduce, disperse and die independently of each other. This is a reasonable assumption as long as the overall number of mutants is a lot smaller than the population size of the wild type. The two ``types'' in the name of method, two-type branching process, correspond to the two habitat types. The process tracks the \linelabel{R2-25}total number of mutants in old- and new-habitat patches at the end of each generation. As mentioned above, the numbers of successful offspring of mutant individuals, i.e., of offspring that survive density regulation and become adults at the next generation, are approximated by Poisson-distributed numbers, with means $(1+ a_{\text{old}})$ in old-habitat patches (eq.~\eqref{eq:sold} and eq.~\eqref{Seq:s_old}), and $1+ a_{\text{new}}$ in new-habitat patches (eq.~\eqref{eq:defanew}). After one generation, the mean number of successful offspring of a single mutant, either in an old- or a new-habitat patch, is then given by the following mean reproduction matrix:
-%
-\begin{equation}\label{eq:mean_repro}
-	\bordermatrix{ ~ & \text{old patch} & \text{new patch} \cr
-		\text{old patch} & \left(1-m_m^{\text{new}}\right) (1+a_{\text{old}}) & m_m^{\text{new}} (1+a_{\text{new}}) \cr
-		\text{new patch} & m_m^{\text{old}} (1+a_{\text{old}}) & \left(1-m_m^{\text{old}}\right) (1+a_{\text{new}})
-		}\ ,
-\end{equation}
-%
-where the rows denote the parent locations, and the columns the patch type of the successful offspring. 
-For example, the top-left entry is the probability for the parent to stay in an old-habitat patch ($1-m_m^{\text{new}}$, see eq.\eqref{eq:dispersal}) times the average number of successful offspring in these patches \linelabel{R2-26}(see Section~\ref{sec:app:modeldyn} in SI for the derivation of $a_{\text{old}}$ at the wild-type equilibrium). The other entries are obtained analogously.
 
-\linelabel{R1-24}We denote by $\varphi_{\text{old}}$ (resp. $\varphi_{\text{new}}$) the probability of establishment of this two-type branching process when the mutant is initially located in a old- (resp. new-) habitat patch. This probability is computed by considering all possible ways of going extinct: the initial individual having $j$ successful offspring in a patch of type $k$, but all lineages descending from these $j$ offspring eventually go extinct; then summing over $k$ and $j$. The establishment probabilities $\varphi_{\text{old}}$ and $\varphi_{\text{new}}$ are then given by the unique positive solution of the following system of equations \citep[see][Chapters 5.3 and 5.6]{haccou_book}:
+\linelabel{R1-24}We denote by $\varphi_{\text{old}}$ (resp. $\varphi_{\text{new}}$) the probability of establishment of this two-type branching process when the mutant is initially located in a old- (resp. new-) habitat patch. This probability is computed by considering all possible ways of going extinct: the initial individual having $j$ successful offspring in a patch of type $k$, but all lineages descending from these $j$ offspring eventually go extinct; then summing over $k$ and $j$. We obtain
 %
-\begin{equation}\label{eq:ext_prob}
-	\begin{aligned}
-		1-\varphi_{\text{old}} &= \sum_{j=0}^{\infty}\left( \mathbf{P}(j \text{ successful offspring in old habitat})(1-\varphi_{\text{old}})^j \right. \\
-		&\qquad \qquad \qquad \left.+ \mathbf{P}(j \text{successful offspring in new habitat})(1-\varphi_{\text{new}})^j\right)\\
-		&=\exp\left[-\left(1-m^{\text{old}\to \text{new}}_m\right)(1+a_{\text{old}})\varphi_{\text{old}} - m^{\text{old}\to \text{new}}_m (1+a_{\text{new}}) \varphi_{\text{new}}\right]\, ,   \\
-		1-\varphi_{\text{new}} &= \exp\left[-m^{\text{new}\to \text{old}}_m(1+a_{\text{old}})\varphi_{\text{old}} - \left(1-m^{\text{new}\to \text{old}}_m\right) (1+a_{\text{new}}) \varphi_{\text{new}}\right]\, .
-	\end{aligned}
-\end{equation}
+\begin{subequations}\label{eq:ext_prob}
+	\begin{align}
+	1-\varphi_{\text{old}} &= \sum_{j=0}^{\infty}\left( \mathbf{P}(j \text{ successful offspring in old habitat})(1-\varphi_{\text{old}})^j \right. \nonumber \\
+	&\qquad \qquad \left.+ \mathbf{P}(j \text{successful offspring in new habitat})(1-\varphi_{\text{new}})^j\right)\nonumber \\
+	%
+	\intertext{Recalling that the number of successful offspring over the life cycle is assumed to be Poisson with means given by the terms of matrix $\mathcal{M}$ (Eq.~\eqref{eq:repromatrix}), we obtain after symplifying}
+	%
+	1-\varphi_{\text{old}}  &=\exp\left[-\left(1 - m \mu_{m}^{\text{new}} \right)(1+a_{\text{old}})\varphi_{\text{old}} - m \mu_{m}^{\text{new}} (1+a_{\text{new}}) \varphi_{\text{new}}\right]\, .   \\
+	%
+	\intertext{Similarly in a new-habitat patch, }
+	1-\varphi_{\text{new}} &= \exp\left[- m \mu_{m}^{\text{old}} (1+a_{\text{old}})\varphi_{\text{old}} - \left(1- m \mu_{m}^{\text{old}} \right) (1+a_{\text{new}}) \varphi_{\text{new}}\right]\, .
+\end{align}
+\end{subequations}
+The establishment probabilities $\varphi_{\text{old}}$ and $\varphi_{\text{new}}$ are then given by the unique positive solution of system~\eqref{eq:ext_prob} \citep[see][Chapters 5.3 and 5.6]{haccou_book}.
 This system of equations can be solved numerically. An analytical approximate solution is available in the case of weak selection and (potentially) weak dispersal (i.e. $a_{\text{old}},a_{\text{new}},m\ll 1$ needs to hold for at least two of the three parameters); see for example~\citet[Theorem~5.6]{haccou_book} for the general theory and \citet{tomasini_2018} for an application in a similar setting. The detailed derivation is presented in the SI, Section~\ref{sec:approxestabproba}. We find
 \begin{equation}\label{eq:estab_approx}
 	\begin{aligned}
