@@ -6,7 +6,9 @@
 \contentsline {xpart}{Appendix}{S1}{part.2}% 
 \contentsline {section}{\numberline {A}Deriving the model dynamics }{S2}{appendix.A}% 
 \contentsline {section}{\numberline {B}Approximation of the establishment probability}{S5}{appendix.B}% 
-\contentsline {subsection}{\numberline {B.1}Disentangling the contributions to the establishment probability}{S8}{subsection.B.1}% 
+\contentsline {subsection}{\numberline {B.1}Computing the largest eigenvalue}{S6}{subsection.B.1}% 
+\contentsline {subsection}{\numberline {B.2}Computing the establishment probability}{S7}{subsection.B.2}% 
+\contentsline {subsection}{\numberline {B.3}Disentangling the contributions to the establishment probability }{S8}{subsection.B.3}% 
 \contentsline {section}{\numberline {C}Habitat of origin of the adaptive mutation}{S10}{appendix.C}% 
 \contentsline {section}{\numberline {D}Probability of establishment for large frequencies of old-habitat patches}{S11}{appendix.D}% 
 \contentsline {section}{\numberline {E}Establishment probability in a model without demography}{S12}{appendix.E}% 

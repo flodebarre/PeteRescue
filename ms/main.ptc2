@@ -1,6 +1,8 @@
 {\reset@font\ptcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {A}Deriving the model dynamics }{\reset@font\ptcSfont S2}{appendix.A}}
 {\reset@font\ptcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {B}Approximation of the establishment probability}{\reset@font\ptcSfont S5}{appendix.B}}
-{\reset@font\ptcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {B.1}Disentangling the contributions to the establishment probability}{\reset@font\ptcSSfont S8}{subsection.B.1}}
+{\reset@font\ptcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {B.1}Computing the largest eigenvalue}{\reset@font\ptcSSfont S6}{subsection.B.1}}
+{\reset@font\ptcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {B.2}Computing the establishment probability}{\reset@font\ptcSSfont S7}{subsection.B.2}}
+{\reset@font\ptcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {B.3}Disentangling the contributions to the establishment probability }{\reset@font\ptcSSfont S8}{subsection.B.3}}
 {\reset@font\ptcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {C}Habitat of origin of the adaptive mutation}{\reset@font\ptcSfont S10}{appendix.C}}
 {\reset@font\ptcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {D}Probability of establishment for large frequencies of old-habitat patches}{\reset@font\ptcSfont S11}{appendix.D}}
 {\reset@font\ptcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {E}Establishment probability in a model without demography}{\reset@font\ptcSfont S12}{appendix.E}}

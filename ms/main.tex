@@ -341,7 +341,7 @@ K_{\text{old}}\, \frac{\omega^\text{old}_m \widetilde{N}^{\text{old}}_m}{\omega^
 \overset{\mathrm{def}}{=} \left(1 + a_{\text{old}}\right) \widetilde{N}^{\text{old}}_m \, .
 \end{equation}
 %
-The approximation results from the assumption that mutants are rare compared to wild-type individuals in old-habitat patches. Eq.~\eqref{eq:sold} defines the per-capita expected growth rate of mutants in old-habitat patches, $a_{\text{old}}$. It depends on $\widetilde{N}^{\text{old}}_w$, the size of the local wild-type population right after dispersal, which is calculated in Section~\ref{sec:app:modeldyn} of the Supplementary Information (SI) (Eq.~\eqref{Seq:Ntildeold}).
+The approximation results from the assumption that mutants are rare compared to wild-type individuals in old-habitat patches. Eq.~\eqref{eq:sold} defines the per-capita expected growth rate of mutants in old-habitat patches, $a_{\text{old}}$. It depends on $\widetilde{N}^{\text{old}}_w$, the size of the local wild-type population right after dispersal, which is calculated in Section~\ref{sec:app:modeldyn} of the Supplementary Information (SI) (Eq.~\eqref{Seq:Ntildeold}). \florence{I suggest adding plots of $a_{\text{old}}$ in the SI, with the same parameters and axes as in the other figures of the main text }
 
 %\hl{The sign of this local growth rate depends on the value of $\widetilde{N}^{\text{old}}_w$, the size of the local wild-type population right after dispersal. Mutants are less fecund that wild-type individuals in old-habitat patches ($\omega^\text{old}_m < \omega^\text{old}_w$), yet the number of mutants can increase in old-habitat patches if $\widetilde{N}^{\text{old}}_w$ is low enough. In this case indeed, the population is far from carrying capacity, and the offspring of all types of individuals can make it to the next generation. Competition is fiercer as carrying capacity is nearer. }\footnote{\florence{I think this is more Results than Model}}. \linelabel{R1-14}The population dynamics of the wild type are analyzed explicitly in Section~\ref{sec:app:modeldyn} of the Supplementary Information (SI).
 
@@ -352,16 +352,19 @@ In new-habitat patches, on the contrary, we assume that population size remains 
 \end{equation}
 which defines $a_{\text{new}}$, the per-capita growth rate of mutants in new-habitat patches. This assumption constrains the differences in carrying capacities among old- and new-habitat patches under which our analysis remains valid. In particular, $K_{\text{new}}$ cannot be too much lower than $K_{\text{old}}$, because in this case, the flow of migrants from old- to new-habitat patches would substantially increase local population sizes in new-habitat patches. 
 
-Combining the different steps of the life cycle, the expected per capita numbers of successful offspring (i.e., offspring that become adults at the next generation) can be gathered in a reproduction matrix
+We finally combine the different steps of the life cycle. The expected per capita numbers of successful offspring  (i.e., offspring that become adults at the next generation) in habitat $k'$ of an individual in a $k$-habitat patch at the beginning of the generation, $\lambda_{k, k'}$, are the following:
 %
-\begin{equation}\label{eq:repromatrix}
-\mathcal{M} = \bordermatrix{ ~ & \text{old patch} & \text{new patch} \cr
-	\text{old patch} & \left(1 - m \mu_m^{\text{new}} \right) (1+a_{\text{old}}) & m \mu_m^{\text{new}} (1+a_{\text{new}}) \cr
-	\text{new patch} & m \mu_m^{\text{old}} (1+a_{\text{old}}) & \left(1 - m \mu_m^{\text{old}}\right) (1+a_{\text{new}})
-}\ ,
+\begin{equation}\label{eq:lambda}
+\begin{array}{ll}
+\lambda_{\text{old}, \text{old}} = \left(1 - m \mu_m^{\text{new}} \right) (1+a_{\text{old}}) , & 
+\lambda_{\text{old}, \text{new}} = m \mu_m^{\text{new}} (1+a_{\text{new}}) ,\\
+%
+\lambda_{\text{new}, \text{old}} =  m \mu_m^{\text{old}} (1+a_{\text{old}}) , & 
+\lambda_{\text{new}, \text{new}} = \left(1 - m \mu_m^{\text{old}}\right) (1+a_{\text{new}}) .\\
+\end{array}
 \end{equation}
-where the rows denote the parent locations, and the columns the patch type of the successful offspring. Our final assumption for the mathematical analysis is that the distributions of numbers of successful offspring are Poisson, with means given by the elements of matrix $\mathcal{M}$ (while in reality, only the production of offspring before density regulation is Poisson)\florence{please check that it is true that dispersal is also lumped in}; these means are treated as constant over time. 
-This way, the dynamics of the mutant population can be described by a two-type branching process. (The two ``types'' in the name of method, two-type branching process, correspond to the two habitat types.) 
+Our final assumption for the mathematical analysis is that the distributions of numbers of successful offspring are Poisson, with means $\lambda_{k, k'}$ (counting the successful offspring in habitat $k'$ of a parent in a $k$-habitat patch at the beginning of the generation). In reality, only the production of offspring before density regulation is Poisson, here we lump in the effects of dispersal and of density regulation. These means are treated as constant over time. 
+This way, the dynamics of the mutant population can be described by a two-type branching process, for which an established methodology exists \citep{haccou_book}. (The two ``types'' in the name of method, two-type branching process, correspond to the two habitat types.)  
 
 \linelabel{R1-17}\linelabel{R2-13} All of these assumptions, made for the sake of mathematical analysis, are relaxed in our stochastic simulations.
 
@@ -407,49 +410,67 @@ In this first step, we consider that there is initially a single mutant individu
 
 \subsubsection*{Mathematical analysis}
 
-\linelabel{R1-24}We denote by $\varphi_{\text{old}}$ (resp. $\varphi_{\text{new}}$) the probability of establishment of this two-type branching process when the mutant is initially located in a old- (resp. new-) habitat patch. This probability is computed by considering all possible ways of going extinct: the initial individual having $j$ successful offspring in a patch of type $k$, but all lineages descending from these $j$ offspring eventually go extinct; then summing over $k$ and $j$. We obtain
+\linelabel{R1-24}We denote by $\varphi_{\text{old}}$ (resp. $\varphi_{\text{new}}$) the probability of establishment of this two-type branching process when the mutant is initially located in a old- (resp. new-) habitat patch. This probability is computed by considering all possible ways of going extinct: the initial individual having $j$ successful offspring in a patch of type $k$, but all lineages descending from these $j$ offspring eventually go extinct; then summing over $k$ and $j$. Denoting by $\mathbb{P}_{k, k'}(j)$ the probability that an individual in a $k$-habitat patch at the beginning of the generation has $j$ successful offspring in a $k'$-habitat patch after density regulation, the following system of equations holds:
+\begin{subequations}\label{eq:phidefs}
+\begin{align}
+1 - \varphi_{\text{old}} &= \sum_{j=0}^{\infty}\sum_{j'=0}^{\infty} \left( \mathbb{P}_{\text{old}, \text{old}}(j) (1-\varphi_{\text{old}})^j \times \mathbb{P}_{\text{old}, \text{new}}(j')  (1-\varphi_{\text{old}})^{j'} \right) \\
+%
+1 - \varphi_{\text{new}} &= \sum_{j=0}^{\infty}\sum_{j'=0}^{\infty} \left( \mathbb{P}_{\text{new}, \text{old}}(j) (1-\varphi_{\text{old}})^j \times \mathbb{P}_{\text{new}, \text{new}}(j')  (1-\varphi_{\text{old}})^{j'} \right)
+\end{align}
+\end{subequations}
+%
+As mentioned previously, we assume for our mathematical analysis that the numbers of successful offspring over the whole life cycle are Poisson distributed with means $\lambda_{k,k'}$ given in Eq.~\eqref{eq:lambda}: 
+%
+\begin{equation}\label{eq:poissondist}
+\mathbb{P}_{k, k'}(j) = \frac{e^{- \lambda_{k,k'}} \lambda_{k,k'}^j}{j!}.
+\end{equation}
+%
+Inserting these expressions into system~\eqref{eq:phidefs} and simplifying, we obtain
 %
 \begin{subequations}\label{eq:ext_prob}
 	\begin{align}
-	1-\varphi_{\text{old}} &= \sum_{j=0}^{\infty}\left( \mathbf{P}(j \text{ successful offspring in old habitat})(1-\varphi_{\text{old}})^j \right. \nonumber \\
-	&\qquad \qquad \left.+ \mathbf{P}(j \text{successful offspring in new habitat})(1-\varphi_{\text{new}})^j\right)\nonumber \\
-	%
-	\intertext{Recalling that the number of successful offspring over the life cycle is assumed to be Poisson with means given by the terms of matrix $\mathcal{M}$ (Eq.~\eqref{eq:repromatrix}), we obtain after symplifying}
-	%
 	1-\varphi_{\text{old}}  &=\exp\left[-\left(1 - m \mu_{m}^{\text{new}} \right)(1+a_{\text{old}})\varphi_{\text{old}} - m \mu_{m}^{\text{new}} (1+a_{\text{new}}) \varphi_{\text{new}}\right]\, .   \\
 	%
-	\intertext{Similarly in a new-habitat patch, }
 	1-\varphi_{\text{new}} &= \exp\left[- m \mu_{m}^{\text{old}} (1+a_{\text{old}})\varphi_{\text{old}} - \left(1- m \mu_{m}^{\text{old}} \right) (1+a_{\text{new}}) \varphi_{\text{new}}\right]\, .
 \end{align}
 \end{subequations}
 The establishment probabilities $\varphi_{\text{old}}$ and $\varphi_{\text{new}}$ are then given by the unique positive solution of system~\eqref{eq:ext_prob} \citep[see][Chapters 5.3 and 5.6]{haccou_book}.
 This system of equations can be solved numerically. An analytical approximate solution is available in the case of weak selection and (potentially) weak dispersal (i.e. $a_{\text{old}},a_{\text{new}},m\ll 1$ needs to hold for at least two of the three parameters); see for example~\citet[Theorem~5.6]{haccou_book} for the general theory and \citet{tomasini_2018} for an application in a similar setting. The detailed derivation is presented in the SI, Section~\ref{sec:approxestabproba}. We find
-\begin{equation}\label{eq:estab_approx}
-	\begin{aligned}
-		\varphi_{\text{old}} &\approx \qquad \quad \; \; \; \; a_{\text{old}}&+ & \quad a_{\text{old}} \frac{\left(1-f_{\text{old}}+\widehat{\pi}_m f_{\text{old}}\right)}{\sqrt{C}}(a_{\text{old}}-a_{\text{new}}) \\
-		& & &  \; \; \; + \; \frac{m}{\sqrt{C}} \left(a_{\text{new}}(1-f_{\text{old}}) + a_{\text{old}}\widehat{\pi}_m f_{\text{old}} - (a_{\text{old}}-a_{\text{new}})(1-f_{\text{old}})\right) \, ,\\
-		\varphi_{\text{new}} &\approx \underbrace{ a_{\text{new}}}_{\text{(1) local growth parameter}} &+ & \quad \underbrace{ a_{\text{new}} \frac{\left(1-f_{\text{old}}+\widehat{\pi}_m f_{\text{old}}\right)}{\sqrt{C}}(a_{\text{new}}-a_{\text{old}})}_{\text{(2) effect of the heterogeneous environment}} \\
-	& & &  \underbrace{+\; \frac{m}{\sqrt{C}}\left( a_{\text{new}}(1-f_{\text{old}}) + a_{\text{old}} \widehat{\pi}_m f_{\text{old}} - (a_{\text{new}}-a_{\text{old}}) \widehat{\pi}_m f_{\text{old}} \right)\, ,}_{\text{(3) effect of dispersal: new patches $+$ old patches $-$ loss to the other patch type }}
-	\end{aligned}
-\end{equation}
-where $C$ is a scaling constant that depends on $m,f_{\text{old}},\widehat{\pi}_m,a_{\text{old}}$ and $a_{\text{new}}$ through
+\begin{subequations}\label{eq:estab_approx}
+	\begin{align}
+\varphi_{\text{old}} \approx &%
+a_{\text{old}} %
++ a_{\text{old}} \frac{\left(1-f_{\text{old}} + e^{\pi_m} f_{\text{old}}\right)}{\sqrt{C}}(a_{\text{old}}-a_{\text{new}}) \nonumber \\
+& + \frac{m}{\sqrt{C}} \left(a_{\text{new}}(1-f_{\text{old}}) + a_{\text{old}} e^{\pi_m} f_{\text{old}} - (a_{\text{old}}-a_{\text{new}})(1-f_{\text{old}})\right) \, ,\\
+%
+%
+\varphi_{\text{new}} \approx & % 
+a_{\text{new}} %
++ a_{\text{new}} \frac{\left(1-f_{\text{old}}+ e^{\pi_m} f_{\text{old}}\right)}{\sqrt{C}}(a_{\text{new}}-a_{\text{old}}) \nonumber \\
+& + \frac{m}{\sqrt{C}}\left( a_{\text{new}}(1-f_{\text{old}}) + a_{\text{old}} \widehat{\pi}_m f_{\text{old}} - (a_{\text{new}}-a_{\text{old}}) e^{\pi_m} f_{\text{old}} \right)\, ,
+	\end{align}
+with
 \begin{equation}\label{eq:normalization}
-	C = (1-f_{\text{old}}+\widehat{\pi}_m f_{\text{old}}) \left((1-f_{\text{old}})(a_{\text{new}}-a_{\text{old}}+m)^2 + \widehat{\pi}_m f_{\text{old}} (a_{\text{new}}-a_{\text{old}}-m)^2\right)\, . 
+C = (1-f_{\text{old}}+ e^{\pi_m} f_{\text{old}}) \left((1-f_{\text{old}})(a_{\text{new}}-a_{\text{old}}+m)^2 + e^{\pi_m} f_{\text{old}} (a_{\text{new}}-a_{\text{old}}-m)^2\right)\, . 
 \end{equation}
+\end{subequations}
+%
+Recall that $a_{\text{old}}$, while considered constant in time, depends on the model's parameters, and in particular on the dispersal probability $m$. The establishment probabilities $\varphi_{\text{old}} $ and $\varphi_{\text{new}}$ in \eqref{eq:estab_approx} are therefore not affine functions of $m$ (although they look so in \eqref{eq:estab_approx}). 
 
-The first term in the approximation of the establishment probabilities ($\varphi_{\text{old}}$ and $\varphi_{\text{new}}$) in eq.~\eqref{eq:estab_approx} describes the local growth depending on the habitat type under study. 
-The second term captures the growth rate differences between the two habitat types.
-The factor $(1-f_{\text{old}}+\widehat{\pi}_m f_{\text{old}})$ accounts for the biased dispersal patterns (when $\pi_m\neq 0$ so that $\widehat{\pi}_m\neq 1$). 
-The third term in the equations corresponds to the direct effect of dispersal on the establishment probability. 
-The first two summands in the bracket are the same for both establishment probabilities. They represent the general effect of dispersal due to the dynamics from new-habitat patches (first summand) and old-habitat patches (second summand). The dispersal bias induced by $\pi_m$ changes the relative impact of old- vs. new-habitat patches. 
-Finally, the last summand in the bracket measures the growth rate loss (or gain) due to dispersal to the other patch type. It therefore differs between the two approximations.
+When the emigration probability is zero ($m=0$), the subpopulations in each habitat evolve in isolation from each other. The establishment probabilities in \eqref{eq:estab_approx} become
+%
+\begin{subequations}\label{eq:estabnomig}
+	\begin{align}
+	\varphi_{\text{old}} (m=0) &= 0, \\
+	\varphi_{\text{new}} (m=0) &  = 2 a_{\text{new}}. \label{eq:estabnomigHaldane}
+	\end{align}
+\end{subequations}
+Eq.~\eqref{eq:estabnomigHaldane} corresponds to Haldane's classical result for the establishment probability of a slightly advantageous mutant in new habitats \citep{haldane_1927}. \linelabel{R1-69} The mutation being counter-selected in old-habitat patches, its probability of establishment is null. 
 
-Note that in these equations, the competition of the mutant with the wild type in old-habitat patches appears in the local growth rate $a_{\text{old}}$, defined in eq.~\eqref{eq:sold}. This quantity is not constant, but instead depends on the wild type population size in old-habitat patches, which itself depends on the wild type's dispersal and growth rate in both habitats \linelabel{R2-28}\chg{(see SI, Section S1)}.
-
-If the emigration probability is zero ($m=0$), the subpopulations in each habitat evolve in isolation from each other and we recover Haldane's classical result for the establishment probability of a slightly advantageous mutant in new habitats: $\varphi_{\text{new}}=2a_{\text{new}}$ \citep{haldane_1927}. \linelabel{R1-69}\chg{In old-habitat patches, where the mutation is deleterious, we see that term (1) and (2) cancel each other so that the establishment probability is simply $\varphi_{\text{old}}=0$.} Furthermore,\francois{when the emigration probability is strictly positive (m>0)} in the case of \chg{unbiased} dispersal ($\pi_w=\pi_m=0$) and for equal number of old- and new-habitat patches ($f_{\text{old}}=1/2$), we obtain the approximation found in \cite{tomasini_2018} (compare system~\eqref{eq:estab_approx} to their eqs.~(4) and~(5)). Note that the approximation is independent of the actual number of patches, but only depends on the environmental configuration determined by the frequency of old-habitat patches $f_{\text{old}}$.
+When the emigration probability is strictly positive ($m>0$), in the case of unbiased dispersal ($\pi_w=\pi_m=0$) and for equal number of old- and new-habitat patches ($f_{\text{old}}=1/2$), we recover the approximation found in \cite{tomasini_2018} (compare system~\eqref{eq:estab_approx} to their eqs.~(4) and~(5)). Note that the approximation is independent of the actual number of patches (two patches in total in \cite{tomasini_2018} \footnote{\florence{please check if this is correct}}), but only depends on the environmental configuration determined by the frequency of old-habitat patches $f_{\text{old}}$.
 
 \subsubsection*{Comparison to simulations and qualitative behavior}
-We compare in Fig.~\ref{fig:vary_m_est} our predictions from eqs.~\eqref{eq:ext_prob} and~\eqref{eq:estab_approx} to simulation results for different values of the emigration rate $m$. We find good agreement with the numerical solution of eq.~\eqref{eq:ext_prob} (solid lines). The approximation given in eq.~\eqref{eq:estab_approx} (dashed lines) deviates slightly from the simulation results in regions where $m,a_{\text{new}}$ and $a_{\text{old}}$ are not small, i.e. when the assumptions made in the analytical derivation do not hold anymore. 
+Our mathematical analysis provided two kinds of results for the establishment probability: an implicit solution in eq.\eqref{eq:ext_prob}, which we solve numerically, and an explicit but approximate solution in eq.\eqref{eq:estab_approx}. In Fig.~\ref{fig:vary_m_est}, we compare these solutions to simulation results for different values of the emigration rate $m$. We find good agreement with the numerical solution of eq.~\eqref{eq:ext_prob} (solid lines). The approximation given in eq.~\eqref{eq:estab_approx} (dashed lines) deviates slightly from the simulation results in regions where $m,a_{\text{new}}$ and $a_{\text{old}}$ are not small, i.e. when the assumptions made in the analytical derivation do not hold anymore. 
 
 \begin{figure}[t!]
 	\centering
@@ -457,33 +478,39 @@ We compare in Fig.~\ref{fig:vary_m_est} our predictions from eqs.~\eqref{eq:ext_
   		\centering
   		\includegraphics[width=\linewidth]{fig2a.pdf}
   		\caption{$\varphi_{\text{old}}$ with $\omega^\text{old}_m = 1.35$ (large fecundity difference)}
+  		\label{fig:vary_m_est_old-large}
 	\end{subfigure}%
 	\begin{subfigure}{.5\textwidth}
  		 \centering
  		 \includegraphics[width=\linewidth]{fig2b.pdf}
   		\caption{$\varphi_{\text{new}}$ with $\omega^\text{old}_m = 1.35$}
+  		\label{fig:vary_m_est_new-large}
 	\end{subfigure}
 	\begin{subfigure}{.5\textwidth}
   		\centering
   		\includegraphics[width=\linewidth]{fig2c.pdf}
   		\caption{$\varphi_{\text{old}}$ with $\omega^\text{old}_m = 1.45$ (small fecundity difference)}
+  		\label{fig:vary_m_est_old-small}
 	\end{subfigure}%
 	\begin{subfigure}{.5\textwidth}
  		 \centering
  		 \includegraphics[width=\linewidth]{fig2d.pdf}
   		\caption{$\varphi_{\text{new}}$ with $\omega^\text{old}_m = 1.45$}
+  		\label{fig:vary_m_est_new-small}		
 	\end{subfigure}
 	\caption{\textbf{Establishment probability when varying the emigration rate.} \small We plot the theoretical results for $\varphi_{\text{old}}$ in (a) and (c), and for $\varphi_{\text{new}}$ in (b) and (d) for $\omega^\text{old}_m=1.35$ in (a), (b) and $\omega^\text{old}_m=1.45$ in (c), (d). Comparison with the results from stochastic simulations (symbols) show very good agreement with our approximation found in eq.~\eqref{eq:estab_approx} (dashed lines). The solid lines are the numerical solution of eq.~\eqref{eq:ext_prob}. The lines in (a) show a clear separation of the three regions of the establishment probability as discussed in the main text: {\color{change}(i) an initial increase due to higher probabilities of dispersal from old- to new-habitat patches; (ii) a local maximum due to increasing number of mutants emigrating from new-habitat patches; (iii) an increase due to relaxed competition in old-habitat patches, a result of wild-type emigration.}}
 	\label{fig:vary_m_est}
 \end{figure}
 
-The qualitative dependence of the establishment probabilities $\varphi_{\text{old}}$ and $\varphi_{\text{new}}$ on the dispersal probability $m$ is similar for all dispersal schemes. The shape of the curve however strongly depends on the fecundity $\omega^\text{old}_m$ of mutants in the old habitat. Before discussing the differences between the dispersal schemes, we first provide a qualitative understanding of this general behavior.
+%The qualitative dependence of the establishment probabilities $\varphi_{\text{old}}$ and $\varphi_{\text{new}}$ on the dispersal probability $m$ is similar for all dispersal schemes. The shapes of the curves however strongly depend on the fecundity $\omega^\text{old}_m$ of mutants in the old habitat. Before discussing the differences between the dispersal schemes, we first provide a qualitative understanding of this general behavior.
 
-For the probability of establishment of a single mutant in an old-habitat patch ($\varphi_{\text{old}}$), we observe up to three different regions, cf. Fig.~\ref{fig:vary_m_est}(a). This is in line with previous observations in the context of local adaptation \citep[e.g.][]{kawecki_1995,tomasini_2018} and evolutionary rescue \citep{uecker_2014}. We define the regions as follows: (i) an initial increase of the establishment probability at low dispersal rates $m$; (ii) a local maximum with a subsequent decrease of the establishment probability; (iii) an increase of the establishment probability for high dispersal rates.
+We identify up to three different regions that define how the probability of establishment of a single mutant initially in an old-habitat patch ($\varphi_{\text{old}}$) changes with the emigration probability $m$ (Fig.~\ref{fig:vary_m_est_old-large} ). This is in line with previous observations in the context of local adaptation \citep[e.g.][]{kawecki_1995,tomasini_2018} and evolutionary rescue \citep{uecker_2014}. We define the regions as follows: (i) at low dispersal rates $m$, an initial increase of the establishment probability with $m$ ; (ii) a local maximum with a subsequent decrease of the establishment probability; (iii) at high dispersal rates $m$, an increase of the establishment probability with $m$.
 
-A detailed assessment and explanation of the regions is provided in the SI, Section S2.1. Briefly, in region (i), the prevalent effect is the dispersal of mutants from old- to new-habitat patches where they are fitter than the wild type, thus increasing the establishment probability. This effect is mediated through the third term of the establishment probability in eq.~\eqref{eq:estab_approx}. 
-Region (ii), beginning with the local maximum, is a result of two counteracting processes: %increased emigration of individuals from the old habitat and \linelabel{R2-30-1}\chg{an increasing probability of an individual that is born in a new habitat emigrates to an old-habitat patch.}
-\linelabel{R2-30-1}\chg{If we increase the emigration probability $m$, a mutant is more likely to emigrate out of old-habitat patches and thus has a higher chance to establish. However, higher dispersal rates also have a negative effect on mutant establishment through \linelabel{R2-32}increasing the probability that a mutant migrates from a new- to an old-habitat patch. More precisely, the number of offspring in the new habitat on average is given by the product of the terms $(1-m_m^{\text{old}})$ and $(1+a_{\text{new}})$. This product can, for large emigration probabilities $m$, be smaller than $1$, i.e. a mutant in a new-habitat patch has on average less than one offspring. Finally, in region (iii), dispersal is so large that the population is close to being well-mixed. Most importantly, many wild-type individuals leave old-habitat patches which results in less competitive pressure in old-habitat patches. In this case the local growth rate of the mutant in these patches, $a_{\text{old}}$ (first term in eq.~\eqref{eq:estab_approx}), becomes positive. This effect called `relaxed competition'~\citep{uecker_2014}. The onset of this effect, in terms of the emigration probability $m$, is strongly dependent on the fecundity values of the mutant in the old habitat. The larger it is, the `earlier' (i.e. for smaller emigration rates $m$) relaxed competition becomes relevant.} 
+A detailed assessment and explanation of the regions is provided in the Appendix, Section~\ref{sec:SI_contributions}. In region (i), the beneficial effect of dispersal on the establishment probability $\varphi_{\text{old}}$ is due to mutants dispersing from old- to new-habitat patches where they are fitter than the wild type. 
+While this effect is still present in region (ii), the establishment probability $\varphi_{\text{old}}$ now decreases with dispersal \linelabel{R2-30-1} \linelabel{R2-32} because back-dispersal into the old-habitat patches is also possible. \florence{STOPPED HERE}
+More precisely, the expected per capita number of successful offspring in the new habitat of an adult in a new-habitat patch is $\lambda_{\text{new, new}} = (1- m \mu_m^{\text{old}}) (1+a_{\text{new}})$. This product can, for large emigration probabilities $m$, be smaller than $1$, i.e. a mutant in a new-habitat patch has on average less than one offspring. This is detrimental to the mutant because it means mutants do not efficiently reproduce in the habitat where they are fitter. 
+Finally, in region (iii), dispersal is so large that the population is close to being well-mixed. Most importantly, many wild-type individuals leave old-habitat patches which results in less competitive pressure in old-habitat patches. 
+In this case the local growth rate of the mutant in these patches, $a_{\text{old}}$ (first term in eq.~\eqref{eq:estab_approx}), becomes positive. This effect called `relaxed competition'~\citep{uecker_2014}. The onset of this effect, in terms of the emigration probability $m$, is strongly dependent on the fecundity values of the mutant in the old habitat. The larger it is, the `earlier' (i.e. for smaller emigration rates $m$) relaxed competition becomes relevant. 
 
 %lowering competitive pressure in old-habitat patches \linelabel{R1-28-1}(see $\widetilde{N}_{\text{old}}^w$ from eqs.~(S7) and~(S8) in the SI). As a result, local growth rates of the mutant in old-habitat patches, \linelabel{R1-30} $a_{\text{old}}$, become larger. This effect was termed `relaxed competition' by \citet{uecker_2014}. 
 
@@ -895,7 +922,12 @@ We compute the survival probability of the lineage of a single mutant starting e
 Our method is the same as the one used in \citet{tomasini_2018}, with the exception that our per capita growth rate in old-habitat patches, $a_{\text{old}}$, depends on the demography of the population. The method in general is based on the theory of multi-type branching processes, cf.~Chapter~5.5 in \citet{haccou_book}. We refer the reader to the Supplementary Information of \citet{tomasini_2018} for a detailed application of the theory. 
 
 The mean reproduction matrix $\mathcal{M}$ of a mutant gives the average number of offspring in a certain habitat, dependent on the habitat type in which the mutant resides (see also eq.~\eqref{eq:mean_repro} in the main text):
-
+\begin{equation}\label{eq:repromatrix}
+\mathcal{M} = \bordermatrix{ ~ & \text{old patch} & \text{new patch} \cr
+	\text{old patch} & \left(1 - m \mu_m^{\text{new}} \right) (1+a_{\text{old}}) & m \mu_m^{\text{new}} (1+a_{\text{new}}) \cr
+	\text{new patch} & m \mu_m^{\text{old}} (1+a_{\text{old}}) & \left(1 - m \mu_m^{\text{old}}\right) (1+a_{\text{new}})
+}\ ,
+\end{equation}
 \begin{equation}\label{Seq:mean_repro}
 \mathcal{M} = \bordermatrix{ ~ & \text{old patch} & \text{new patch} \cr
 	\text{old patch} & \left(1-m_m^{\text{new}}\right) (1+a_{\text{old}}) & m_m^{\text{new}} (1+a_{\text{new}}) \cr
@@ -913,7 +945,7 @@ with
 B = \sum_{i=1}^2 u_i \sum_{j=1}^2 v_j \mathcal{M}_{ij} + \rho(1-\rho) \sum_{j=1}^2 u_j v_j^2\, . 
 \end{equation} 
 
-\subsection*{Computing the largest eigenvalue}
+\subsection{Computing the largest eigenvalue}
 We first approximate the largest eigenvalue of $\mathcal{M}$ denoted by $\rho$. It is given by (see \textit{Mathematica} notebook)
 \begin{equation}
 \begin{aligned}
@@ -943,7 +975,7 @@ For $\varepsilon\to 0$ we find that $\rho\to 1$ \chg{(eq.~\eqref{eq:eigenvalue})
 
 %Inserting $\rho$ into equation~\eqref{eq:theory} we see the the enumerator is of order $\varepsilon$.
 
-\subsection*{Computing the establishment probability}
+\subsection{Computing the establishment probability}
 For the solution of eq.~\eqref{Seq:theory} it remains to compute the normalized eigenvectors. Their precise form is of not much insight. We therefore omit stating them explicitly but refer to the \textit{Mathematica} notebook. Solving eq.~\eqref{Seq:theory} to the first order of $\varepsilon$ we find
 
 \begin{equation}
@@ -980,7 +1012,7 @@ Slightly re-ordering the terms, this gives the establishment probability of a si
 
 \chg{For $m=0$ we see that $\varphi_{\text{old}}=0$, i.e. terms (1) and (2) cancel out. For the establishment probability in the new habitat we recover Haldane's result for the establishment probability of a slightly advantageous mutant: $\varphi_{\text{new}}=2a_{\text{new}}$ \citep{haldane_1927}.}
 
-\subsection{Disentangling the contributions to the establishment probability}
+\subsection{Disentangling the contributions to the establishment probability \label{sec:SI_contributions}}
 \chg{We now proceed to explain} the three regions of the establishment probability from Fig.~\ref{fig:vary_m_est}(a) in the main text. These were defined by: (i) an initial increase of the establishment probability at low dispersal rates $m$; (ii) a local maximum with a subsequent decrease of the establishment probability; (iii) an increase of the establishment probability for high dispersal rates. 
 
 \begin{figure}[t!]
