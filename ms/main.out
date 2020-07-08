@@ -1,12 +1,18 @@
 \BOOKMARK [0][-]{part.1}{ }{}% 1
-\BOOKMARK [1][-]{figure.caption.8}{Appendix}{part.1}% 2
+\BOOKMARK [1][-]{figure.caption.7}{Appendix}{part.1}% 2
 \BOOKMARK [0][-]{part.2}{ Appendix}{}% 3
 \BOOKMARK [1][-]{appendix.A}{Deriving the model dynamics }{part.2}% 4
-\BOOKMARK [1][-]{appendix.B}{Approximation of the establishment probability}{part.2}% 5
-\BOOKMARK [2][-]{subsection.B.1}{Computing the largest eigenvalue}{appendix.B}% 6
-\BOOKMARK [2][-]{subsection.B.2}{Computing the establishment probability}{appendix.B}% 7
-\BOOKMARK [2][-]{subsection.B.3}{Disentangling the contributions to the establishment probability }{appendix.B}% 8
-\BOOKMARK [1][-]{appendix.C}{Habitat of origin of the adaptive mutation}{part.2}% 9
-\BOOKMARK [1][-]{appendix.D}{Probability of establishment for large frequencies of old-habitat patches}{part.2}% 10
-\BOOKMARK [1][-]{appendix.E}{Establishment probability in a model without demography}{part.2}% 11
-\BOOKMARK [1][-]{appendix.F}{Habitat of origin dependent on the dispersal scheme}{part.2}% 12
+\BOOKMARK [2][-]{subsection.A.1}{Stationary wild-type population sizes}{appendix.A}% 5
+\BOOKMARK [2][-]{subsection.A.2}{Wild-type population sizes after dispersal}{appendix.A}% 6
+\BOOKMARK [2][-]{subsection.A.3}{Wild-type population sizes during the environmental change }{appendix.A}% 7
+\BOOKMARK [2][-]{subsection.A.4}{Local per capita growth rates}{appendix.A}% 8
+\BOOKMARK [3][-]{subsubsection.A.4.1}{The local per capita growth rate aold}{subsection.A.4}% 9
+\BOOKMARK [3][-]{subsubsection.A.4.2}{The local per capita growth rate anew}{subsection.A.4}% 10
+\BOOKMARK [1][-]{appendix.B}{Approximation of the establishment probability}{part.2}% 11
+\BOOKMARK [2][-]{subsection.B.1}{Computing the largest eigenvalue}{appendix.B}% 12
+\BOOKMARK [2][-]{subsection.B.2}{Computing the establishment probability}{appendix.B}% 13
+\BOOKMARK [2][-]{subsection.B.3}{Disentangling the contributions to the establishment probability }{appendix.B}% 14
+\BOOKMARK [1][-]{appendix.C}{Habitat of origin of the adaptive mutation}{part.2}% 15
+\BOOKMARK [1][-]{appendix.D}{Probability of establishment for large frequencies of old-habitat patches}{part.2}% 16
+\BOOKMARK [1][-]{appendix.E}{Establishment probability in a model without demography}{part.2}% 17
+\BOOKMARK [1][-]{appendix.F}{Habitat of origin dependent on the dispersal scheme}{part.2}% 18

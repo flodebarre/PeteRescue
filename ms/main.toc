@@ -1,15 +1,21 @@
 \babel@toc {english}{}
 \contentsline {part}{\hspace {1em}}{2}{part.1}% 
 \contentsline {xpart}{}{2}{part.1}% 
-\contentsline {section}{Appendix}{S1}{figure.caption.8}% 
+\contentsline {section}{Appendix}{S1}{figure.caption.7}% 
 \contentsline {part}{\hspace {1em}Appendix}{S1}{part.2}% 
 \contentsline {xpart}{Appendix}{S1}{part.2}% 
 \contentsline {section}{\numberline {A}Deriving the model dynamics }{S2}{appendix.A}% 
-\contentsline {section}{\numberline {B}Approximation of the establishment probability}{S5}{appendix.B}% 
-\contentsline {subsection}{\numberline {B.1}Computing the largest eigenvalue}{S6}{subsection.B.1}% 
-\contentsline {subsection}{\numberline {B.2}Computing the establishment probability}{S7}{subsection.B.2}% 
-\contentsline {subsection}{\numberline {B.3}Disentangling the contributions to the establishment probability }{S8}{subsection.B.3}% 
-\contentsline {section}{\numberline {C}Habitat of origin of the adaptive mutation}{S10}{appendix.C}% 
-\contentsline {section}{\numberline {D}Probability of establishment for large frequencies of old-habitat patches}{S11}{appendix.D}% 
-\contentsline {section}{\numberline {E}Establishment probability in a model without demography}{S12}{appendix.E}% 
-\contentsline {section}{\numberline {F}Habitat of origin dependent on the dispersal scheme}{S14}{appendix.F}% 
+\contentsline {subsection}{\numberline {A.1}Stationary wild-type population sizes}{S2}{subsection.A.1}% 
+\contentsline {subsection}{\numberline {A.2}Wild-type population sizes after dispersal}{S3}{subsection.A.2}% 
+\contentsline {subsection}{\numberline {A.3}Wild-type population sizes during the environmental change }{S3}{subsection.A.3}% 
+\contentsline {subsection}{\numberline {A.4}Local per capita growth rates}{S4}{subsection.A.4}% 
+\contentsline {subsubsection}{\numberline {A.4.1}The local per capita growth rate $a_{\text {old}}$}{S4}{subsubsection.A.4.1}% 
+\contentsline {subsubsection}{\numberline {A.4.2}The local per capita growth rate $a_{\text {new}}$}{S4}{subsubsection.A.4.2}% 
+\contentsline {section}{\numberline {B}Approximation of the establishment probability}{S6}{appendix.B}% 
+\contentsline {subsection}{\numberline {B.1}Computing the largest eigenvalue}{S7}{subsection.B.1}% 
+\contentsline {subsection}{\numberline {B.2}Computing the establishment probability}{S8}{subsection.B.2}% 
+\contentsline {subsection}{\numberline {B.3}Disentangling the contributions to the establishment probability }{S9}{subsection.B.3}% 
+\contentsline {section}{\numberline {C}Habitat of origin of the adaptive mutation}{S11}{appendix.C}% 
+\contentsline {section}{\numberline {D}Probability of establishment for large frequencies of old-habitat patches}{S12}{appendix.D}% 
+\contentsline {section}{\numberline {E}Establishment probability in a model without demography}{S13}{appendix.E}% 
+\contentsline {section}{\numberline {F}Habitat of origin dependent on the dispersal scheme}{S15}{appendix.F}% 
